@@ -5,12 +5,19 @@
 }
 :root {
     --background-nav: #577BC1;
+    --background: #fffff5;
+    --font-xs: 1rem;
+    --font-s: 1.5rem;
+    --font-m: 2rem;
+    --font-l: 2.5rem;
+    --font-xl: 3rem;
 }
 html,
 body {
 	font-family: "Lato", sans-serif;
-	color: #c9ccd5;
+	color: #222831;
 	overflow-x: hidden;
+    background-color: var(--background);
 }
 
 
@@ -71,14 +78,13 @@ body {
 }
 
 .navbar__logo {
-    box-shadow: 0px 37px 15px rgba(0, 0, 0, 0.7);;
+    box-shadow: 0px 37px 15px rgba(0, 0, 0, 0.7);
 }
 .navbar__logo img:hover {
 	animation-name: navbarLogo;
-	animation-duration: 800ms;
+	animation-duration: 500ms;
 	animation-fill-mode: forwards;
 	animation-timing-function: linear;
-	transform: scaleX(1);
     text-decoration: none;
 }
 
@@ -112,6 +118,10 @@ body {
 	}
 }
 
+main {
+    padding: 10rem 10vw 0rem 10vw;
+}
+
 /*
 ******************************
 ******************************
@@ -120,32 +130,42 @@ body {
 ******************************
 */
 .welcome {
-	padding-top: 12rem;
-	width: 100vw;
-    height: 100vh;
-	min-height: 100vh;
 	position: relative;
 	z-index: 1;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10rem;
 }
-.welcome__wrapper {
-	justify-content: center;
-	display: flex;
-	flex-wrap: wrap;
-}
+
 .presentation {
-	max-width: 60%;
-	padding-right: 14rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.presentation h1 {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+.presentation h2 {
+    font-size: var(--font-xl);
+    padding-bottom: 2rem;
+}
+.welcome__text {
+    display: flex;
+    justify-content: space-around;
+}
+.welcome__text img {
+    height: 29rem;
 }
 .welcome__description {
-	font-size: 1.4rem;
-	transition: 1200ms;
-	padding: 0 3rem 0 0;
+    font-size: var(--font-s);
+    width: 60%;
 }
-.welcome__wrapper > .socialmedia {
+.socialmedia {
 	display: inline-flex;
 	position: absolute;
-	bottom: 15%;
-	padding: 6rem;
+	right: 0rem;
+    padding: 7rem;
 	transition: 400ms;
 	align-self: flex-end;
 }
@@ -153,14 +173,13 @@ body {
 	margin: 0rem 0.4rem;
 }
 a i {
-	color: #bbbbbbb0;
+	color: #222831;
 }
 .footer__wrapper--socialmedia a i:hover,
 main a i:hover {
-	color: #95d600;
+	color: var(--background-nav);
 	transition: 600ms;
 }
-
 /* responsive query */
 
 @media (max-width: 576px) {
