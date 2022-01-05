@@ -40,7 +40,7 @@ body {
 	justify-content: space-between;
 	align-items: baseline;
 	background-color: var(--background-nav);
-	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 	z-index: 3;
     height: 4.1rem;
 }
@@ -78,7 +78,7 @@ body {
 }
 
 .navbar__logo {
-    box-shadow: 0px 37px 15px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 37px 15px rgba(0, 0, 0, 0.2);
 }
 .navbar__logo img:hover {
 	animation-name: navbarLogo;
@@ -125,16 +125,16 @@ main {
 /*
 ******************************
 ******************************
-    welcome article
+    welcome
 ******************************
 ******************************
 */
 .welcome {
+    height: 100vh;
 	position: relative;
 	z-index: 1;
     display: flex;
     justify-content: center;
-    padding-bottom: 10rem;
 }
 
 .presentation {
@@ -199,5 +199,64 @@ main a i:hover {
 	.welcome__wrapper > .socialmedia {
 		bottom: 5%;
 		padding: 2rem;
+	}
+}
+
+/*
+******************************
+******************************
+    mania presentation
+******************************
+******************************
+*/
+.mania__presentation{
+    height: 100vh;
+    position: relative;
+	z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mania-logo{
+    width: 100%;
+}
+.mania__presentation > article{
+    padding: 0 6rem;
+}
+.wrapper__mania-presentation > div {
+    font-size: var(--font-s);
+}
+.wrapper__mania-presentation > div > p{
+    padding-bottom: 3rem;
+}
+.wrapper__mania-logo > div > h2{
+    padding-left: 7rem;
+    padding-top: 4rem;
+    font-size: var(--font-xl);
+}
+.button{
+    background-color: #fdda00;
+	color: #222831;
+	text-decoration: none;
+	font-size: 1.4rem;
+    border-radius: 1rem;
+    border: 1px solid #fdda00;
+    padding: 1rem;
+}
+.button:hover {
+	animation-name: button;
+	animation-duration: 300ms;
+	animation-fill-mode: forwards;
+	text-decoration: none;
+	animation-timing-function: linear;
+    border: 1px solid #fdda00;
+	color: #222831;
+}
+
+@keyframes button {
+	100% {
+        background-color: transparent;
+		color: #fdda00;
+        border: 1px solid #fdda00;
 	}
 }
