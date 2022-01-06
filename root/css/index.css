@@ -118,10 +118,6 @@ body {
 	}
 }
 
-main {
-    padding: 10rem 17vw 0rem 17vw;
-}
-
 /*
 ******************************
 ******************************
@@ -130,7 +126,7 @@ main {
 ******************************
 */
 .welcome {
-    background-image: url();
+    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/background.jpg) center/100vw no-repeat;
     height: 100vh;
 	position: relative;
 	z-index: 1;
