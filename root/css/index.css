@@ -228,7 +228,8 @@ a i {
 ******************************
 */
 .mania__presentation{
-    background: url();
+    clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0, 52% 0);
+    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/Mania_logo_back.png) center/20vw repeat;
     height: 100vh;
     position: relative;
 	z-index: 1;
