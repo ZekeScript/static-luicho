@@ -160,6 +160,7 @@ body {
     align-items: center;
     background-color: #cfcfcf80;
     width: 50vw;
+    padding: 0 0 0 1vw;
 }
 .welcome__text img {
     height: 29rem;
@@ -168,12 +169,11 @@ body {
     font-size: var(--font-s);
 }
 .socialmedia {
-	display: inline-flex;
+	display: flex;
 	position: absolute;
-	right: 0vw;
-    padding: 7rem;
+	right: 15vw;
+    bottom: 10vh;
 	transition: 400ms;
-	align-self: flex-end;
 }
 .socialmedia > div {
 	margin: 0rem 0.4rem;
@@ -228,6 +228,7 @@ a i {
 ******************************
 */
 .mania__presentation{
+    background: url();
     height: 100vh;
     position: relative;
 	z-index: 1;
