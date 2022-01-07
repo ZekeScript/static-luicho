@@ -302,5 +302,7 @@ a i {
 ******************************
 */
 .general__products{
-    background: ;
+    height: 134vh;
+    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/3d-illustration-gift-boxes-flying-in-the-sky-with-parachutes-online-shopping-and-delivery-service-concept.jpg) center/100vw no-repeat;
+    margin-top: -34vh;
 }
