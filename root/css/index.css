@@ -133,30 +133,39 @@ body {
     display: flex;
     justify-content: center;
 }
-
+.welcome__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .presentation {
+    background-color: #cfcfcf80;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 1vw;
+    margin-bottom: 6vh;
 }
 .presentation h1 {
     font-size: 4rem;
-    padding-bottom: 1rem;
+    margin-bottom: 2vh;
 }
 .presentation h2 {
     font-size: var(--font-xl);
-    padding-bottom: 2rem;
 }
 .welcome__text {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: #cfcfcf80;
+    width: 50vw;
 }
 .welcome__text img {
     height: 29rem;
 }
 .welcome__description {
     font-size: var(--font-s);
-    width: 60%;
 }
 .socialmedia {
 	display: inline-flex;
