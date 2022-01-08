@@ -147,8 +147,8 @@ body {
     padding: 0 1vw;
     margin-bottom: 6vh;
 }
-.presentation h1 {
-    font-size: 4rem;
+.presentation img {
+    width: 33vw;
     margin-bottom: 2vh;
 }
 .presentation h2 {
@@ -229,7 +229,7 @@ a i {
 ******************************
 */
 .mania__presentation{
-    clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 80%, 0 0, 50% 0);
+    clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0, 50% 0);
     background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/Mania_logo_back.png) center/10vw repeat;
     height: 100vh;
     position: relative;
@@ -305,14 +305,31 @@ a i {
     height: 120vh;
     background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/background-general.jpg) center/100vw no-repeat;
     margin-top: -21vh;
-    padding: 5vh 15vw;
+    padding: 20vh 15vw 0 15vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .general__products > article{
-    width: 17vw;
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.general__products> article > div > h2{
+    padding-bottom: 1vh;
+    text-align: center;
 }
 .restaurant{
-    background: ;
+    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/greengrocery%20background.jpg) center/100% no-repeat;
+}
+.restaurant > div{
+    background-color: #ffffffbe;
+    padding: 1rem 1rem 0.1rem 1rem;
+    width: 11.27vw;
+}
+.kiosco{
+    background: url();
 }
