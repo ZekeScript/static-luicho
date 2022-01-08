@@ -229,7 +229,7 @@ a i {
 ******************************
 */
 .mania__presentation{
-    clip-path: polygon(100% 0, 100% 66%, 50% 100%, 0 66%, 0 0, 50% 0);
+    clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 80%, 0 0, 50% 0);
     background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/Mania_logo_back.png) center/10vw repeat;
     height: 100vh;
     position: relative;
@@ -302,7 +302,17 @@ a i {
 ******************************
 */
 .general__products{
-    height: 134vh;
-    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/3d-illustration-gift-boxes-flying-in-the-sky-with-parachutes-online-shopping-and-delivery-service-concept.jpg) center/100vw no-repeat;
-    margin-top: -34vh;
+    height: 120vh;
+    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/background-general.jpg) center/100vw no-repeat;
+    margin-top: -21vh;
+    padding: 5vh 15vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.general__products > article{
+    width: 17vw;
+}
+.restaurant{
+    background: ;
 }
