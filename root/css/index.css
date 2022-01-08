@@ -126,7 +126,7 @@ body {
 ******************************
 */
 .welcome {
-    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/background.jpg) center/100vw no-repeat;
+    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/background.jpg) center/cover no-repeat;
     height: 100vh;
 	position: relative;
 	z-index: 2;
@@ -303,7 +303,7 @@ a i {
 */
 .general__products{
     height: 100vh;
-    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/background-general.jpg) center/100vw no-repeat;
+    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/background-general.jpg) center/cover no-repeat;
     margin-top: -21vh;
     padding: 10vh 15vw 0 15vw;
     display: flex;
@@ -311,8 +311,8 @@ a i {
     align-items: center;
 }
 .products__box{
-    width: 20vw;
-    height: 20vw;
+    width: 18vw;
+    height: 18vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -323,7 +323,7 @@ a i {
     text-align: center;
 }
 .restaurant{
-    background: url() center/100% no-repeat;
+    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/restaurant_background.jpg) center/cover no-repeat;
 }
 .restaurant > div{
     background-color: #ffffffbe;
@@ -331,7 +331,7 @@ a i {
     width: 11.27vw;
 }
 .kiosco{
-    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/background_supermarket.jpg) center/30vw no-repeat;
+    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/background_supermarket.jpg) center/cover no-repeat;
 }
 .kiosco > div{
     background-color: #ffffffbe;
@@ -339,7 +339,7 @@ a i {
     width: 13vw;
 }
 .verduleria{
-    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/greengrocery%20background.jpg) center/30vw no-repeat;
+    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/greengrocery%20background.jpg) center/cover no-repeat;
 }
 .verduleria > div{
     background-color: #ffffffbe;
