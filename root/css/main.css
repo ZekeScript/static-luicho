@@ -318,7 +318,7 @@ a i {
 	border-radius: 20px;
 }
 .products__box:hover {
-	transform: scale(1.75);
+	transform: scale(1.5);
 	transition: 600ms;
 }
 .general__products > article > div > h2 {
@@ -475,11 +475,14 @@ textarea:focus {
 .footer {
 	position: relative;
 	z-index: 2;
-	display: flex;
 	background-color: var(--background-nav);
-	justify-content: space-around;
-	align-items: center;
 	padding: 1vh 0;
+}
+.footer__wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 15vw;
+	align-items: center;
 }
 .footer__menu {
 	display: flex;
@@ -494,7 +497,9 @@ textarea:focus {
 	text-decoration: none;
 }
 .footer__mark {
-	align-self: flex-end;
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
 }
 .footer__mark a {
 	color: #222831;
