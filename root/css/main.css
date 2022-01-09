@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 }
 :root {
+    --yellow-logo: #fdda00;
 	--background-nav: #577bc1;
 	--background: #fffff5;
 	--font-xs: 1rem;
@@ -44,16 +45,16 @@ body {
 	margin: 0 0 0 15vw;
 }
 .navbar__wrapper {
-	margin: 0 15vw 0 0;
+	margin: 0 15vw 3vh 0;
+    align-self: center;
 }
-.navbar__wrapper li {
-	display: inline;
-	margin: 0rem 0.3rem;
+.navbar__wrapper a {
+	margin: 0rem 0.5rem;
 }
 .navbar__link {
 	color: #cfcfcf;
 	text-decoration: none;
-	font-size: 1.4rem;
+	font-size: var(--font-s);
 }
 .navbar__link:hover {
 	animation-name: navbarMenu;
@@ -68,8 +69,8 @@ body {
 @keyframes navbarMenu {
 	100% {
 		padding-bottom: 0.2rem;
-		border-bottom: 0.1rem solid #fdda00;
-		color: #ffffff;
+		border-bottom: 0.1rem solid var(--yellow-logo);
+		color: var(--background);
 	}
 }
 
@@ -250,8 +251,8 @@ a i {
 }
 .wrapper__mania-presentation > div > p {
 	margin-bottom: 5vh;
-	padding: 0 0 0 1rem;
-	background-color: #ffffffbe;
+	padding: 0 0 0.3rem 1rem;
+	background-color: var(--background);
 }
 .wrapper__mania-logo > div {
 	display: flex;
@@ -259,17 +260,17 @@ a i {
 	align-items: center;
 }
 .wrapper__mania-logo > div > h2 {
-	padding: 0 0 0 1rem;
-	background-color: #ffffffbe;
+	padding: 0 1rem 1rem 1rem;
+	background-color: var(--background);
 	font-size: var(--font-xl);
 }
 .button {
-	background-color: #fdda00;
-	color: #577bc1;
+	background-color: var(--yellow-logo);
+	color: var(--background-nav);
 	text-decoration: none;
 	font-size: 1.4rem;
 	border-radius: 1rem;
-	border: 1px solid #577bc1;
+	border: 1px solid var(--background-nav);
 	padding: 1rem;
 }
 .button:hover {
@@ -277,24 +278,24 @@ a i {
 	animation-duration: 300ms;
 	animation-fill-mode: forwards;
 	text-decoration: none;
-	background-color: #fdda00;
+	background-color: var(--yellow-logo);
 	animation-timing-function: linear;
-	border: 1px solid #577bc1;
-	color: #577bc1;
+	border: 1px solid var(--background-nav);
+	color: var(--background-nav);
 }
 
 @keyframes button {
 	100% {
-		background-color: #577bc1;
-		color: #fdda00;
-		border: 1px solid #fdda00;
+		background-color: var(--background-nav);
+		color: var(--yellow-logo);
+		border: 1px solid var(--yellow-logo);
 	}
 }
 
 /*
 ******************************
 ******************************
-    mania presentation
+    general products
 ******************************
 ******************************
 */
@@ -316,6 +317,9 @@ a i {
 	align-items: center;
 	border-radius: 20px;
 }
+.products__box:hover{
+    transform: scale(1.75);
+}
 .general__products > article > div > h2 {
 	padding-bottom: 1vh;
 	text-align: center;
@@ -325,7 +329,7 @@ a i {
 		center/cover no-repeat;
 }
 .restaurant > div {
-	background-color: #ffffffbe;
+	background-color: var(--background);
 	padding: 1rem 1rem 0.1rem 1rem;
 	width: 11.27vw;
 }
@@ -334,7 +338,7 @@ a i {
 		center/cover no-repeat;
 }
 .kiosco > div {
-	background-color: #ffffffbe;
+	background-color: var(--background);
 	padding: 1rem 1rem 0.1rem 1rem;
 	width: 13vw;
 }
@@ -343,7 +347,7 @@ a i {
 		center/cover no-repeat;
 }
 .verduleria > div {
-	background-color: #ffffffbe;
+	background-color: var(--background);
 	padding: 1rem 1rem 0.1rem 1rem;
 	width: 10.9vw;
 }
@@ -381,7 +385,10 @@ a i {
 	border-radius: 40px;
 	width: 6.5vw;
 	border: solid;
-	border-color: #577bc1;
+	border-color: var(--background-nav);
+}
+.clients__logo > img:hover {
+    transform: scale(1.66);
 }
 
 /*
@@ -392,7 +399,7 @@ a i {
 ******************************
 */
 .contact {
-	margin-top: -15vh;
+	margin-top: -10vh;
 	clip-path: polygon(0 100%, 100% 100%, 100% 20%, 40% 20%, 28% 0, 28% 20%, 0 20%);
 	background: #222831
 		url(https://raw.githubusercontent.com/estga/furry-journey/main/images/mailGraphic.png)
@@ -405,7 +412,7 @@ a i {
 	padding: 20vh 15vw 0 15vw;
 	justify-content: space-between;
 	align-items: center;
-	color: #fffff5;
+	color: var(--background);
 	font-size: var(--font-m);
 }
 .contact article {
@@ -439,9 +446,9 @@ input[type="email"],
 input[type="text"]:not(output):not(:focus),
 input[type="email"]:not(output):not(:focus),
 textarea {
-	border-bottom: 1px solid #fffff5;
+	border-bottom: 1px solid var(--background);
 	background: transparent;
-	color: #fffff5;
+	color: var(--background);
 	font-size: var(--font-s);
 	box-shadow: none;
 	outline: none;
@@ -454,7 +461,7 @@ textarea:focus {
 	border-bottom: 1px solid #577bc1;
 }
 ::placeholder {
-	color: #fffff5;
+	color: var(--background);
 }
 /*
 ******************************
@@ -467,16 +474,41 @@ textarea:focus {
 	position: relative;
 	z-index: 2;
 	display: flex;
-	background-color: #577bc1;
+	background-color: var(--background-nav);
 	justify-content: space-around;
-	padding: 3vh;
+	align-items: center;
+	padding: 1vh 0;
 }
-.footer__menu > ul,
+.footer__menu {
+	display: flex;
+	flex-direction: column;
+}
+.footer__menu > a {
+	color: #222831;
+}
+.footer__menu > a:hover{
+    color: var(--yellow-logo);
+    transition: 600ms;
+    text-decoration: none;
+}
+.footer__mark {
+	align-self: flex-end;
+}
+.footer__mark a {
+	color: #222831;
+}
+.footer__mark a:hover {
+    color: var(--yellow-logo);
+    transition: 600ms;
+    text-decoration: none;
+}
 .footer__socialmedia {
 	display: flex;
 }
-.footer__link,
 .footer__socialmedia > div {
-	padding: 0 0.4vw;
-	text-decoration: none;
+	padding: 0 0.3vw;
+}
+.footer__socialmedia i:hover{
+    color: var(--yellow-logo);
+    transition: 600ms;
 }
