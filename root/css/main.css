@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 :root {
-    --yellow-logo: #fdda00;
+	--yellow-logo: #fdda00;
 	--background-nav: #577bc1;
 	--background: #fffff5;
 	--font-xs: 1rem;
@@ -46,7 +46,7 @@ body {
 }
 .navbar__wrapper {
 	margin: 0 15vw 3vh 0;
-    align-self: center;
+	align-self: center;
 }
 .navbar__wrapper a {
 	margin: 0rem 0.5rem;
@@ -146,11 +146,11 @@ body {
 	margin-bottom: 6vh;
 }
 .presentation img {
-	width: 33vw;
+	width: 25vw;
 	margin-bottom: 2vh;
 }
 .presentation h2 {
-	font-size: var(--font-xl);
+	font-size: var(--font-l);
 }
 .welcome__text {
 	display: flex;
@@ -169,8 +169,8 @@ body {
 .socialmedia {
 	display: flex;
 	position: absolute;
-	right: 15vw;
-	bottom: 10vh;
+	right: 16vw;
+	bottom: 15vh;
 	transition: 400ms;
 }
 .socialmedia > div {
@@ -317,8 +317,9 @@ a i {
 	align-items: center;
 	border-radius: 20px;
 }
-.products__box:hover{
-    transform: scale(1.75);
+.products__box:hover {
+	transform: scale(1.75);
+	transition: 600ms;
 }
 .general__products > article > div > h2 {
 	padding-bottom: 1vh;
@@ -388,7 +389,8 @@ a i {
 	border-color: var(--background-nav);
 }
 .clients__logo > img:hover {
-    transform: scale(1.66);
+	transform: scale(1.66);
+	transition: 600ms;
 }
 
 /*
@@ -486,10 +488,10 @@ textarea:focus {
 .footer__menu > a {
 	color: #222831;
 }
-.footer__menu > a:hover{
-    color: var(--yellow-logo);
-    transition: 600ms;
-    text-decoration: none;
+.footer__menu > a:hover {
+	color: var(--yellow-logo);
+	transition: 600ms;
+	text-decoration: none;
 }
 .footer__mark {
 	align-self: flex-end;
@@ -498,9 +500,9 @@ textarea:focus {
 	color: #222831;
 }
 .footer__mark a:hover {
-    color: var(--yellow-logo);
-    transition: 600ms;
-    text-decoration: none;
+	color: var(--yellow-logo);
+	transition: 600ms;
+	text-decoration: none;
 }
 .footer__socialmedia {
 	display: flex;
@@ -508,7 +510,7 @@ textarea:focus {
 .footer__socialmedia > div {
 	padding: 0 0.3vw;
 }
-.footer__socialmedia i:hover{
-    color: var(--yellow-logo);
-    transition: 600ms;
+.footer__socialmedia i:hover {
+	color: var(--yellow-logo);
+	transition: 600ms;
 }
