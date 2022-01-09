@@ -231,7 +231,6 @@ a i {
 		center/10vw repeat;
 	height: 100vh;
 	position: relative;
-	z-index: 2;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -365,12 +364,12 @@ a i {
 	padding: 0 15vw;
 }
 .clients__title {
-    text-align: center;
+	text-align: center;
 	font-size: var(--font-l);
 }
 .clients__title > h2 {
 	font-size: var(--font-xl);
-    padding-bottom: 1.5vh;
+	padding-bottom: 1.5vh;
 }
 .clients__logo {
 	margin-top: 7vh;
@@ -379,10 +378,10 @@ a i {
 	gap: 4vh 8vw;
 }
 .clients__logo > img {
-    border-radius: 40px;
+	border-radius: 40px;
 	width: 6.5vw;
-    border: solid;
-    border-color: #577bc1;
+	border: solid;
+	border-color: #577bc1;
 }
 
 /*
@@ -392,3 +391,92 @@ a i {
 ******************************
 ******************************
 */
+.contact {
+	margin-top: -15vh;
+	clip-path: polygon(0 100%, 100% 100%, 100% 20%, 40% 20%, 28% 0, 28% 20%, 0 20%);
+	background: #222831
+		url(https://raw.githubusercontent.com/estga/furry-journey/main/images/mailGraphic.png)
+		center left/66vh no-repeat;
+	background-blend-mode: multiply;
+	height: 100vh;
+	position: relative;
+	z-index: 2;
+	display: flex;
+	padding: 20vh 15vw 0 15vw;
+	justify-content: space-between;
+	align-items: center;
+	color: #fffff5;
+	font-size: var(--font-m);
+}
+.contact article {
+	width: 33vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.contact h2 {
+	font-size: var(--font-xl);
+	padding-bottom: 2vh;
+}
+form label {
+	font-size: var(--font-s);
+}
+form input,
+textarea {
+	border: none;
+	padding: 1rem;
+	height: 6vh;
+	width: 33vw;
+	margin-bottom: 2vh;
+}
+form textarea {
+	height: 18vh;
+	resize: none;
+}
+input[type="text"],
+input[type="email"],
+input[type="text"]:not(output):not(:focus),
+input[type="email"]:not(output):not(:focus),
+textarea {
+	border-bottom: 1px solid #fffff5;
+	background: transparent;
+	color: #fffff5;
+	font-size: var(--font-s);
+	box-shadow: none;
+	outline: none;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="text"]:not(output):focus,
+input[type="email"]:not(output):focus,
+textarea:focus {
+	border-bottom: 1px solid #577bc1;
+}
+::placeholder {
+	color: #fffff5;
+}
+/*
+******************************
+******************************
+    footer
+******************************
+******************************
+*/
+.footer {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	background-color: #577bc1;
+	justify-content: space-around;
+	padding: 3vh;
+}
+.footer__menu > ul,
+.footer__socialmedia {
+	display: flex;
+}
+.footer__link,
+.footer__socialmedia > div {
+	padding: 0 0.4vw;
+	text-decoration: none;
+}

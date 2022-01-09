@@ -268,24 +268,35 @@
 						method="post"
 					>
 						<fieldset class="contact__form__wrapper">
+							<label for="name"
+								>Nombre<br /><input
+									type="text"
+									name="Name"
+									id="" /><br /></label
+							><br />
 							<label for="email"
 								>Email<br />
 								<input type="email" name="email" id="" /></label
 							><br />
 							<label for="message"
 								>Mensaje<br />
-								<input type="text" name="message" id=""
-							/></label>
+								<textarea
+									name="message"
+									id=""
+									cols="30"
+									rows="50"
+								></textarea>
+							</label>
 						</fieldset>
 						<br />
-						<button class="btn up-animation" type="submit">Enviar</button>
 					</form>
+					<button class="button" type="submit">Enviar</button>
 				</article>
 			</section>
 			<!-- end formulario -->
 		</main>
 		<footer class="footer">
-			<section class="footer__wrapper">
+			<section class="footer__menu">
 				<!-- footer nav -->
 				<ul>
 					<li>
@@ -323,14 +334,14 @@
 				</ul>
 				<!-- end footer nav -->
 			</section>
-			<section class="footer__wrapper">
+			<section class="footer__mark">
 				<p>
 					Powered by
 					<a href="https://github.com/estga" target="_blank">estga</a>
 				</p>
 			</section>
 			<!-- socialmedia links -->
-			<div class="footer__socialmedia">
+			<section class="footer__socialmedia">
 				<div class="socialmedia__facebook">
 					<a href="https://www.facebook.com/DistribuidoraLuicho" target="_blank"
 						><i class="fab fa-facebook" style="font-size: 2rem"></i
@@ -355,7 +366,7 @@
 						><i class="fas fa-envelope-open-text" style="font-size: 2rem"></i
 					></a>
 				</div>
-			</div>
+			</section>
 			<!-- end socialmedia -->
 		</footer>
 	</body>
