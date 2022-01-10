@@ -592,11 +592,12 @@ textarea:focus {
 */
 .faqs {
     padding: 20vh 15vw 5vh 15vw;
-    background: url() top 25vh center/25vw no-repeat;
+    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/faqs.jpg) top 7vh center/50vw no-repeat;
     display: flex;
     justify-content: space-between;
 }
 .bulto__abierto, .bulto__cerrado {
+    margin-top: 60vh;
     width: 33vw;
 }
 .bulto__abierto h2 {
@@ -616,4 +617,22 @@ textarea:focus {
 .faqs h2 {
     text-align: center;
     padding-bottom: 5vh;
+}
+
+/*
+******************************
+******************************
+******************************
+******************************
+    condiciones
+******************************
+******************************
+******************************
+******************************
+*/
+.condiciones {
+    margin: 20vh 15vw 5vw 15vw;
+}
+.condiciones article {
+    margin: 10vh 5vw 5vw 5vw;
 }
