@@ -554,12 +554,15 @@ textarea:focus {
 ******************************
 */
 .quienes__somos {
-    background: url();
+    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/quienes_somos_background.jpg) top 26vh right 13vw/25vw no-repeat;
 }
 .historia {
-    padding: 20vh 20vw 0 20vw;
+    padding: 20vh 40vw 0 20vw;
 }
-.equipamiento, .calidad, .produccion, .atencion, .mision, .vision {
+.equipamiento {
+    padding: 10vh 40vw 0 20vw;
+}
+.calidad, .produccion, .atencion, .mision, .vision {
     padding: 10vh 20vw 0 20vw;
 }
 .valores {
@@ -568,15 +571,49 @@ textarea:focus {
 .quienes__somos__text > section{
     padding: 5vh 0;
 }
-aside{
-    position: fixed;
-    bottom: 0vh;
-    top: 20vh;
-    left: 0vw;
-}
 .historia h2, .equipamiento h2, .calidad h2, .produccion h2, .atencion h2, .mision h2, .vision h2, .valores h2 {
     color: #13A4DD;
+    font-weight: 900;
 }
 .historia hr, .equipamiento hr, .calidad hr, .produccion hr, .atencion hr, .mision hr, .vision hr, .valores hr {
-    border-top: solid #13A4DD;
+    border-top: 1px solid #13A4DD;
+}
+
+/*
+******************************
+******************************
+******************************
+******************************
+    faqs
+******************************
+******************************
+******************************
+******************************
+*/
+.faqs {
+    padding: 20vh 15vw 5vh 15vw;
+    background: url() top 25vh center/25vw no-repeat;
+    display: flex;
+    justify-content: space-between;
+}
+.bulto__abierto, .bulto__cerrado {
+    width: 33vw;
+}
+.bulto__abierto h2 {
+    color: #13A4DD;
+    font-weight: 900;
+}
+.bulto__abierto hr {
+    border-top: 1px solid #13A4DD;
+}
+.bulto__cerrado h2 {
+    color: #7813DD;
+    font-weight: 900;
+}
+.bulto__cerrado hr {
+    border-top: 1px solid #7813DD;
+}
+.faqs h2 {
+    text-align: center;
+    padding-bottom: 5vh;
 }
