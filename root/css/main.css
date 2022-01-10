@@ -138,7 +138,7 @@ body {
 	align-items: center;
 }
 .presentation {
-	background-color: #cfcfcf80;
+	background-color: #adadad80;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -156,7 +156,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #cfcfcf80;
+	background-color: #adadad80;
 	width: 50vw;
 	padding: 0 0 0 1vw;
 }
@@ -165,6 +165,14 @@ body {
 }
 .welcome__description {
 	font-size: var(--font-s);
+}
+.welcome__description span {
+    color: var(--yellow-logo);
+}
+.welcome__description .mania {
+    font-family: 'Comforter Brush', cursive;
+    font-size: var(--font-l);
+    color: #222831;
 }
 .socialmedia {
 	display: flex;
@@ -254,6 +262,11 @@ a i {
 	padding: 0 0 0.3rem 1rem;
 	background-color: var(--background);
 }
+.wrapper__mania-presentation span{
+    font-family: 'Comforter Brush', cursive;
+    font-size: var(--font-l);
+    padding-right: 0.4rem;
+}
 .wrapper__mania-logo > div {
 	display: flex;
 	flex-direction: column;
@@ -269,13 +282,14 @@ a i {
 	color: var(--background-nav);
 	text-decoration: none;
 	font-size: 1.4rem;
+    font-weight: 900;
 	border-radius: 1rem;
 	border: 1px solid var(--background-nav);
 	padding: 1rem;
 }
 .button:hover {
 	animation-name: button;
-	animation-duration: 300ms;
+	animation-duration: 333ms;
 	animation-fill-mode: forwards;
 	text-decoration: none;
 	background-color: var(--yellow-logo);
@@ -376,6 +390,9 @@ a i {
 	font-size: var(--font-xl);
 	padding-bottom: 1.5vh;
 }
+.clients__title span {
+    border-bottom: solid var(--background-nav) 2px;
+}
 .clients__logo {
 	margin-top: 7vh;
 	display: grid;
@@ -428,6 +445,9 @@ a i {
 	font-size: var(--font-xl);
 	padding-bottom: 2vh;
 }
+.contact span {
+    border-bottom: solid var(--yellow-logo) 2px;
+}
 form label {
 	font-size: var(--font-s);
 }
@@ -461,10 +481,12 @@ input[type="text"]:not(output):focus,
 input[type="email"]:not(output):focus,
 textarea:focus {
 	border-bottom: 1px solid #577bc1;
+    transition: 250ms;
 }
 ::placeholder {
 	color: var(--background);
 }
+
 /*
 ******************************
 ******************************
@@ -518,4 +540,43 @@ textarea:focus {
 .footer__socialmedia i:hover {
 	color: var(--yellow-logo);
 	transition: 600ms;
+}
+
+/*
+******************************
+******************************
+******************************
+******************************
+    Quienes Somos
+******************************
+******************************
+******************************
+******************************
+*/
+.quienes__somos {
+    background: url();
+}
+.historia {
+    padding: 20vh 20vw 0 20vw;
+}
+.equipamiento, .calidad, .produccion, .atencion, .mision, .vision {
+    padding: 10vh 20vw 0 20vw;
+}
+.valores {
+    padding: 10vh 20vw 10vh 20vw;
+}
+.quienes__somos__text > section{
+    padding: 5vh 0;
+}
+aside{
+    position: fixed;
+    bottom: 0vh;
+    top: 20vh;
+    left: 0vw;
+}
+.historia h2, .equipamiento h2, .calidad h2, .produccion h2, .atencion h2, .mision h2, .vision h2, .valores h2 {
+    color: #13A4DD;
+}
+.historia hr, .equipamiento hr, .calidad hr, .produccion hr, .atencion hr, .mision hr, .vision hr, .valores hr {
+    border-top: solid #13A4DD;
 }
