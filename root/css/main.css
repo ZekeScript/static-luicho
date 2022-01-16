@@ -5,7 +5,7 @@
 }
 :root {
 	--yellow-logo: #fdda00;
-	--background-nav: #577bc1;
+	--background-nav: #577bc2;
 	--background: #fffff5;
 	--font-xs: 1rem;
 	--font-s: 1.5rem;
@@ -17,7 +17,6 @@ html,
 body {
 	font-family: "Lato", sans-serif;
 	color: #222831;
-	overflow-x: hidden;
 	background-color: var(--background);
 }
 
@@ -35,18 +34,15 @@ body {
 	left: 0;
 	display: flex;
 	justify-content: space-between;
-	align-items: baseline;
+	align-items: center;
 	background-color: var(--background-nav);
 	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 	z-index: 3;
-	height: 4.1rem;
-}
-.navbar__wrapper--logo {
-	margin: 0 0 0 15vw;
+	height: 6vh;
+    padding: 0 10vw;
 }
 .navbar__wrapper {
-	margin: 0 15vw 3vh 0;
-	align-self: center;
+    margin-bottom: 2vh;
 }
 .navbar__wrapper a {
 	margin: 0rem 0.5rem;
@@ -122,107 +118,91 @@ body {
 ******************************
 ******************************
 */
-.welcome {
-	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/background.jpg)
-		center/cover no-repeat;
-	height: 100vh;
-	position: relative;
-	z-index: 2;
-	display: flex;
-	justify-content: center;
+main {
+    padding-top: 10vh;
 }
-.welcome__wrapper {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.welcome {
+	height: 90vh;
+    margin: 0 5vw;
+    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/background.jpg) top right/50vw no-repeat;
+	display: grid;
+    grid-template-areas: 
+    "presentation  ."
+    ".             socialmedia";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 .presentation {
-	background-color: #adadad80;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 0 1vw;
-	margin-bottom: 6vh;
+    margin: 50vh 0 0 7vw;
+    grid-area: presentation;
+    color: var(--background);
+    background-color: var(--background-nav);
+	text-align: center;
 }
-.presentation img {
-	width: 25vw;
-	margin-bottom: 2vh;
+.presentation h1 {
+    color: var(--yellow-logo);
+    font-size: 4vw;
 }
 .presentation h2 {
-	font-size: var(--font-l);
-}
-.welcome__text {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: #adadad80;
-	width: 50vw;
-	padding: 0 0 0 1vw;
-}
-.welcome__text img {
-	height: 29rem;
-}
-.welcome__description {
-	font-size: var(--font-s);
-}
-.welcome__description span {
-    color: var(--yellow-logo);
-}
-.welcome__description .mania {
-    font-family: 'Comforter Brush', cursive;
     font-size: var(--font-l);
-    color: #222831;
+}
+.welcome__image {
+    grid-area: welcome__image;
 }
 .socialmedia {
+    grid-area: socialmedia;
+    margin-right: 5vw;
+    justify-content: end;
 	display: flex;
-	position: absolute;
-	right: 16vw;
-	bottom: 15vh;
 	transition: 400ms;
 }
 .socialmedia > div {
-	margin: 0rem 0.4rem;
+    margin: 0rem 0.4rem;
 }
 a i {
-	color: #222831;
+    color: #222831;
 }
-.footer__wrapper--socialmedia a i:hover,
-.socialmedia a i:hover {
-	color: var(--background-nav);
+.socialmedia i:hover {
+    color: var(--background-nav);
 	transition: 600ms;
 }
 .fixed_button {
-	position: fixed;
-	bottom: 4vh;
-	right: 2vw;
+    display: flex;
+    justify-content: end;
+    margin-right: 3vw;
+	position: sticky;
+	top: 86vh;
 	z-index: 1;
+    text-decoration: none;
+}
+.fixed_button:hover {
+    text-decoration: none;
 }
 .fixed_button i {
-	color: #128c7e;
+    color: #128c7e;
 }
 .fixed_button i:hover {
-	color: #25d366;
+    color: #25d366;
 	transition: 600ms;
 }
 /* responsive query */
 
 @media (max-width: 576px) {
-	.welcome {
-		padding-top: 20rem;
+    .welcome {
+        padding-top: 20rem;
 	}
 	.presentation {
-		max-width: 85%;
+        max-width: 85%;
 		padding-right: 0;
 	}
 	.welcome__description {
-		font-size: 1rem;
+        font-size: 1rem;
 	}
 	.welcome__name {
-		font-size: 3rem;
+        font-size: 3rem;
 	}
 	.welcome__wrapper > .socialmedia {
-		bottom: 5%;
+        bottom: 5%;
 		padding: 2rem;
 	}
 }
@@ -230,51 +210,68 @@ a i {
 /*
 ******************************
 ******************************
-    mania presentation
+mania presentation
 ******************************
 ******************************
 */
 .mania__presentation {
+    height: 98vh;
+    padding: 10vh 10vw 20vh 10vw;
 	clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0, 50% 0);
 	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/Mania_logo_back.png)
-		center/10vw repeat;
-	height: 100vh;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 0 15vw;
+    center/10vw repeat;
+	display: grid;
+    grid-template-areas: 
+    ".                  welcome__text"
+    "mania-presentation mania-logo";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.welcome__text {
+    grid-area: welcome__text;
+    background-color: var(--background-nav);
+    font-size: var(--font-s);
+    color: var(--background);
+    margin: 0 0vw 3vh 0vw;
+    border-radius: 30px;
+}
+.welcome__description span {
+    color: var(--yellow-logo);
+}
+.welcome__description .mania {
+    font-family: 'Comforter Brush', cursive;
+    font-size: var(--font-l);
+    color: var(--background);
 }
 .mania-logo {
-	width: 33vw;
+    width: 75%;
 }
 .mania__presentation > article {
 	padding: 0 2vw;
 }
-.wrapper__mania-presentation > div {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
+.wrapper__mania-presentation {
 	font-size: var(--font-s);
+    grid-area: mania-presentation;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.wrapper__mania-presentation > div > p {
-	margin-bottom: 5vh;
+.wrapper__mania-presentation p {
+	margin-bottom: 1vh;
 	padding: 0 0 0.3rem 1rem;
-	background-color: var(--background);
 }
 .wrapper__mania-presentation span{
     font-family: 'Comforter Brush', cursive;
     font-size: var(--font-l);
     padding-right: 0.4rem;
 }
-.wrapper__mania-logo > div {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.wrapper__mania-logo {
+	text-align: center;
+    grid-area: mania-logo;
 }
-.wrapper__mania-logo > div > h2 {
+.wrapper__mania-logo h2 {
 	padding: 0 1rem 1rem 1rem;
-	background-color: var(--background);
 	font-size: var(--font-xl);
 }
 .button {
@@ -315,8 +312,6 @@ a i {
 */
 .general__products {
 	height: 100vh;
-	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/background-general.jpg)
-		center/cover no-repeat;
 	margin-top: -21vh;
 	padding: 10vh 15vw 0 15vw;
 	display: flex;
@@ -500,10 +495,13 @@ textarea:focus {
 	background-color: var(--background-nav);
 	padding: 1vh 0;
 }
+.footer hr {
+    border-top: solid 1px var(--yellow-logo);
+}
 .footer__wrapper {
 	display: flex;
 	justify-content: space-between;
-	padding: 0 15vw;
+	padding: 0 10vw;
 	align-items: center;
 }
 .footer__menu {
@@ -530,6 +528,9 @@ textarea:focus {
 	color: var(--yellow-logo);
 	transition: 600ms;
 	text-decoration: none;
+}
+.footer__mark i {
+    color: var(--yellow-logo);
 }
 .footer__socialmedia {
 	display: flex;
