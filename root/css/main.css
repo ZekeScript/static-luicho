@@ -319,9 +319,6 @@ mania presentation
 	align-items: center;
 }
 .products__box {
-	width: 18vw;
-	height: 18vw;
-	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: 20px;
@@ -330,7 +327,7 @@ mania presentation
 	transform: scale(1.5);
 	transition: 600ms;
 }
-.general__products > article > div > h2 {
+.general__products h2 {
 	padding-bottom: 1vh;
 	text-align: center;
 }
@@ -338,28 +335,22 @@ mania presentation
 	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/restaurant_background.jpg)
 		center/cover no-repeat;
 }
-.restaurant > div {
+.restaurant {
 	background-color: var(--background);
-	padding: 1rem 1rem 0.1rem 1rem;
-	width: 11.27vw;
 }
 .kiosco {
 	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/background_supermarket.jpg)
 		center/cover no-repeat;
 }
-.kiosco > div {
+.kiosco {
 	background-color: var(--background);
-	padding: 1rem 1rem 0.1rem 1rem;
-	width: 13vw;
 }
 .verduleria {
 	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/greengrocery%20background.jpg)
 		center/cover no-repeat;
 }
-.verduleria > div {
+.verduleria {
 	background-color: var(--background);
-	padding: 1rem 1rem 0.1rem 1rem;
-	width: 10.9vw;
 }
 
 /*
