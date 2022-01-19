@@ -39,35 +39,43 @@ body {
 	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 	z-index: 3;
 	height: 6vh;
-    padding: 0 10vw;
+	padding: 0 10vw;
 }
 .navbar__wrapper {
-    margin-bottom: 2vh;
+	margin-bottom: 2vh;
 }
 .navbar__wrapper a {
 	margin: 0rem 0.5rem;
 }
 .navbar__link {
 	color: #cfcfcf;
+	padding-bottom: 0.4rem;
 	text-decoration: none;
 	font-size: var(--font-s);
+	position: relative;
 }
 .navbar__link:hover {
 	animation-name: navbarMenu;
-	padding-bottom: 0.8rem;
-	animation-duration: 300ms;
 	animation-fill-mode: forwards;
 	text-decoration: none;
 	animation-timing-function: linear;
-	color: #cfcfcf;
+	color: var(--background);
+    transition: color 300ms linear;
 }
 
-@keyframes navbarMenu {
-	100% {
-		padding-bottom: 0.2rem;
-		border-bottom: 0.1rem solid var(--yellow-logo);
-		color: var(--background);
-	}
+.navbar__link::before {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	content: "";
+	background: var(--yellow-logo);
+	width: 0%;
+	height: 2px;
+	transition: width 300ms linear;
+}
+
+.navbar__link:hover:before {
+	width: 100%;
 }
 
 .navbar__logo {
@@ -119,90 +127,89 @@ body {
 ******************************
 */
 main {
-    padding-top: 10vh;
+	padding-top: 10vh;
 }
 .welcome {
-	height: 90vh;
-    margin: 0 5vw;
-    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/background.jpg) top right/50vw no-repeat;
+	margin-right: 5vw;
+	padding: 50vh 5vw 0 5vw;
+	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/background.jpg)
+		top right/50vw no-repeat;
 	display: grid;
-    grid-template-areas: 
-    "presentation  ."
-    ".             socialmedia";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+		"presentation  ."
+		".             socialmedia";
+	min-height: 90vh;
 }
 .presentation {
-    margin: 50vh 0 0 7vw;
-    grid-area: presentation;
-    color: var(--background);
-    background-color: var(--background-nav);
+	grid-area: presentation;
+	color: var(--background);
+	background-color: var(--background-nav);
 	text-align: center;
 }
 .presentation h1 {
-    color: var(--yellow-logo);
-    font-size: 4vw;
+	color: var(--yellow-logo);
+	font-size: 4vw;
 }
 .presentation h2 {
-    font-size: var(--font-l);
+	font-size: var(--font-l);
 }
 .welcome__image {
-    grid-area: welcome__image;
+	grid-area: welcome__image;
 }
 .socialmedia {
-    grid-area: socialmedia;
-    margin-right: 5vw;
-    justify-content: end;
+	grid-area: socialmedia;
+	margin-right: 5vw;
+	justify-content: end;
 	display: flex;
 	transition: 400ms;
 }
 .socialmedia > div {
-    margin: 0rem 0.4rem;
+	margin: 0rem 0.4rem;
 }
 a i {
-    color: #222831;
+	color: #222831;
 }
 .socialmedia i:hover {
-    color: var(--background-nav);
+	color: var(--background-nav);
 	transition: 600ms;
 }
 .fixed_button {
-    display: flex;
-    justify-content: end;
-    margin-right: 3vw;
+	display: flex;
+	justify-content: end;
+	margin-right: 3vw;
 	position: sticky;
 	top: 86vh;
 	z-index: 1;
-    text-decoration: none;
+	text-decoration: none;
 }
 .fixed_button:hover {
-    text-decoration: none;
+	text-decoration: none;
 }
 .fixed_button i {
-    color: #128c7e;
+	color: #128c7e;
 }
 .fixed_button i:hover {
-    color: #25d366;
+	color: #25d366;
 	transition: 600ms;
 }
 /* responsive query */
 
 @media (max-width: 576px) {
-    .welcome {
-        padding-top: 20rem;
+	.welcome {
+		padding-top: 20rem;
 	}
 	.presentation {
-        max-width: 85%;
+		max-width: 85%;
 		padding-right: 0;
 	}
 	.welcome__description {
-        font-size: 1rem;
+		font-size: 1rem;
 	}
 	.welcome__name {
-        font-size: 3rem;
+		font-size: 3rem;
 	}
 	.welcome__wrapper > .socialmedia {
-        bottom: 5%;
+		bottom: 5%;
 		padding: 2rem;
 	}
 }
@@ -215,78 +222,76 @@ mania presentation
 ******************************
 */
 .mania__presentation {
-    height: 98vh;
-    padding: 10vh 10vw 20vh 10vw;
+	padding: 10vh 10vw 20vh 10vw;
 	clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0, 50% 0);
 	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/Mania_logo_back.png)
-    center/10vw repeat;
+		center/10vw repeat;
 	display: grid;
-    grid-template-areas: 
-    ".                  welcome__text"
-    "mania-presentation mania-logo";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+		".                  welcome__text"
+		"mania-presentation mania-logo";
+	min-height: 97vh;
 }
 .welcome__text {
-    grid-area: welcome__text;
-    background-color: var(--background-nav);
-    font-size: var(--font-s);
-    color: var(--background);
-    margin: 0 0vw 3vh 0vw;
-    border-radius: 30px;
+	grid-area: welcome__text;
+	background-color: var(--background-nav);
+	font-size: var(--font-s);
+	color: var(--background);
+	margin: 0 0vw 3vh 0vw;
+	border-radius: 30px;
 }
 .welcome__description span {
-    color: var(--yellow-logo);
+	color: var(--yellow-logo);
 }
 .welcome__description .mania {
-    font-family: 'Comforter Brush', cursive;
-    font-size: var(--font-l);
-    color: var(--background);
+	font-family: "Comforter Brush", cursive;
+	font-size: var(--font-l);
+	color: var(--background);
 }
 .mania-logo {
-    width: 75%;
+	width: 50%;
 }
 .mania__presentation > article {
 	padding: 0 2vw;
 }
 .wrapper__mania-presentation {
 	font-size: var(--font-s);
-    grid-area: mania-presentation;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	grid-area: mania-presentation;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .wrapper__mania-presentation p {
 	margin-bottom: 1vh;
 	padding: 0 0 0.3rem 1rem;
 }
-.wrapper__mania-presentation span{
-    font-family: 'Comforter Brush', cursive;
-    font-size: var(--font-l);
-    padding-right: 0.4rem;
+.wrapper__mania-presentation span {
+	font-family: "Comforter Brush", cursive;
+	font-size: var(--font-l);
+	padding-right: 0.4rem;
 }
 .wrapper__mania-logo {
 	text-align: center;
-    grid-area: mania-logo;
+	grid-area: mania-logo;
 }
 .wrapper__mania-logo h2 {
 	padding: 0 1rem 1rem 1rem;
-	font-size: var(--font-xl);
+	font-size: var(--font-l);
 }
 .button {
 	background-color: var(--yellow-logo);
 	color: var(--background-nav);
 	text-decoration: none;
 	font-size: 1.4rem;
-    font-weight: 900;
+	font-weight: 900;
 	border-radius: 1rem;
 	border: 1px solid var(--background-nav);
 	padding: 1rem;
 }
 .button:hover {
 	animation-name: button;
-	animation-duration: 333ms;
+	animation-duration: 300ms;
 	animation-fill-mode: forwards;
 	text-decoration: none;
 	background-color: var(--yellow-logo);
@@ -311,48 +316,61 @@ mania presentation
 ******************************
 */
 .general__products {
-	height: 100vh;
-	margin-top: -21vh;
-	padding: 10vh 15vw 0 15vw;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	padding: 5vh 15vw 15vh 15vw;
+	display: grid;
+	grid-template-areas:
+		"restaurant verduleria panaderia"
+		"carniceria kiosco     kiosco";
+	gap: 2%;
+	align-items: stretch;
+	justify-content: center;
+	min-height: 80vh;
 }
 .products__box {
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	border-radius: 20px;
+	text-align: center;
+	padding: 10%;
 }
 .products__box:hover {
-	transform: scale(1.5);
-	transition: 600ms;
+	transform: scale(1.2);
+	transition: 300ms;
 }
 .general__products h2 {
 	padding-bottom: 1vh;
-	text-align: center;
+}
+.products__box div {
+	background-color: var(--background);
+	border-radius: 20px;
+	padding: 2%;
 }
 .restaurant {
 	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/restaurant_background.jpg)
 		center/cover no-repeat;
-}
-.restaurant {
-	background-color: var(--background);
+	grid-area: restaurant;
 }
 .kiosco {
 	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/background_supermarket.jpg)
 		center/cover no-repeat;
-}
-.kiosco {
-	background-color: var(--background);
+	grid-area: kiosco;
 }
 .verduleria {
-	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/greengrocery%20background.jpg)
+	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/greengrocery_pattern.jpg)
 		center/cover no-repeat;
+	grid-area: verduleria;
 }
-.verduleria {
-	background-color: var(--background);
+.panaderia {
+	background: url(https://github.com/estga/super-chainsaw/blob/main/root/images/bakery_pattern.jpg?raw=true)
+		center/cover no-repeat;
+	grid-area: panaderia;
 }
-
+.carniceria {
+	background: url(https://github.com/estga/super-chainsaw/blob/main/root/images/meat_pattern.jpg?raw=true)
+		center/cover no-repeat;
+	grid-area: carniceria;
+}
 /*
 ******************************
 ******************************
@@ -361,12 +379,12 @@ mania presentation
 ******************************
 */
 .our__clients {
-	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 0 15vw;
+	padding: 0vh 15vw;
+	min-height: 90vh;
 }
 .clients__title {
 	text-align: center;
@@ -377,7 +395,7 @@ mania presentation
 	padding-bottom: 1.5vh;
 }
 .clients__title span {
-    border-bottom: solid var(--background-nav) 2px;
+	border-bottom: solid var(--background-nav) 2px;
 }
 .clients__logo {
 	margin-top: 7vh;
@@ -388,12 +406,11 @@ mania presentation
 .clients__logo > img {
 	border-radius: 40px;
 	width: 6.5vw;
-	border: solid;
-	border-color: var(--background-nav);
+	border: solid 2px var(--background-nav);
 }
 .clients__logo > img:hover {
 	transform: scale(1.66);
-	transition: 600ms;
+	transition: 300ms;
 }
 
 /*
@@ -404,21 +421,21 @@ mania presentation
 ******************************
 */
 .contact {
-	margin-top: -10vh;
+	margin-top: -5vh;
 	clip-path: polygon(0 100%, 100% 100%, 100% 20%, 40% 20%, 28% 0, 28% 20%, 0 20%);
 	background: #222831
 		url(https://raw.githubusercontent.com/estga/furry-journey/main/images/mailGraphic.png)
 		center left/66vh no-repeat;
 	background-blend-mode: multiply;
-	height: 100vh;
 	position: relative;
 	z-index: 2;
 	display: flex;
-	padding: 20vh 15vw 0 15vw;
+	padding: 30vh 15vw 10vh 15vw;
 	justify-content: space-between;
 	align-items: center;
 	color: var(--background);
 	font-size: var(--font-m);
+	min-height: 90vh;
 }
 .contact article {
 	width: 33vw;
@@ -432,7 +449,7 @@ mania presentation
 	padding-bottom: 2vh;
 }
 .contact span {
-    border-bottom: solid var(--yellow-logo) 2px;
+	border-bottom: solid var(--yellow-logo) 2px;
 }
 form label {
 	font-size: var(--font-s);
@@ -467,7 +484,7 @@ input[type="text"]:not(output):focus,
 input[type="email"]:not(output):focus,
 textarea:focus {
 	border-bottom: 1px solid #577bc1;
-    transition: 250ms;
+	transition: 250ms;
 }
 ::placeholder {
 	color: var(--background);
@@ -487,7 +504,7 @@ textarea:focus {
 	padding: 1vh 0;
 }
 .footer hr {
-    border-top: solid 1px var(--yellow-logo);
+	border-top: solid 1px var(--yellow-logo);
 }
 .footer__wrapper {
 	display: flex;
@@ -521,7 +538,7 @@ textarea:focus {
 	text-decoration: none;
 }
 .footer__mark i {
-    color: var(--yellow-logo);
+	color: var(--yellow-logo);
 }
 .footer__socialmedia {
 	display: flex;
@@ -546,29 +563,48 @@ textarea:focus {
 ******************************
 */
 .quienes__somos {
-    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/quienes_somos_background.jpg) top 26vh right 13vw/25vw no-repeat;
+	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/quienes_somos_background.jpg)
+		top 26vh right 13vw/25vw no-repeat;
 }
 .historia {
-    padding: 20vh 40vw 0 20vw;
+	padding: 20vh 40vw 0 20vw;
 }
 .equipamiento {
-    padding: 10vh 40vw 0 20vw;
+	padding: 10vh 40vw 0 20vw;
 }
-.calidad, .produccion, .atencion, .mision, .vision {
-    padding: 10vh 20vw 0 20vw;
+.calidad,
+.produccion,
+.atencion,
+.mision,
+.vision {
+	padding: 10vh 20vw 0 20vw;
 }
 .valores {
-    padding: 10vh 20vw 10vh 20vw;
+	padding: 10vh 20vw 10vh 20vw;
 }
-.quienes__somos__text > section{
-    padding: 5vh 0;
+.quienes__somos__text > section {
+	padding: 5vh 0;
 }
-.historia h2, .equipamiento h2, .calidad h2, .produccion h2, .atencion h2, .mision h2, .vision h2, .valores h2 {
-    color: #13A4DD;
-    font-weight: 900;
+.historia h2,
+.equipamiento h2,
+.calidad h2,
+.produccion h2,
+.atencion h2,
+.mision h2,
+.vision h2,
+.valores h2 {
+	color: #13a4dd;
+	font-weight: 900;
 }
-.historia hr, .equipamiento hr, .calidad hr, .produccion hr, .atencion hr, .mision hr, .vision hr, .valores hr {
-    border-top: 1px solid #13A4DD;
+.historia hr,
+.equipamiento hr,
+.calidad hr,
+.produccion hr,
+.atencion hr,
+.mision hr,
+.vision hr,
+.valores hr {
+	border-top: 1px solid #13a4dd;
 }
 
 /*
@@ -583,32 +619,34 @@ textarea:focus {
 ******************************
 */
 .faqs {
-    padding: 20vh 15vw 5vh 15vw;
-    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/faqs.jpg) top 7vh center/50vw no-repeat;
-    display: flex;
-    justify-content: space-between;
+	padding: 20vh 15vw 5vh 15vw;
+	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/faqs.jpg)
+		top 7vh center/50vw no-repeat;
+	display: flex;
+	justify-content: space-between;
 }
-.bulto__abierto, .bulto__cerrado {
-    margin-top: 60vh;
-    width: 33vw;
+.bulto__abierto,
+.bulto__cerrado {
+	margin-top: 60vh;
+	width: 33vw;
 }
 .bulto__abierto h2 {
-    color: #13A4DD;
-    font-weight: 900;
+	color: #13a4dd;
+	font-weight: 900;
 }
 .bulto__abierto hr {
-    border-top: 1px solid #13A4DD;
+	border-top: 1px solid #13a4dd;
 }
 .bulto__cerrado h2 {
-    color: #7813DD;
-    font-weight: 900;
+	color: #7813dd;
+	font-weight: 900;
 }
 .bulto__cerrado hr {
-    border-top: 1px solid #7813DD;
+	border-top: 1px solid #7813dd;
 }
 .faqs h2 {
-    text-align: center;
-    padding-bottom: 5vh;
+	text-align: center;
+	padding-bottom: 5vh;
 }
 
 /*
@@ -623,8 +661,8 @@ textarea:focus {
 ******************************
 */
 .condiciones {
-    margin: 20vh 15vw 5vw 15vw;
+	margin: 20vh 15vw 5vw 15vw;
 }
 .condiciones article {
-    margin: 10vh 5vw 5vw 5vw;
+	margin: 10vh 5vw 5vw 5vw;
 }
