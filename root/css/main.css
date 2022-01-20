@@ -38,8 +38,11 @@ body {
 	background-color: var(--background-nav);
 	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 	z-index: 3;
-	height: 6vh;
+	height: 10vh;
 	padding: 0 10vw;
+}
+.navbar__wrapper--logo {
+	padding-top: 2vh;
 }
 .navbar__wrapper {
 	margin-bottom: 2vh;
@@ -51,7 +54,7 @@ body {
 	color: #cfcfcf;
 	padding-bottom: 0.4rem;
 	text-decoration: none;
-	font-size: var(--font-s);
+	font-size: 1.4rem;
 	position: relative;
 }
 .navbar__link:hover {
@@ -60,7 +63,7 @@ body {
 	text-decoration: none;
 	animation-timing-function: linear;
 	color: var(--background);
-    transition: color 300ms linear;
+	transition: color 300ms linear;
 }
 
 .navbar__link::before {
@@ -81,6 +84,9 @@ body {
 .navbar__logo {
 	box-shadow: 0px 37px 15px rgba(0, 0, 0, 0.2);
 }
+.navbar__logo img {
+	width: 10vh;
+}
 .navbar__logo img:hover {
 	animation-name: navbarLogo;
 	animation-duration: 500ms;
@@ -99,20 +105,17 @@ body {
 }
 
 /* Responsive query */
-@media (max-width: 576px) {
+@media all and (max-width: 480px) {
 	.navbar {
-		align-items: center;
-		flex-direction: column;
-		padding: 0;
+		padding: 0 5vw;
 	}
-	.navbar__wrapper--logo {
-		margin-top: 0.5rem;
+	.navbar__link {
+		font-size: 1.2rem;
 	}
-	.navbar__wrapper {
-		margin: 0;
-	}
-	.navbar__logo {
-		font-size: 1.3rem;
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+	.navbar {
+		padding: 0 5vw;
 	}
 	.navbar__link {
 		font-size: 1.2rem;
@@ -145,13 +148,15 @@ main {
 	color: var(--background);
 	background-color: var(--background-nav);
 	text-align: center;
+	align-self: center;
 }
 .presentation h1 {
 	color: var(--yellow-logo);
-	font-size: 4vw;
+	font-size: 3.5rem;
+	font-weight: 800;
 }
 .presentation h2 {
-	font-size: var(--font-l);
+	font-size: 2.5rem;
 }
 .welcome__image {
 	grid-area: welcome__image;
@@ -168,6 +173,7 @@ main {
 }
 a i {
 	color: #222831;
+	font-size: 2.5rem;
 }
 .socialmedia i:hover {
 	color: var(--background-nav);
@@ -187,30 +193,38 @@ a i {
 }
 .fixed_button i {
 	color: #128c7e;
+	font-size: 4rem;
 }
 .fixed_button i:hover {
 	color: #25d366;
 	transition: 600ms;
 }
-/* responsive query */
 
-@media (max-width: 576px) {
+/* Responsive query */
+@media all and (max-width: 480px) {
 	.welcome {
-		padding-top: 20rem;
+		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/background.jpg)
+			top right/90vw no-repeat;
+		grid-template-areas:
+			"presentation"
+			"socialmedia";
+		padding: 25vh 5vw 0 10vw;
 	}
-	.presentation {
-		max-width: 85%;
-		padding-right: 0;
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+	.welcome {
+		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/background.jpg)
+			top right/90vw no-repeat;
+		grid-template-areas:
+			"presentation"
+			"socialmedia";
+		padding: 45vh 5vw 0 10vw;
 	}
-	.welcome__description {
-		font-size: 1rem;
-	}
-	.welcome__name {
-		font-size: 3rem;
-	}
-	.welcome__wrapper > .socialmedia {
-		bottom: 5%;
-		padding: 2rem;
+}
+@media all and (min-width: 769px) and (max-width: 1279px) {
+	.welcome {
+		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/background.jpg)
+			top right/66vw no-repeat;
 	}
 }
 
@@ -308,6 +322,33 @@ mania presentation
 	}
 }
 
+/* Responsive query */
+@media all and (max-width: 480px) {
+	.mania__presentation {
+		padding: 10vh 5vw 10vh 5vw;
+		clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0, 50% 0);
+		grid-template-areas:
+			"welcome__text"
+			"mania-logo"
+			"mania-presentation";
+	}
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+	.mania__presentation {
+		padding: 10vh 5vw 10vh 5vw;
+		clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0, 50% 0);
+		grid-template-areas:
+			"welcome__text"
+			"mania-logo"
+			"mania-presentation";
+	}
+}
+@media all and (min-width: 769px) and (max-width: 1279px) {
+	.mania__presentation {
+		clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0, 50% 0);
+	}
+}
+
 /*
 ******************************
 ******************************
@@ -371,6 +412,30 @@ mania presentation
 		center/cover no-repeat;
 	grid-area: carniceria;
 }
+
+/* Responsive query */
+@media all and (max-width: 480px) {
+	.general__products {
+		padding: 5vh 10vw 15vh 10vw;
+		grid-template-areas:
+			"restaurant"
+			"verduleria"
+			"panaderia"
+			"carniceria"
+			"kiosco"
+			"kiosco";
+	}
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+	.general__products {
+		padding: 5vh 10vw 15vh 10vw;
+		grid-template-areas:
+			"restaurant restaurant"
+			"verduleria panaderia"
+			"carniceria kiosco";
+	}
+}
+
 /*
 ******************************
 ******************************
@@ -383,7 +448,7 @@ mania presentation
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 0vh 15vw;
+	padding: 10vh 15vw;
 	min-height: 90vh;
 }
 .clients__title {
@@ -411,6 +476,32 @@ mania presentation
 .clients__logo > img:hover {
 	transform: scale(1.66);
 	transition: 300ms;
+}
+
+/* Responsive query */
+@media all and (max-width: 480px) {
+	.clients__logo {
+		margin-top: 7vh;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 4vh 8vw;
+	}
+	.clients__logo > img {
+		border-radius: 40px;
+		width: 20vw;
+	}
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+	.clients__logo {
+		margin-top: 7vh;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 4vh 8vw;
+	}
+	.clients__logo > img {
+		border-radius: 40px;
+		width: 15vw;
+	}
 }
 
 /*
@@ -490,6 +581,38 @@ textarea:focus {
 	color: var(--background);
 }
 
+/* Responsive query */
+@media all and (max-width: 480px) {
+	.contact {
+		padding: 40vh 5vw 10vh 5vw;
+		flex-direction: column;
+	}
+	.contact article {
+		width: 100%;
+		padding-bottom: 10vh;
+	}
+	form input,
+	textarea,
+	label {
+		width: 100%;
+	}
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+	.contact {
+		padding: 40vh 5vw 10vh 5vw;
+		flex-direction: column;
+	}
+	.contact article {
+		width: 100%;
+		padding-bottom: 10vh;
+	}
+	form input,
+	textarea,
+	label {
+		width: 100%;
+	}
+}
+
 /*
 ******************************
 ******************************
@@ -544,11 +667,23 @@ textarea:focus {
 	display: flex;
 }
 .footer__socialmedia > div {
-	padding: 0 0.3vw;
+	padding: 0 0.5vw;
 }
 .footer__socialmedia i:hover {
 	color: var(--yellow-logo);
 	transition: 600ms;
+}
+
+/* Responsive query */
+@media all and (max-width: 480px) {
+	.footer__socialmedia > div {
+		padding: 0 1.2vw;
+	}
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+	.footer__socialmedia > div {
+		padding: 0 1vw;
+	}
 }
 
 /*
@@ -666,3 +801,16 @@ textarea:focus {
 .condiciones article {
 	margin: 10vh 5vw 5vw 5vw;
 }
+
+/*
+Breakpoint
+    @media all and (min-width:1200px){ … }
+
+    @media all and (min-width: 960px) and (max-width: 1199px) { … }
+
+    @media all and (min-width: 768px) and (max-width: 959px) { … }
+
+    @media all and (min-width: 480px) and (max-width: 767px){ … }
+
+    @media all and (max-width: 479px) { … }
+*/
