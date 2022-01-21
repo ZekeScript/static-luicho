@@ -366,6 +366,7 @@ mania presentation
 	align-items: stretch;
 	justify-content: center;
 	min-height: 80vh;
+    font-size: 15px;
 }
 .products__box {
 	border-radius: 10px;
@@ -381,6 +382,7 @@ mania presentation
 }
 .general__products h2 {
 	padding-bottom: 1vh;
+    font-size: 30px;
 }
 .products__box div {
 	background-color: var(--background);
@@ -430,9 +432,12 @@ mania presentation
 	.general__products {
 		padding: 5vh 10vw 15vh 10vw;
 		grid-template-areas:
-			"restaurant restaurant"
-			"verduleria panaderia"
-			"carniceria kiosco";
+			"restaurant"
+			"verduleria"
+			"panaderia"
+			"carniceria"
+			"kiosco"
+			"kiosco";
 	}
 }
 
