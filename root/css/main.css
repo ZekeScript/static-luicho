@@ -742,6 +742,50 @@ textarea:focus {
 	border-top: 1px solid #13a4dd;
 }
 
+/* Responsive query */
+@media all and (max-width: 480px) {
+	.quienes__somos {
+		background: none;
+	}
+	.historia {
+		padding: 10vh 10vw 0 10vw;
+	}
+	.equipamiento {
+		padding: 10vh 10vw 0 10vw;
+	}
+	.calidad,
+	.produccion,
+	.atencion,
+	.mision,
+	.vision {
+		padding: 10vh 10vw 0 10vw;
+	}
+	.valores {
+		padding: 10vh 10vw 10vh 10vw;
+	}
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+	.quienes__somos {
+		background: none;
+	}
+	.historia {
+		padding: 10vh 10vw 0 10vw;
+	}
+	.equipamiento {
+		padding: 10vh 10vw 0 10vw;
+	}
+	.calidad,
+	.produccion,
+	.atencion,
+	.mision,
+	.vision {
+		padding: 10vh 10vw 0 10vw;
+	}
+	.valores {
+		padding: 10vh 10vw 10vh 10vw;
+	}
+}
+
 /*
 ******************************
 ******************************
@@ -784,6 +828,34 @@ textarea:focus {
 	padding-bottom: 5vh;
 }
 
+/* Responsive query */
+@media all and (max-width: 480px) {
+	.faqs {
+		padding: 20vh 5vw 5vh 5vw;
+		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/faqs.jpg)
+			top 7vh center/90vw no-repeat;
+		flex-direction: column;
+	}
+	.bulto__abierto,
+	.bulto__cerrado {
+		margin-top: 25vh;
+		width: 90vw;
+	}
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+	.faqs {
+		padding: 20vh 5vw 5vh 5vw;
+		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/faqs.jpg)
+			top 7vh center/60vw no-repeat;
+		flex-direction: column;
+	}
+	.bulto__abierto,
+	.bulto__cerrado {
+		margin-top: 25vh;
+		width: 90vw;
+	}
+}
+
 /*
 ******************************
 ******************************
@@ -800,6 +872,24 @@ textarea:focus {
 }
 .condiciones article {
 	margin: 10vh 5vw 5vw 5vw;
+}
+
+/* Responsive query */
+@media all and (max-width: 480px) {
+	.condiciones {
+		margin: 20vh 5vw 5vw 5vw;
+	}
+	.condiciones article {
+		margin: 10vh 5vw 5vw 5vw;
+	}
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+	.condiciones {
+		margin: 20vh 10vw 5vw 10vw;
+	}
+	.condiciones article {
+		margin: 10vh 5vw 5vw 5vw;
+	}
 }
 
 /*
