@@ -135,7 +135,7 @@ main {
 .welcome {
 	margin-right: 5vw;
 	padding: 50vh 5vw 0 5vw;
-	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/background.jpg)
+	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background.jpg)
 		top right/50vw no-repeat;
 	display: grid;
 	grid-template-areas:
@@ -203,7 +203,7 @@ a i {
 /* Responsive query */
 @media all and (max-width: 480px) {
 	.welcome {
-		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/background.jpg)
+		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background.jpg)
 			top right/90vw no-repeat;
 		grid-template-areas:
 			"presentation"
@@ -213,7 +213,7 @@ a i {
 }
 @media all and (min-width: 481px) and (max-width: 768px) {
 	.welcome {
-		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/background.jpg)
+		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background.jpg)
 			top right/90vw no-repeat;
 		grid-template-areas:
 			"presentation"
@@ -223,7 +223,7 @@ a i {
 }
 @media all and (min-width: 769px) and (max-width: 1279px) {
 	.welcome {
-		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/background.jpg)
+		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background.jpg)
 			top right/66vw no-repeat;
 	}
 }
@@ -238,7 +238,7 @@ mania presentation
 .mania__presentation {
 	padding: 10vh 10vw 20vh 10vw;
 	clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0, 50% 0);
-	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/Mania_logo_back.png)
+	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/Mania_logo_back.png)
 		center/10vw repeat;
 	display: grid;
 	grid-template-areas:
@@ -390,27 +390,27 @@ mania presentation
 	padding: 2%;
 }
 .restaurant {
-	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/restaurant_background.jpg)
+	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/restaurant_background.jpg)
 		center/cover no-repeat;
 	grid-area: restaurant;
 }
 .kiosco {
-	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/background_supermarket.jpg)
+	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background_supermarket.jpg)
 		center/cover no-repeat;
 	grid-area: kiosco;
 }
 .verduleria {
-	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/greengrocery_pattern.jpg)
+	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/greengrocery_pattern.jpg)
 		center/cover no-repeat;
 	grid-area: verduleria;
 }
 .panaderia {
-	background: url(https://github.com/estga/super-chainsaw/blob/main/root/images/bakery_pattern.jpg?raw=true)
+	background: url(https://github.com/estga/super-chainsaw/blob/main/images/bakery_pattern.jpg?raw=true)
 		center/cover no-repeat;
 	grid-area: panaderia;
 }
 .carniceria {
-	background: url(https://github.com/estga/super-chainsaw/blob/main/root/images/meat_pattern.jpg?raw=true)
+	background: url(https://github.com/estga/super-chainsaw/blob/main/images/meat_pattern.jpg?raw=true)
 		center/cover no-repeat;
 	grid-area: carniceria;
 }
@@ -703,7 +703,7 @@ textarea:focus {
 ******************************
 */
 .quienes__somos {
-	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/quienes_somos_background.jpg)
+	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/quienes_somos_background.jpg)
 		top 26vh right 13vw/25vw no-repeat;
 }
 .historia {
@@ -804,7 +804,7 @@ textarea:focus {
 */
 .faqs {
 	padding: 20vh 15vw 5vh 15vw;
-	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/faqs.jpg)
+	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/faqs.jpg)
 		top 7vh center/50vw no-repeat;
 	display: flex;
 	justify-content: space-between;
@@ -837,7 +837,7 @@ textarea:focus {
 @media all and (max-width: 480px) {
 	.faqs {
 		padding: 20vh 5vw 5vh 5vw;
-		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/faqs.jpg)
+		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/faqs.jpg)
 			top 7vh center/90vw no-repeat;
 		flex-direction: column;
 	}
@@ -850,7 +850,7 @@ textarea:focus {
 @media all and (min-width: 481px) and (max-width: 768px) {
 	.faqs {
 		padding: 20vh 5vw 5vh 5vw;
-		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/root/images/faqs.jpg)
+		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/faqs.jpg)
 			top 7vh center/60vw no-repeat;
 		flex-direction: column;
 	}
