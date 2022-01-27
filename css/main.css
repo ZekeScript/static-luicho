@@ -42,7 +42,7 @@ body {
 	padding: 0 10vw;
 }
 .navbar__wrapper--logo {
-	padding-top: 2vh;
+	padding-top: 2.9vh;
 }
 .navbar__wrapper {
 	margin-bottom: 2vh;
@@ -135,10 +135,15 @@ main {
 .sponge {
     position: absolute;
     width: 10%;
-    
+
+}
+.plasticbag {
+    width: 23%;
+    position: absolute;
+    margin: 30vh 0 0 5vw;
 }
 .welcome {
-	padding: 20vh 5vw 0 5vw;
+	padding: 15vh 5vw 0 5vw;
     background: var(--background-nav);
 	min-height: 90vh;
 }
@@ -151,7 +156,8 @@ main {
 	color: var(--background);
 	text-align: center;
 	align-self: center;
-    margin: 0 0 20vh 15vw;
+    margin: 3vh 0 0 15vw;
+    z-index: 10;
 }
 .pizzabox {
     position: absolute;
@@ -159,14 +165,14 @@ main {
 }
 .presentation h1 {
 	color: var(--yellow-logo);
-	font-size: 70px;
+	font-size: 80px;
 	font-weight: 900;
 }
 .presentation h2 {
-	font-size: 2.5rem;
+	font-size: 1.8rem;
 }
 .socialmedia {
-	margin-right: 5vw;
+	margin: 30vh 5vw 0 0;
 	justify-content: end;
 	display: flex;
 	transition: 400ms;
