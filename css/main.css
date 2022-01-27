@@ -5,8 +5,8 @@
 }
 :root {
 	--yellow-logo: #fdda00;
-	--background-nav: #577bc2;
-	--background: #fffff5;
+	--background-nav: #18306d;
+	--background: #fff;
 	--font-xs: 1rem;
 	--font-s: 1.5rem;
 	--font-m: 2rem;
@@ -51,7 +51,7 @@ body {
 	margin: 0rem 0.5rem;
 }
 .navbar__link {
-	color: #cfcfcf;
+	color: #aaaaaa;
 	padding-bottom: 0.4rem;
 	text-decoration: none;
 	font-size: 1.4rem;
@@ -133,36 +133,26 @@ main {
 	padding-top: 10vh;
 }
 .welcome {
-	margin-right: 5vw;
-	padding: 50vh 5vw 0 5vw;
-	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background.jpg)
-		top right/50vw no-repeat;
-	display: grid;
-	grid-template-areas:
-		"presentation  ."
-		".             socialmedia";
+	padding: 20vh 5vw 0 5vw;
+    background: var(--background-nav) url();
 	min-height: 90vh;
 }
 .presentation {
-	grid-area: presentation;
+    width: 33%;
 	color: var(--background);
-	background-color: var(--background-nav);
 	text-align: center;
 	align-self: center;
+    margin: 0 0 20vh 15vw;
 }
 .presentation h1 {
 	color: var(--yellow-logo);
-	font-size: 3.5rem;
-	font-weight: 800;
+	font-size: 70px;
+	font-weight: 900;
 }
 .presentation h2 {
 	font-size: 2.5rem;
 }
-.welcome__image {
-	grid-area: welcome__image;
-}
 .socialmedia {
-	grid-area: socialmedia;
 	margin-right: 5vw;
 	justify-content: end;
 	display: flex;
@@ -172,11 +162,11 @@ main {
 	margin: 0rem 0.4rem;
 }
 a i {
-	color: #222831;
+	color: #171b20;
 	font-size: 2.5rem;
 }
 .socialmedia i:hover {
-	color: var(--background-nav);
+	color: var(--yellow-logo);
 	transition: 600ms;
 }
 .fixed_button {
