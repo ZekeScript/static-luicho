@@ -133,6 +133,7 @@ main {
 	padding-top: 10vh;
 }
 .sponge {
+    margin: -8vh 0 0 -1vw;
     position: absolute;
     width: 10%;
 
@@ -654,7 +655,7 @@ textarea:focus {
 	flex-direction: column;
 }
 .footer__menu > a {
-	color: #222831;
+	color: black;
 }
 .footer__menu > a:hover {
 	color: var(--yellow-logo);
@@ -662,12 +663,13 @@ textarea:focus {
 	text-decoration: none;
 }
 .footer__mark {
+    color: black;
 	display: flex;
 	align-items: baseline;
 	justify-content: center;
 }
 .footer__mark a {
-	color: #222831;
+	color: black;
 }
 .footer__mark a:hover {
 	color: var(--yellow-logo);
@@ -682,6 +684,9 @@ textarea:focus {
 }
 .footer__socialmedia > div {
 	padding: 0 0.5vw;
+}
+.footer__socialmedia i {
+    color: #171b20;
 }
 .footer__socialmedia i:hover {
 	color: var(--yellow-logo);
