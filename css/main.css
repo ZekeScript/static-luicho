@@ -132,10 +132,19 @@ body {
 main {
 	padding-top: 10vh;
 }
+.sponge {
+    position: absolute;
+    width: 10%;
+    
+}
 .welcome {
 	padding: 20vh 5vw 0 5vw;
     background: var(--background-nav);
 	min-height: 90vh;
+}
+.welcome__center {
+    display: flex;
+    width: 100%;
 }
 .presentation {
     width: 33%;
@@ -143,6 +152,10 @@ main {
 	text-align: center;
 	align-self: center;
     margin: 0 0 20vh 15vw;
+}
+.pizzabox {
+    position: absolute;
+    right: 0%;
 }
 .presentation h1 {
 	color: var(--yellow-logo);
