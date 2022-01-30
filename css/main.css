@@ -1,72 +1,83 @@
 * {
 	margin: 0;
 	padding: 0;
+	outline: 0;
 	box-sizing: border-box;
 }
+
 :root {
 	--yellow-logo: #fdda00;
 	--background-nav: #18306d;
 	--background: #fff;
-	--font-xs: 1rem;
-	--font-s: 1.5rem;
-	--font-m: 2rem;
-	--font-l: 2.5rem;
-	--font-xl: 3rem;
-}
-html,
-body {
-	font-family: "Lato", sans-serif;
-	color: #222831;
-	background-color: var(--background);
 }
 
-/*
-******************************
-******************************
-    navbar section
-******************************
-******************************
-*/
+body {
+	background: var(--background);
+	color: #222831;
+	-webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+body,
+input,
+button {
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+}
+
+button {
+	cursor: pointer;
+}
+
+/*******************
+    navbar
+*******************/
 .navbar {
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: var(--background-nav);
-	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
-	z-index: 3;
-	height: 10vh;
-	padding: 0 10vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    z-index: 3;
 }
-.navbar__wrapper--logo {
-	padding-top: 2.9vh;
+.nav-wrapper {
+    padding-inline: 10vw;
+    height: 66px;
 }
-.navbar__wrapper {
-	margin-bottom: 2vh;
+.navbar-collapse {
+    display: block;
+    align-items: center;
+    justify-content: right;
 }
-.navbar__wrapper a {
-	margin: 0rem 0.5rem;
+.navbar-wrapper-brand {
+    display: flex;
+    align-self: flex-start;
+    width: 90px;
+    height: 70px;
+    z-index: 2;
 }
-.navbar__link {
-	color: #aaaaaa;
-	padding-bottom: 0.4rem;
-	text-decoration: none;
-	font-size: 1.4rem;
-	position: relative;
+.navbar-nav {
+    padding-top: 3vh;
 }
-.navbar__link:hover {
-	animation-name: navbarMenu;
+.brand {
+    box-shadow: 0px 35px 15px rgba(0, 0, 0, 0.2);
+}
+.navbar-wrapper-toggle {
+    align-self: center;
+}
+.bg-dark {
+    background-color: #18306d !important;
+}
+.line-animation {
+    position: relative;
+}
+.line-animation:hover {
+    animation-name: navbarMenu;
 	animation-fill-mode: forwards;
-	text-decoration: none;
-	animation-timing-function: linear;
-	color: var(--background);
+    animation-timing-function: linear;
 	transition: color 300ms linear;
 }
-
-.navbar__link::before {
+.line-animation::before {
 	position: absolute;
 	bottom: 0px;
 	left: 0px;
@@ -76,25 +87,15 @@ body {
 	height: 2px;
 	transition: width 300ms linear;
 }
-
-.navbar__link:hover:before {
+.line-animation:hover:before {
 	width: 100%;
 }
-
-.navbar__logo {
-	box-shadow: 0px 37px 15px rgba(0, 0, 0, 0.2);
-}
-.navbar__logo img {
-	width: 10vh;
-}
-.navbar__logo img:hover {
+.brand img:hover {
 	animation-name: navbarLogo;
 	animation-duration: 500ms;
 	animation-fill-mode: forwards;
 	animation-timing-function: linear;
-	text-decoration: none;
 }
-
 @keyframes navbarLogo {
 	50% {
 		transform: scaleX(-1);
@@ -104,22 +105,28 @@ body {
 	}
 }
 
-/* Responsive query */
-@media all and (max-width: 480px) {
-	.navbar {
-		padding: 0 5vw;
-	}
-	.navbar__link {
-		font-size: 1.2rem;
-	}
+/*******************
+    welcome
+*******************/
+.welcome {
+    margin-top: 8vh;
+    height: 92vh;
 }
-@media all and (min-width: 481px) and (max-width: 768px) {
-	.navbar {
-		padding: 0 5vw;
-	}
-	.navbar__link {
-		font-size: 1.2rem;
-	}
+.sponge {
+	margin: -5vh 0 0 -1vw;
+	position: absolute;
+	width: 10%;
+    z-index: 0;
+}
+.plasticbag {
+	width: 30vw;
+	position: absolute;
+	margin: 40vh 0 0 10vw;
+}
+.pizzabox {
+	position: absolute;
+	right: 0%;
+    top: 25%;
 }
 
 /*
@@ -128,41 +135,40 @@ body {
     welcome
 ******************************
 ******************************
-*/
+*
 main {
 	padding-top: 10vh;
 }
 .sponge {
-    margin: -8vh 0 0 -1vw;
-    position: absolute;
-    width: 10%;
-
+	margin: -8vh 0 0 -1vw;
+	position: absolute;
+	width: 10%;
 }
 .plasticbag {
-    width: 23%;
-    position: absolute;
-    margin: 30vh 0 0 5vw;
+	width: 20vw;
+	position: absolute;
+	margin: 40vh 0 0 10vw;
 }
 .welcome {
 	padding: 15vh 5vw 0 5vw;
-    background: var(--background-nav);
+	background: var(--background-nav);
 	min-height: 90vh;
 }
 .welcome__center {
-    display: flex;
-    width: 100%;
+	display: flex;
+	width: 100%;
 }
 .presentation {
-    width: 33%;
+	width: 33%;
 	color: var(--background);
 	text-align: center;
 	align-self: center;
-    margin: 3vh 0 0 15vw;
-    z-index: 10;
+	margin: 3vh 0 0 15vw;
+	z-index: 2;
 }
 .pizzabox {
-    position: absolute;
-    right: 0%;
+	position: absolute;
+	right: 0%;
 }
 .presentation h1 {
 	color: var(--yellow-logo);
@@ -210,31 +216,20 @@ a i {
 	transition: 600ms;
 }
 
-/* Responsive query */
+/* Responsive query *
 @media all and (max-width: 480px) {
 	.welcome {
-		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background.jpg)
-			top right/90vw no-repeat;
-		grid-template-areas:
-			"presentation"
-			"socialmedia";
 		padding: 25vh 5vw 0 10vw;
 	}
 }
 @media all and (min-width: 481px) and (max-width: 768px) {
 	.welcome {
-		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background.jpg)
-			top right/90vw no-repeat;
-		grid-template-areas:
-			"presentation"
-			"socialmedia";
 		padding: 45vh 5vw 0 10vw;
 	}
 }
 @media all and (min-width: 769px) and (max-width: 1279px) {
-	.welcome {
-		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background.jpg)
-			top right/66vw no-repeat;
+	.plasticbag {
+		width: ;
 	}
 }
 
@@ -244,7 +239,7 @@ a i {
 mania presentation
 ******************************
 ******************************
-*/
+*
 .mania__presentation {
 	padding: 10vh 10vw 20vh 10vw;
 	clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0, 50% 0);
@@ -332,7 +327,7 @@ mania presentation
 	}
 }
 
-/* Responsive query */
+/* Responsive query *
 @media all and (max-width: 480px) {
 	.mania__presentation {
 		padding: 10vh 5vw 10vh 5vw;
@@ -365,7 +360,7 @@ mania presentation
     general products
 ******************************
 ******************************
-*/
+*
 .general__products {
 	padding: 5vh 15vw 15vh 15vw;
 	display: grid;
@@ -376,7 +371,7 @@ mania presentation
 	align-items: stretch;
 	justify-content: center;
 	min-height: 80vh;
-    font-size: 15px;
+	font-size: 15px;
 }
 .products__box {
 	border-radius: 10px;
@@ -392,7 +387,7 @@ mania presentation
 }
 .general__products h2 {
 	padding-bottom: 1vh;
-    font-size: 30px;
+	font-size: 30px;
 }
 .products__box div {
 	background-color: var(--background);
@@ -425,7 +420,7 @@ mania presentation
 	grid-area: carniceria;
 }
 
-/* Responsive query */
+/* Responsive query *
 @media all and (max-width: 480px) {
 	.general__products {
 		padding: 5vh 10vw 15vh 10vw;
@@ -457,7 +452,7 @@ mania presentation
     our clients
 ******************************
 ******************************
-*/
+*
 .our__clients {
 	display: flex;
 	flex-direction: column;
@@ -493,7 +488,7 @@ mania presentation
 	transition: 300ms;
 }
 
-/* Responsive query */
+/* Responsive query *
 @media all and (max-width: 480px) {
 	.clients__logo {
 		margin-top: 7vh;
@@ -525,7 +520,7 @@ mania presentation
     contact
 ******************************
 ******************************
-*/
+*
 .contact {
 	margin-top: -5vh;
 	clip-path: polygon(0 100%, 100% 100%, 100% 20%, 40% 20%, 28% 0, 28% 20%, 0 20%);
@@ -596,7 +591,7 @@ textarea:focus {
 	color: var(--background);
 }
 
-/* Responsive query */
+/* Responsive query *
 @media all and (max-width: 480px) {
 	.contact {
 		padding: 40vh 5vw 10vh 5vw;
@@ -634,7 +629,7 @@ textarea:focus {
     footer
 ******************************
 ******************************
-*/
+*
 .footer {
 	position: relative;
 	z-index: 2;
@@ -663,7 +658,7 @@ textarea:focus {
 	text-decoration: none;
 }
 .footer__mark {
-    color: black;
+	color: black;
 	display: flex;
 	align-items: baseline;
 	justify-content: center;
@@ -686,14 +681,14 @@ textarea:focus {
 	padding: 0 0.5vw;
 }
 .footer__socialmedia i {
-    color: #171b20;
+	color: #171b20;
 }
 .footer__socialmedia i:hover {
 	color: var(--yellow-logo);
 	transition: 600ms;
 }
 
-/* Responsive query */
+/* Responsive query *
 @media all and (max-width: 480px) {
 	.footer__socialmedia > div {
 		padding: 0 1.2vw;
@@ -715,7 +710,7 @@ textarea:focus {
 ******************************
 ******************************
 ******************************
-*/
+*
 .quienes__somos {
 	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/quienes_somos_background.jpg)
 		top 26vh right 13vw/25vw no-repeat;
@@ -761,7 +756,7 @@ textarea:focus {
 	border-top: 1px solid #13a4dd;
 }
 
-/* Responsive query */
+/* Responsive query *
 @media all and (max-width: 480px) {
 	.quienes__somos {
 		background: none;
@@ -815,7 +810,7 @@ textarea:focus {
 ******************************
 ******************************
 ******************************
-*/
+*
 .faqs {
 	padding: 20vh 15vw 5vh 15vw;
 	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/faqs.jpg)
@@ -847,7 +842,7 @@ textarea:focus {
 	padding-bottom: 5vh;
 }
 
-/* Responsive query */
+/* Responsive query *
 @media all and (max-width: 480px) {
 	.faqs {
 		padding: 20vh 5vw 5vh 5vw;
@@ -885,7 +880,7 @@ textarea:focus {
 ******************************
 ******************************
 ******************************
-*/
+*
 .condiciones {
 	margin: 20vh 15vw 5vw 15vw;
 }
@@ -893,7 +888,7 @@ textarea:focus {
 	margin: 10vh 5vw 5vw 5vw;
 }
 
-/* Responsive query */
+/* Responsive query *
 @media all and (max-width: 480px) {
 	.condiciones {
 		margin: 20vh 5vw 5vw 5vw;

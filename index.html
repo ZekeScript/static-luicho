@@ -9,69 +9,56 @@
 			src="https://kit.fontawesome.com/7ce4d1e53b.js"
 			crossorigin="anonymous"
 		></script>
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-			crossorigin="anonymous"
-		/>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Lato:wght@100;400;700;900&family=Roboto:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
+        <link rel="stylesheet" href="./bootstrap-local/css/bootstrap.css" />
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 	<body>
+
+        <!-- Bootstrap JS -->
+        <script src="./bootstrap-local/js/bootstrap.js"></script>
 		<header>
-			<!-- navbar -->
-			<nav class="navbar">
-				<section class="navbar__wrapper--logo">
-					<!-- brand logo -->
-					<a class="navbar__logo" href="index.html"
-						><img
-							src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/DL_logo.png"
-							alt=""
-					/></a>
-					<!-- end logo -->
-				</section>
-				<section class="navbar__wrapper">
-					<!-- navigation menu -->
-					<a
-						class="navbar__link"
-						href="./pages/quienesSomos.html"
-						rel="noopener noreferrer"
-						>Quienes somos</a
-					>
-					<a
-						class="navbar__link"
-						href="./pages/productos.html"
-						rel="noopener noreferrer"
-						>Productos</a
-					>
-					<a
-						class="navbar__link"
-						href="./pages/faqs.html"
-						rel="noopener noreferrer"
-						>FAQS</a
-					>
-					<!-- end menu -->
-				</section>
-			</nav>
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <section class="container-fluid nav-wrapper">
+                    <article class="navbar-wrapper-brand brand">
+                        <a class="navbar-brand" href="index.html">
+                            <img width="90" height="90" class="d-inline-block align-text-top" src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/DL_logo.png" alt=""/>
+                        </a>
+                    </article>
+                    <article class="navbar-wrapper-toggle">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </article>
+                    <article class="collapse navbar-collapse bg-dark" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="index.html"><i class="fas fa-home"></i></a>
+                            <a class="nav-link line-animation" href="./pages/quienesSomos.html">Quienes somos</a>
+                            <a class="nav-link line-animation" href="./pages/productos.html">Productos</a>
+                            <a class="nav-link line-animation" href="./pages/faqs.html">FAQS</a>
+                        </div>
+                    </article>
+                </section>
+            </nav>
 			<!-- end navbar -->
 		</header>
 		<main>
 			<!-- brand presentation -->
             <img class="sponge" src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/rectangle-sponge.png" alt="">
             <img class="plasticbag" src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/plastic-bag.png" alt="">
-			<section class="welcome">
+			<section class="welcome bg-dark">
 				<article class="welcome__center">
 				    <div class="presentation">
     					<h1>Distribuidora Luicho</h1>
     					<h2>La mejor calidad, al mejor precio</h2>
     				</div>
-                    <img class="pizzabox" src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/front-view-female-hand-in-black-gloves-holding-pizza-boxes-on-white.png" alt="">
+                    <img class="pizzabox img-fluid" src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/front-view-female-hand-in-black-gloves-holding-pizza-boxes-on-white.png" alt="">
 				</article>
 				<article class="socialmedia">
 					<!-- socialmedia links -->
