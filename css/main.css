@@ -42,28 +42,24 @@ button {
 }
 .nav-wrapper {
 	padding-inline: 10vw;
-	height: 51px;
 }
 .navbar-collapse {
-	display: block;
-	align-items: center;
 	justify-content: right;
 }
 .navbar-wrapper-brand {
-	display: flex;
-	align-self: flex-start;
-	width: 70px;
-	height: 40px;
+	width: 80px;
+	height: 56px;
 	z-index: 2;
 }
-.navbar-nav {
-	padding-top: 1vh;
-}
 .brand {
-	box-shadow: 0px 35px 15px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 35px 30px rgba(0, 0, 0, 0.2);
 }
 .navbar-wrapper-toggle {
-	align-self: center;
+	align-self: baseline;
+}
+.navbar-nav {
+    display: flex;
+    align-items: center;
 }
 .bg-dark {
 	background-color: #18306d !important;
@@ -109,40 +105,39 @@ button {
     welcome
 *******************/
 .welcome {
-	margin-top: 6.9vh;
+	margin-top: 6.5vh;
 	height: 85vh;
 }
 .sponge {
-	top: -150px;
+	top: -70px;
 	left: -60px;
 	position: absolute;
 	width: 300px;
 }
 .plasticbag {
-	width: 260px;
+	width: 300px;
 	position: absolute;
-	top: -60px;
-	right: -25px;
-	rotate: 200deg;
+	top: -50px;
+	right: -50px;
 }
 .pizzabox {
 	grid-area: pizzabox;
 	max-width: 50vw;
 	justify-self: end;
-    align-self: center;
+	align-self: center;
 }
 .welcome__center {
 	top: 27vh;
-    height: 50vh;
+	height: 50vh;
 	width: 100vw;
 	position: absolute;
 	display: grid;
 	grid-template-areas: "presentation pizzabox";
 }
 .presentation {
-	margin-top: 6vh;
 	grid-area: presentation;
-	justify-self: center;
+	justify-self: right;
+    align-self: center;
 }
 .display-1 {
 	font-weight: 1000;
@@ -153,37 +148,34 @@ button {
 	color: var(--background);
 }
 .socialmedia {
-    position: absolute;
-    display: flex;
-    right: 5vw;
-    bottom: 170px;
+	position: absolute;
+	display: flex;
+	right: 10vw;
+	bottom: 150px;
 }
 .socialmedia i {
-    font-size: 2.25rem;
-    width: 45px;
-    color: #1b1b1b;
+	font-size: 2.25rem;
+	width: 45px;
+	color: #1b1b1b;
 }
 .socialmedia i:hover {
-    color: var(--yellow-logo);
-    transition: 300ms;
+	color: var(--yellow-logo);
+	transition: 300ms;
 }
 .fixed_button {
-    float: right;
+	float: right;
 	margin-right: 3vw;
 	position: sticky;
 	top: 86vh;
 	z-index: 1;
 }
 .fixed_button i {
-	color: #6c757d;
+	color: #2b2b2b;
 	font-size: 4rem;
 }
 .fixed_button i:hover {
 	color: #25d366;
 	transition: 600ms;
-}
-.welcome__center .animate__animated.animate__fadeInRightBig {
-  --animate-duration: 1500ms;
 }
 
 /* Responsive query */
@@ -191,6 +183,9 @@ button {
 	.welcome__center {
 		grid-template-areas: "presentation presentation";
 	}
+    .presentation {
+	    justify-self: center;
+    }
 	.sponge {
 		top: -100px;
 		width: 200px;
@@ -206,15 +201,30 @@ button {
 	.welcome__center {
 		grid-template-areas: "presentation presentation";
 	}
+    .presentation {
+	    justify-self: center;
+    }
 	.pizzabox {
 		display: none;
 	}
 }
 
 /*******************
+    brand presentation
+*******************/
+.brand__presentation {
+    margin-top: 3vh;
+}
+.brand__presentation > .bg-light {
+    background: #fddb00a8 !important;
+}
+.brand__presentation .icon-square i{
+    font-size: 2em;
+}
+
+/*******************
     mania
 *******************/
-
 
 /*
 ******************************
