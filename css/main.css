@@ -72,6 +72,7 @@ button {
 	animation-fill-mode: forwards;
 	animation-timing-function: linear;
 	transition: color 300ms linear;
+    color: #f8f9fa !important;
 }
 .line-animation::before {
 	position: absolute;
@@ -187,10 +188,11 @@ button {
 		justify-self: center;
 	}
 	.sponge {
-		top: -100px;
+		top: 10px;
 		width: 200px;
 	}
 	.plasticbag {
+        top: 40px;
 		width: 200px;
 	}
 	.pizzabox {
@@ -369,23 +371,35 @@ button {
 /* Responsive query */
 @media all and (max-width: 576px) {
 	.clients__logo {
-		grid-template-columns: repeat(1, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 	}
+    .clients__logo > img {
+	    width: 5em;
+    }
 }
 @media all and (min-width: 577px) and (max-width: 768px) {
 	.clients__logo {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 	}
+    .clients__logo > img {
+	    width: 5.5em;
+    }
 }
 @media all and (min-width: 769px) and (max-width: 992px) {
 	.clients__logo {
 		grid-template-columns: repeat(3, 1fr);
 	}
+    .clients__logo > img {
+	    width: 6em;
+    }
 }
 @media all and (min-width: 993px) and (max-width: 1200px) {
 	.clients__logo {
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(5, 1fr);
 	}
+    .clients__logo > img {
+	    width: 6.5em;
+    }
 }
 
 /*
