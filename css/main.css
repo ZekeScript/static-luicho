@@ -22,7 +22,7 @@ body,
 input,
 button {
 	font-size: 16px;
-	font-family: "Lato", sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
 button {
@@ -58,8 +58,8 @@ button {
 	align-self: baseline;
 }
 .navbar-nav {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 .bg-dark {
 	background-color: #18306d !important;
@@ -77,7 +77,7 @@ button {
 	position: absolute;
 	bottom: 0px;
 	left: 0px;
-	content: "";
+	content: '';
 	background: var(--yellow-logo);
 	width: 0%;
 	height: 2px;
@@ -132,12 +132,12 @@ button {
 	width: 100vw;
 	position: absolute;
 	display: grid;
-	grid-template-areas: "presentation pizzabox";
+	grid-template-areas: 'presentation pizzabox';
 }
 .presentation {
 	grid-area: presentation;
 	justify-self: right;
-    align-self: center;
+	align-self: center;
 }
 .display-1 {
 	font-weight: 1000;
@@ -181,11 +181,11 @@ button {
 /* Responsive query */
 @media all and (max-width: 480px) {
 	.welcome__center {
-		grid-template-areas: "presentation presentation";
+		grid-template-areas: 'presentation presentation';
 	}
-    .presentation {
-	    justify-self: center;
-    }
+	.presentation {
+		justify-self: center;
+	}
 	.sponge {
 		top: -100px;
 		width: 200px;
@@ -199,152 +199,47 @@ button {
 }
 @media all and (min-width: 481px) and (max-width: 768px) {
 	.welcome__center {
-		grid-template-areas: "presentation presentation";
+		grid-template-areas: 'presentation presentation';
 	}
-    .presentation {
-	    justify-self: center;
-    }
+	.presentation {
+		justify-self: center;
+	}
 	.pizzabox {
 		display: none;
 	}
 }
 
 /*******************
-    brand presentation
+    brand
 *******************/
 .brand__presentation {
-    margin-top: 3vh;
+	margin-top: 3vh;
 }
 .brand__presentation > .bg-light {
-    background: #fddb00a8 !important;
+	background: #fddb00a8 !important;
 }
-.brand__presentation .icon-square i{
-    font-size: 2em;
+.brand__presentation .icon-square i {
+	font-size: 2em;
+}
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+@media (min-width: 768px) {
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	}
 }
 
 /*******************
     mania
 *******************/
-
-/*
-******************************
-******************************
-mania presentation
-******************************
-******************************
-*
-.mania__presentation {
-	padding: 10vh 10vw 20vh 10vw;
-	clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0, 50% 0);
-	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/Mania_logo_back.png)
-		center/10vw repeat;
-	display: grid;
-	grid-template-areas:
-		".                  welcome__text"
-		"mania-presentation mania-logo";
-	min-height: 97vh;
-}
-.welcome__text {
-	grid-area: welcome__text;
-	background-color: var(--background-nav);
-	font-size: var(--font-s);
-	color: var(--background);
-	margin: 0 0vw 3vh 0vw;
-	border-radius: 30px;
-}
-.welcome__description span {
-	color: var(--yellow-logo);
-}
-.welcome__description .mania {
-	font-family: "Comforter Brush", cursive;
-	font-size: var(--font-l);
-	color: var(--background);
-}
-.mania-logo {
-	width: 50%;
-}
-.mania__presentation > article {
-	padding: 0 2vw;
-}
-.wrapper__mania-presentation {
-	font-size: var(--font-s);
-	grid-area: mania-presentation;
-	align-self: center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.wrapper__mania-presentation p {
-	margin-bottom: 1vh;
-	padding: 0 0 0.3rem 1rem;
-}
-.wrapper__mania-presentation span {
-	font-family: "Comforter Brush", cursive;
-	font-size: var(--font-l);
-	padding-right: 0.4rem;
-}
-.wrapper__mania-logo {
-	text-align: center;
-	grid-area: mania-logo;
-}
-.wrapper__mania-logo h2 {
-	padding: 0 1rem 1rem 1rem;
-	font-size: var(--font-l);
-}
-.button {
-	background-color: var(--yellow-logo);
-	color: var(--background-nav);
-	text-decoration: none;
-	font-size: 1.4rem;
-	font-weight: 900;
-	border-radius: 1rem;
-	border: 1px solid var(--background-nav);
-	padding: 1rem;
-}
-.button:hover {
-	animation-name: button;
-	animation-duration: 300ms;
-	animation-fill-mode: forwards;
-	text-decoration: none;
-	background-color: var(--yellow-logo);
-	animation-timing-function: linear;
-	border: 1px solid var(--background-nav);
-	color: var(--background-nav);
-}
-
-@keyframes button {
-	100% {
-		background-color: var(--background-nav);
-		color: var(--yellow-logo);
-		border: 1px solid var(--yellow-logo);
-	}
-}
-
-/* Responsive query *
-@media all and (max-width: 480px) {
-	.mania__presentation {
-		padding: 10vh 5vw 10vh 5vw;
-		clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0, 50% 0);
-		grid-template-areas:
-			"welcome__text"
-			"mania-logo"
-			"mania-presentation";
-	}
-}
-@media all and (min-width: 481px) and (max-width: 768px) {
-	.mania__presentation {
-		padding: 10vh 5vw 10vh 5vw;
-		clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0, 50% 0);
-		grid-template-areas:
-			"welcome__text"
-			"mania-logo"
-			"mania-presentation";
-	}
-}
-@media all and (min-width: 769px) and (max-width: 1279px) {
-	.mania__presentation {
-		clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0, 50% 0);
-	}
+.wrapper__mania-presentation p{
+    font-weight: 400;
 }
 
 /*
