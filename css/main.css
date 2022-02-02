@@ -139,11 +139,11 @@ button {
 	justify-self: right;
 	align-self: center;
 }
-.display-1 {
+.welcome .display-1 {
 	font-weight: 1000;
 	color: var(--yellow-logo);
 }
-.display-6 {
+.welcome .display-6 {
 	font-weight: 500;
 	color: var(--background);
 }
@@ -156,7 +156,7 @@ button {
 .socialmedia i {
 	font-size: 2.25rem;
 	width: 45px;
-	color: #1b1b1b;
+	color: #807B5A;
 }
 .socialmedia i:hover {
 	color: var(--yellow-logo);
@@ -213,7 +213,7 @@ button {
     brand
 *******************/
 .brand__presentation {
-	margin-top: 3vh;
+	margin-top: 10vh;
 }
 .brand__presentation > .bg-light {
 	background: #fddb00a8 !important;
@@ -238,28 +238,32 @@ button {
 /*******************
     mania
 *******************/
-.wrapper__mania-presentation p{
+.mania__presentation {
+    margin-top: 10vh;
+}
+.wrapper__mania-presentation p {
     font-weight: 400;
 }
+.wrapper__mania-presentation a:hover {
+    background-color: #f8f9fa;
+    color: #0d6efd;
+}
 
-/*
-******************************
-******************************
+/*******************
     general products
-******************************
-******************************
-*
+*******************/
 .general__products {
-	padding: 5vh 15vw 15vh 15vw;
+    margin-top: 20vh;
 	display: grid;
 	grid-template-areas:
 		"restaurant verduleria panaderia"
 		"carniceria kiosco     kiosco";
 	gap: 2%;
-	align-items: stretch;
-	justify-content: center;
-	min-height: 80vh;
-	font-size: 15px;
+    width: 100%;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    margin-right: auto;
+    margin-left: auto;
 }
 .products__box {
 	border-radius: 10px;
@@ -308,10 +312,9 @@ button {
 	grid-area: carniceria;
 }
 
-/* Responsive query *
-@media all and (max-width: 480px) {
+/* Responsive query */
+@media all and (max-width: 576px) {
 	.general__products {
-		padding: 5vh 10vw 15vh 10vw;
 		grid-template-areas:
 			"restaurant"
 			"verduleria"
@@ -321,41 +324,36 @@ button {
 			"kiosco";
 	}
 }
-@media all and (min-width: 481px) and (max-width: 768px) {
+@media all and (min-width: 577px) and (max-width: 768px) {
 	.general__products {
-		padding: 5vh 10vw 15vh 10vw;
 		grid-template-areas:
-			"restaurant"
-			"verduleria"
-			"panaderia"
-			"carniceria"
-			"kiosco"
-			"kiosco";
+			"restaurant restaurant" "verduleria carniceria"
+			"panaderia panaderia"
+			"kiosco kiosco";
+	}
+}
+@media all and (min-width: 769px) and (max-width: 992px) {
+	.general__products {
+		grid-template-areas:
+			"restaurant verduleria"
+			"panaderia carniceria"
+			"kiosco kiosco";
 	}
 }
 
-/*
-******************************
-******************************
+/*******************
     our clients
-******************************
-******************************
-*
+*******************/
 .our__clients {
+    margin-top: 20vh !important;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 10vh 15vw;
 	min-height: 90vh;
 }
-.clients__title {
-	text-align: center;
-	font-size: var(--font-l);
-}
-.clients__title > h2 {
-	font-size: var(--font-xl);
-	padding-bottom: 1.5vh;
+.clients__title p {
+    font-weight: 400;
 }
 .clients__title span {
 	border-bottom: solid var(--background-nav) 2px;
@@ -376,7 +374,7 @@ button {
 	transition: 300ms;
 }
 
-/* Responsive query *
+/* Responsive query */
 @media all and (max-width: 480px) {
 	.clients__logo {
 		margin-top: 7vh;
@@ -408,9 +406,8 @@ button {
     contact
 ******************************
 ******************************
-*
+*/
 .contact {
-	margin-top: -5vh;
 	clip-path: polygon(0 100%, 100% 100%, 100% 20%, 40% 20%, 28% 0, 28% 20%, 0 20%);
 	background: #222831
 		url(https://raw.githubusercontent.com/estga/furry-journey/main/images/mailGraphic.png)
@@ -423,7 +420,6 @@ button {
 	justify-content: space-between;
 	align-items: center;
 	color: var(--background);
-	font-size: var(--font-m);
 	min-height: 90vh;
 }
 .contact article {
@@ -479,7 +475,7 @@ textarea:focus {
 	color: var(--background);
 }
 
-/* Responsive query *
+/* Responsive query */
 @media all and (max-width: 480px) {
 	.contact {
 		padding: 40vh 5vw 10vh 5vw;
@@ -517,7 +513,7 @@ textarea:focus {
     footer
 ******************************
 ******************************
-*
+*/
 .footer {
 	position: relative;
 	z-index: 2;
@@ -576,7 +572,7 @@ textarea:focus {
 	transition: 600ms;
 }
 
-/* Responsive query *
+/* Responsive query */
 @media all and (max-width: 480px) {
 	.footer__socialmedia > div {
 		padding: 0 1.2vw;

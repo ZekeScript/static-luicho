@@ -6,13 +6,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Distribuidora Luicho</title>
+        
+        <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/7ce4d1e53b.js" crossorigin="anonymous"></script>
+
+        <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Lato:wght@100;400;700;900&family=Roboto:wght@400;700&display=swap"
             rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <!-- AOS Library -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <!-- Bootstrap CSS-->
         <link rel="stylesheet" href="./bootstrap-local/css/bootstrap.css" />
         <link rel="stylesheet" href="./css/main.css" />
     </head>
@@ -27,9 +35,9 @@
                 <section class="container-fluid nav-wrapper">
                     <article class="navbar-wrapper-brand brand">
                         <a class="navbar-brand" href="index.html">
-                            <img width="80" height="80" class="d-inline-block align-text-top"
+                            <img width="80" height="80"         class="d-inline-block align-text-top"
                                 src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/DL_logo.png"
-                                alt="" />
+                            />
                         </a>
                     </article>
                     <article class="navbar-wrapper-toggle">
@@ -54,34 +62,35 @@
         </header>
         <main>
             <!-- brand presentation -->
-            <img class="sponge animate__animated animate__fadeInTopLeft animate__fast"
-                src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/rectangle-sponge.png" alt="">
-            <img class="plasticbag animate__animated animate__fadeInTopRight animate__fast"
-                src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/plastic-bag.png" alt="">
+            <img class="sponge"
+                data-aos="fade-up-left" data-aos-duration="1000" 
+                src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/rectangle-sponge.png">
+            <img class="plasticbag" data-aos="fade-up-right" data-aos-duration="1000"
+                src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/plastic-bag.png">
             <section class="welcome bg-dark">
                 <article class="welcome__center">
-                    <div class="presentation animate__animated animate__bounceInLeft animate__slow">
+                    <div class="presentation" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
                         <h1 class="display-1">Distribuidora <br> Luicho</h1>
                         <h2 class="display-6">La mejor calidad, <br> al mejor precio.</h2>
                     </div>
-                    <img class="pizzabox img-fluid animate__animated animate__fadeInRightBig animate__slower"
-                        src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/pizza-boxes.png" alt="">
+                    <img class="pizzabox img-fluid" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600"
+                        src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/pizza-boxes.png">
                 </article>
                 <article class="socialmedia">
                     <!-- socialmedia links -->
-                    <div class="socialmedia__facebook">
+                    <div class="socialmedia__facebook" data-aos="fade-up" data-aos-duration="500" data-aos-delay="1250">
                         <a href="https://www.facebook.com/DistribuidoraLuicho" target="_blank"><i
                                 class="fab fa-facebook"></i></a>
                     </div>
-                    <div class="socialmedia__instagram">
+                    <div class="socialmedia__instagram" data-aos="fade-up" data-aos-duration="500" data-aos-delay="1500">
                         <a href="https://www.instagram.com/distribuidoraluicho_/" target="_blank"><i
                                 class="fab fa-instagram"></i></a>
                     </div>
-                    <div class="socialmedia__whatsapp">
+                    <div class="socialmedia__whatsapp" data-aos="fade-up" data-aos-duration="500" data-aos-delay="1750">
                         <a href="https://wa.me/543794335737/?text=Me%20interesa%20el%20producto" target="_blank"><i
                                 class="fab fa-whatsapp"></i></a>
                     </div>
-                    <div class="socialmedia__mail">
+                    <div class="socialmedia__mail" data-aos="fade-up" data-aos-duration="500" data-aos-delay="2000">
                         <a href="mailto:Distribuidoraluicho@yahoo.com" target="_blank"><i
                                 class="fas fa-envelope-open-text"></i></a>
                     </div>
@@ -89,21 +98,19 @@
                 </article>
             </section>
             <section class="brand__presentation container py-4">
-                <article class="p-5 mb-4 bg-light rounded-3">
+                <article class="p-5 mb-4 bg-light rounded-3" data-aos="flip-left" data-aos-duration="750" data-aos-anchor-placement="top-center">
                     <div class="container-fluid py-5">
                         <h1 class="display-5 fw-bold">Distribuidora Luicho es...</h1>
                         <p class="col-md-8 fs-4">Una pyme especializada en la distribución y comercialización
                             de, productos y envases descartables, para alimentos, higiene y embalaje. <br />
-                            También nos dedicamos a la fabricación y distribución de productos de limpieza bajo nuestra
-                            marca,
-                            <span class="mania">Manía</span>.
+                            También nos dedicamos a la fabricación y distribución de productos de limpieza bajo nuestra marca, Manía.
                         </p>
                     </div>
                 </article>
                 <article class="container px-4 py-5" id="hanging-icons">
                     <h2 class="pb-2 border-bottom">Servicio imbatible</h2>
                     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                        <div class="col d-flex align-items-start">
+                        <div class="col d-flex align-items-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                             <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
                                 <i class="fas fa-phone-volume"></i>
                             </div>
@@ -113,7 +120,7 @@
                                     los productos que mejor se adapten a su comercio o negocio.</p>
                             </div>
                         </div>
-                        <div class="col d-flex align-items-start">
+                        <div class="col d-flex align-items-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
                             <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
                                 <i class="fas fa-dollar-sign"></i>
                             </div>
@@ -123,7 +130,7 @@
                                     Y sin cupo mínimo de compra.</p>
                             </div>
                         </div>
-                        <div class="col d-flex align-items-start">
+                        <div class="col d-flex align-items-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">
                             <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
                                 <i class="fas fa-truck"></i>
                             </div>
@@ -137,7 +144,7 @@
                     </div>
                 </article>
             </section>
-            <section class="mania__presentation container col-xxl-8 px-4 py-5">
+            <section class="mania__presentation container col-xxl-8 px-4 py-5" data-aos="flip-down" data-aos-duration="1000" data-aos-anchor-placement="top-center">
                 <article class="wrapper__mania-presentation row flex-lg-row-reverse align-items-center g-5 py-5">
                     <div class="wrapper__mania-logo col-10 col-sm-8 col-lg-6">
                         <img src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/Mania_logo.png" class="mania-logo d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
@@ -148,7 +155,7 @@
                         Los productos manía son de excelente calidad y desempeño. <br />
                         Todo eso y mas al alcance de tu mano, a un precio super accesible.</p>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                            <a type="button" href="./pages/productos.html" class="btn btn-primary btn-lg px-4 me-md-2">Proba Mania!</a>
+                            <a type="button" href="./pages/productos.html" class="btn btn-primary btn-lg px-4 me-md-2">Proba Manía!</a>
                         </div>
                     </div>
                 </article>
@@ -157,8 +164,8 @@
                 target="_blank"><i class="fab fa-whatsapp"></i></a>
             <!-- end brand presentation -->
             <!-- productos generales y comercios que lo utilizan -->
-            <section class="general__products">
-                <article class="restaurant products__box">
+            <section class="general__products container-xxl themed-container">
+                <article class="restaurant products__box" data-aos="fade-up" data-aos-duration="1000">
                     <div>
                         <h2>
                             Comedores<br />
@@ -171,7 +178,7 @@
                         </p>
                     </div>
                 </article>
-                <article class="kiosco products__box">
+                <article class="kiosco products__box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                     <div>
                         <h2>
                             Kioscos<br />
@@ -184,7 +191,7 @@
                         </p>
                     </div>
                 </article>
-                <article class="verduleria products__box">
+                <article class="verduleria products__box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                     <div>
                         <h2>Verdulerias</h2>
                         <p>
@@ -193,7 +200,7 @@
                         </p>
                     </div>
                 </article>
-                <article class="panaderia products__box">
+                <article class="panaderia products__box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
                     <div>
                         <h2>Panaderias</h2>
                         <p>
@@ -202,7 +209,7 @@
                         </p>
                     </div>
                 </article>
-                <article class="carniceria products__box">
+                <article class="carniceria products__box" data-aos="fade-up" data-aos-duration="1000">
                     <div>
                         <h2>Carnicerias</h2>
                         <p>
@@ -214,42 +221,86 @@
             </section>
             <!-- end productos generales-->
             <!-- espacio para los logos de las marcas con las que trabaja la empresa-->
-            <section class="our__clients">
-                <article class="clients__title">
-                    <h2>Nuestros <span>clientes</span></h2>
-                    <p>Estas empresas confiaron en nosotros</p>
-                </article>
-                <article class="clients__logo">
-                    <img src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/clients/al_rio.jpg"
-                        alt="" /><img
+            <section class="px-4 pt-5 my-5 text-center border-bottom our__clients clients__title" data-aos="flip-down" data-aos-duration="1000">
+                <h1 class="display-4 fw-bold">Nuestros <span>clientes</span></h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4">Estas empresas confiaron en nosotros.</p>
+                </div>
+                <article class="container px-5 clients__logo">
+                    <img 
+                        data-aos="fade-up" data-aos-duration="500"
+                        class="img-fluid border rounded-4 shadow-lg mb-4" src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/clients/al_rio.jpg"
+                    />
+                    <img
+                        data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
+                        class="img-fluid border rounded-4 shadow-lg mb-4"
                         src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/clients/chicho_y_bauti.jpg"
-                        alt="" /><img
+                    />
+                    <img
+                        data-aos="fade-up" data-aos-duration="500" data-aos-delay="600"
+                        class="img-fluid border rounded-4 shadow-lg mb-4"
                         src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/clients/credicoop.jpg"
-                        alt="" /><img
+                    />
+                    <img
+                        data-aos="fade-up" data-aos-duration="500" data-aos-delay="900"
+                        class="img-fluid border rounded-4 shadow-lg mb-4"
                         src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/clients/do%C3%B1a_ilu.jpg"
-                        alt="" /><img
+                    />
+                    <img
+                        data-aos="fade-up" data-aos-duration="500" data-aos-delay="1200"
+                        class="img-fluid border rounded-4 shadow-lg mb-4"
                         src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/clients/el_campeon.jpg"
-                        alt="" /><img
+                    />
+                    <img
+                        data-aos="fade-up" data-aos-duration="500"
+                        class="img-fluid border rounded-4 shadow-lg mb-4"
                         src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/clients/el_litoral.jpg"
-                        alt="" /><img
+                    />
+                    <img
+                        data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
+                        class="img-fluid border rounded-4 shadow-lg mb-4"
                         src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/clients/el_parrillon.jpg"
-                        alt="" /><img
+                    />
+                    <img
+                        data-aos="fade-up" data-aos-duration="500" data-aos-delay="600"
+                        class="img-fluid border rounded-4 shadow-lg mb-4"
                         src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/clients/f%26g.jpg"
-                        alt="" /><img
+                    />
+                    <img
+                        data-aos="fade-up" data-aos-duration="500" data-aos-delay="900"
+                        class="img-fluid border rounded-4 shadow-lg mb-4"
                         src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/clients/full.png"
-                        alt="" /><img
+                    />
+                    <img
+                        data-aos="fade-up" data-aos-duration="500" data-aos-delay="1200"
+                        class="img-fluid border rounded-4 shadow-lg mb-4"
                         src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/clients/la_familia.jpg"
-                        alt="" /><img
+                    />
+                    <img
+                        data-aos="fade-up" data-aos-duration="500"
+                        class="img-fluid border rounded-4 shadow-lg mb-4"
                         src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/clients/la_tentacion.jpg"
-                        alt="" /><img
+                    />
+                    <img
+                        data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
+                        class="img-fluid border rounded-4 shadow-lg mb-4"
                         src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/clients/pizzas_rusticas.jpg"
-                        alt="" /><img
+                    />
+                    <img
+                        data-aos="fade-up" data-aos-duration="500" data-aos-delay="600"
+                        class="img-fluid border rounded-4 shadow-lg mb-4"
                         src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/clients/septimo.jpg"
-                        alt="" /><img
+                    />
+                    <img
+                        data-aos="fade-up" data-aos-duration="500" data-aos-delay="900"
+                        class="img-fluid border rounded-4 shadow-lg mb-4"
                         src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/clients/todo_casero.jpg"
-                        alt="" /><img
+                    />
+                    <img
+                        data-aos="fade-up" data-aos-duration="500" data-aos-delay="1200"
+                        class="img-fluid border rounded-4 shadow-lg mb-4"
                         src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/clients/%C3%B1ande_ibera.jpg"
-                        alt="" />
+                    />
                 </article>
             </section>
             <!-- formulario de contacto -->
@@ -315,6 +366,11 @@
                 </p>
             </section>
         </footer>
+        <!-- AOS JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 
 </html>
