@@ -346,11 +346,6 @@ button {
 *******************/
 .our__clients {
     margin-top: 20vh !important;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	min-height: 90vh;
 }
 .clients__title p {
     font-weight: 400;
@@ -362,41 +357,34 @@ button {
 	margin-top: 7vh;
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
-	gap: 4vh 8vw;
+    justify-items: center; 
+    align-items: center; 
 }
 .clients__logo > img {
 	border-radius: 40px;
-	width: 6.5vw;
-	border: solid 2px var(--background-nav);
-}
-.clients__logo > img:hover {
-	transform: scale(1.66);
-	transition: 300ms;
+	width: 7em;
+	border: solid 2px var(--background-nav) !important;
 }
 
 /* Responsive query */
-@media all and (max-width: 480px) {
+@media all and (max-width: 576px) {
 	.clients__logo {
-		margin-top: 7vh;
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 4vh 8vw;
-	}
-	.clients__logo > img {
-		border-radius: 40px;
-		width: 20vw;
+		grid-template-columns: repeat(1, 1fr);
 	}
 }
-@media all and (min-width: 481px) and (max-width: 768px) {
+@media all and (min-width: 577px) and (max-width: 768px) {
 	.clients__logo {
-		margin-top: 7vh;
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 4vh 8vw;
+		grid-template-columns: repeat(2, 1fr);
 	}
-	.clients__logo > img {
-		border-radius: 40px;
-		width: 15vw;
+}
+@media all and (min-width: 769px) and (max-width: 992px) {
+	.clients__logo {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media all and (min-width: 993px) and (max-width: 1200px) {
+	.clients__logo {
+		grid-template-columns: repeat(4, 1fr);
 	}
 }
 
@@ -415,12 +403,12 @@ button {
 	background-blend-mode: multiply;
 	position: relative;
 	z-index: 2;
-	display: flex;
-	padding: 30vh 15vw 10vh 15vw;
-	justify-content: space-between;
-	align-items: center;
 	color: var(--background);
 	min-height: 90vh;
+}
+.contact__wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 .contact article {
 	width: 33vw;
@@ -428,16 +416,23 @@ button {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+    padding-bottom: 10vh;
 }
 .contact h2 {
-	font-size: var(--font-xl);
+	font-weight: 900;
 	padding-bottom: 2vh;
 }
 .contact span {
 	border-bottom: solid var(--yellow-logo) 2px;
 }
+.contact__wrapper p {
+    font-weight: 400;
+}
+.contact__form {
+    margin-top: 29vh;
+}
 form label {
-	font-size: var(--font-s);
+	font-size: 1.6rem;
 }
 form input,
 textarea {
@@ -456,7 +451,7 @@ input[type="email"],
 input[type="text"]:not(output):not(:focus),
 input[type="email"]:not(output):not(:focus),
 textarea {
-	border-bottom: 1px solid var(--background);
+	border-bottom: 2px solid var(--background);
 	background: transparent;
 	color: var(--background);
 	font-size: var(--font-s);
@@ -468,38 +463,36 @@ input[type="email"]:focus,
 input[type="text"]:not(output):focus,
 input[type="email"]:not(output):focus,
 textarea:focus {
-	border-bottom: 1px solid #577bc1;
-	transition: 250ms;
+	border-bottom: 2px solid #577bc1;
+	transition: 300ms;
 }
 ::placeholder {
 	color: var(--background);
 }
+.form__wrapper button {
+    color: var(--yellow-logo) !important;
+    border-color: var(--yellow-logo) !important;
+}
+.form__wrapper button:hover {
+    color: #171b20 !important;
+    background-color: var(--yellow-logo) !important;
+}
 
 /* Responsive query */
-@media all and (max-width: 480px) {
-	.contact {
-		padding: 40vh 5vw 10vh 5vw;
+@media all and (max-width: 768px) {
+	.contact__wrapper {
 		flex-direction: column;
 	}
 	.contact article {
 		width: 100%;
 		padding-bottom: 10vh;
 	}
-	form input,
-	textarea,
-	label {
-		width: 100%;
-	}
-}
-@media all and (min-width: 481px) and (max-width: 768px) {
-	.contact {
-		padding: 40vh 5vw 10vh 5vw;
-		flex-direction: column;
-	}
-	.contact article {
-		width: 100%;
-		padding-bottom: 10vh;
-	}
+    .contact-title {
+        margin-top: 30vh;
+    }
+    .contact__form {
+        margin-top: 0;
+    }
 	form input,
 	textarea,
 	label {
@@ -526,7 +519,6 @@ textarea:focus {
 .footer__wrapper {
 	display: flex;
 	justify-content: space-between;
-	padding: 0 10vw;
 	align-items: center;
 }
 .footer__menu {
@@ -535,6 +527,7 @@ textarea:focus {
 }
 .footer__menu > a {
 	color: black;
+    text-decoration: none;
 }
 .footer__menu > a:hover {
 	color: var(--yellow-logo);
@@ -549,6 +542,7 @@ textarea:focus {
 }
 .footer__mark a {
 	color: black;
+    text-decoration: none;
 }
 .footer__mark a:hover {
 	color: var(--yellow-logo);
