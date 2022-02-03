@@ -192,7 +192,7 @@ i:hover {
 
 /* Responsive query */
 @media all 
-and (max-width: 480px) {
+and (max-width: 576px) {
 	.welcome__center {
 		grid-template-areas: 'presentation presentation';
 	}
@@ -212,7 +212,7 @@ and (max-width: 480px) {
 	}
 }
 @media all 
-and (min-width: 481px) 
+and (min-width: 577px) 
 and (max-width: 768px) {
 	.welcome__center {
 		grid-template-areas: 'presentation presentation';
@@ -592,13 +592,11 @@ hr {
 	display: flex;
 	flex-direction: column;
 }
-.footer__menu 
-> a {
+.footer__link {
 	color: black;
 	text-decoration: none;
 }
-.footer__menu 
-> a:hover {
+.footer__link:hover {
 	color: var(--yellow-logo);
 	transition: 600ms;
 	text-decoration: none;
@@ -625,11 +623,7 @@ i {
 	color: var(--yellow-logo);
 }
 .footer__socialmedia {
-	display: flex;
-}
-.footer__socialmedia 
-> div {
-	padding: 0 0.5vw;
+	flex-wrap: nowrap;
 }
 .footer__socialmedia 
 i {
@@ -641,22 +635,6 @@ i:hover {
 	transition: 600ms;
 }
 
-/* Responsive query */
-@media all 
-and (max-width: 480px) {
-	.footer__socialmedia > div {
-		padding: 0 1.2vw;
-	}
-}
-@media all 
-and (min-width: 481px) 
-and (max-width: 768px) {
-	.footer__socialmedia 
-    > div {
-		padding: 0 1vw;
-	}
-}
-
 /*
 ****************************************
 ****************************************
@@ -665,11 +643,15 @@ and (max-width: 768px) {
 ****************************************
 */
 .quienes__somos {
-    margin-top: 20vh;
+    margin: 10vh 0 10vh 0;
 }
 .quienes__somos 
-section {
-    margin-bottom: 7vh;
+.description {
+    margin: 5vh 0 5vh 0;
+}
+.description 
+article {
+    margin: 5vh 0 5vh 0;
 }
 .quienes__somos 
 p {
@@ -693,16 +675,20 @@ hr {
 ****************************************
 */
 .faqs {
-	padding: 20vh 15vw 5vh 15vw;
-	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/faqs.jpg)
-		top 7vh center/50vw no-repeat;
-	display: flex;
-	justify-content: space-between;
+    margin: 15vh 0 15vh 0;
+}
+.faqs 
+p {
+    font-weight: 400;
+}
+.faqs 
+.detail {
+    margin-top: 15vh;
+    justify-content: space-between;
 }
 .bulto__abierto,
 .bulto__cerrado {
-	margin-top: 60vh;
-	width: 33vw;
+	width: 45%;
 }
 .bulto__abierto 
 h2 {
@@ -711,7 +697,7 @@ h2 {
 }
 .bulto__abierto 
 hr {
-	border-top: 1px solid #13a4dd;
+	border-top: 2px solid #13a4dd;
 }
 .bulto__cerrado 
 h2 {
@@ -720,7 +706,7 @@ h2 {
 }
 .bulto__cerrado 
 hr {
-	border-top: 1px solid #7813dd;
+	border-top: 2px solid #7813dd;
 }
 .faqs 
 h2 {
@@ -730,33 +716,37 @@ h2 {
 
 /* Responsive query */
 @media all 
-and (max-width: 480px) {
-	.faqs {
-		padding: 20vh 5vw 5vh 5vw;
-		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/faqs.jpg)
-			top 7vh center/90vw no-repeat;
+and (max-width: 576px) {
+    .faqs {
+        margin: 10vh 0 10vh 0;
+    }
+	.faqs 
+    .detail {
+        margin-top: 10vh;
 		flex-direction: column;
 	}
 	.bulto__abierto,
 	.bulto__cerrado {
-		margin-top: 25vh;
-		width: 90vw;
+		width: 100%;
 	}
+    .bulto__cerrado {
+        margin-top: 10vh;
+    }
 }
 @media all 
-and (min-width: 481px) 
+and (min-width: 577px) 
 and (max-width: 768px) {
-	.faqs {
-		padding: 20vh 5vw 5vh 5vw;
-		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/faqs.jpg)
-			top 7vh center/60vw no-repeat;
+	.faqs 
+    .detail {
 		flex-direction: column;
 	}
 	.bulto__abierto,
 	.bulto__cerrado {
-		margin-top: 25vh;
-		width: 90vw;
+		width: 100%;
 	}
+    .bulto__cerrado {
+        margin-top: 10vh;
+    }
 }
 
 /*
@@ -776,7 +766,7 @@ article {
 
 /* Responsive query */
 @media all 
-and (max-width: 480px) {
+and (max-width: 576px) {
 	.condiciones {
 		margin: 20vh 5vw 5vw 5vw;
 	}
@@ -786,7 +776,7 @@ and (max-width: 480px) {
 	}
 }
 @media all 
-and (min-width: 481px) 
+and (min-width: 577px) 
 and (max-width: 768px) {
 	.condiciones {
 		margin: 20vh 10vw 5vw 10vw;
