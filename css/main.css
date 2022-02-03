@@ -1,37 +1,40 @@
+/* 
+******************************
+    reset
+******************************
+*/
 * {
 	margin: 0;
 	padding: 0;
 	outline: 0;
 	box-sizing: border-box;
 }
-
 :root {
 	--yellow-logo: #fdda00;
 	--background-nav: #18306d;
 	--background: #fff;
 }
-
 body {
 	background: var(--background);
 	color: #222831;
 	-webkit-font-smoothing: antialiased;
 	overflow-x: hidden;
 }
-
 body,
 input,
 button {
 	font-size: 16px;
 	font-family: 'Lato', sans-serif;
 }
-
 button {
 	cursor: pointer;
 }
 
-/*******************
+/*
+******************************
     navbar
-*******************/
+******************************
+*/
 .navbar {
 	position: fixed;
 	top: 0px;
@@ -72,7 +75,7 @@ button {
 	animation-fill-mode: forwards;
 	animation-timing-function: linear;
 	transition: color 300ms linear;
-    color: #f8f9fa !important;
+	color: #f8f9fa !important;
 }
 .line-animation::before {
 	position: absolute;
@@ -102,9 +105,11 @@ button {
 	}
 }
 
-/*******************
+/*
+******************************
     welcome
-*******************/
+******************************
+*/
 .welcome {
 	margin-top: 6.5vh;
 	height: 85vh;
@@ -157,7 +162,7 @@ button {
 .socialmedia i {
 	font-size: 2.25rem;
 	width: 45px;
-	color: #807B5A;
+	color: #807b5a;
 }
 .socialmedia i:hover {
 	color: var(--yellow-logo);
@@ -192,7 +197,7 @@ button {
 		width: 200px;
 	}
 	.plasticbag {
-        top: 40px;
+		top: 40px;
 		width: 200px;
 	}
 	.pizzabox {
@@ -211,9 +216,11 @@ button {
 	}
 }
 
-/*******************
+/*
+******************************
     brand
-*******************/
+******************************
+*/
 .brand__presentation {
 	margin-top: 10vh;
 }
@@ -231,41 +238,46 @@ button {
 	user-select: none;
 }
 
+/* Responsive query */
 @media (min-width: 768px) {
 	.bd-placeholder-img-lg {
 		font-size: 3.5rem;
 	}
 }
 
-/*******************
+/*
+******************************
     mania
-*******************/
+******************************
+*/
 .mania__presentation {
-    margin-top: 10vh;
+	margin-top: 10vh;
 }
 .wrapper__mania-presentation p {
-    font-weight: 400;
+	font-weight: 400;
 }
 .wrapper__mania-presentation a:hover {
-    background-color: #f8f9fa;
-    color: #0d6efd;
+	background-color: #f8f9fa;
+	color: #0d6efd;
 }
 
-/*******************
+/*
+******************************
     general products
-*******************/
+******************************
+*/
 .general__products {
-    margin-top: 20vh;
+	margin-top: 20vh;
 	display: grid;
 	grid-template-areas:
-		"restaurant verduleria panaderia"
-		"carniceria kiosco     kiosco";
+		'restaurant verduleria panaderia'
+		'carniceria kiosco     kiosco';
 	gap: 2%;
-    width: 100%;
-    padding-right: 3rem;
-    padding-left: 3rem;
-    margin-right: auto;
-    margin-left: auto;
+	width: 100%;
+	padding-right: 3rem;
+	padding-left: 3rem;
+	margin-right: auto;
+	margin-left: auto;
 }
 .products__box {
 	border-radius: 10px;
@@ -318,39 +330,41 @@ button {
 @media all and (max-width: 576px) {
 	.general__products {
 		grid-template-areas:
-			"restaurant"
-			"verduleria"
-			"panaderia"
-			"carniceria"
-			"kiosco"
-			"kiosco";
+			'restaurant'
+			'verduleria'
+			'panaderia'
+			'carniceria'
+			'kiosco'
+			'kiosco';
 	}
 }
 @media all and (min-width: 577px) and (max-width: 768px) {
 	.general__products {
 		grid-template-areas:
-			"restaurant restaurant" "verduleria carniceria"
-			"panaderia panaderia"
-			"kiosco kiosco";
+			'restaurant restaurant' 'verduleria carniceria'
+			'panaderia panaderia'
+			'kiosco kiosco';
 	}
 }
 @media all and (min-width: 769px) and (max-width: 992px) {
 	.general__products {
 		grid-template-areas:
-			"restaurant verduleria"
-			"panaderia carniceria"
-			"kiosco kiosco";
+			'restaurant verduleria'
+			'panaderia carniceria'
+			'kiosco kiosco';
 	}
 }
 
-/*******************
+/*
+******************************
     our clients
-*******************/
+******************************
+*/
 .our__clients {
-    margin-top: 20vh !important;
+	margin-top: 20vh !important;
 }
 .clients__title p {
-    font-weight: 400;
+	font-weight: 400;
 }
 .clients__title span {
 	border-bottom: solid var(--background-nav) 2px;
@@ -359,8 +373,8 @@ button {
 	margin-top: 7vh;
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
-    justify-items: center; 
-    align-items: center; 
+	justify-items: center;
+	align-items: center;
 }
 .clients__logo > img {
 	border-radius: 40px;
@@ -373,40 +387,38 @@ button {
 	.clients__logo {
 		grid-template-columns: repeat(3, 1fr);
 	}
-    .clients__logo > img {
-	    width: 5em;
-    }
+	.clients__logo > img {
+		width: 5em;
+	}
 }
 @media all and (min-width: 577px) and (max-width: 768px) {
 	.clients__logo {
 		grid-template-columns: repeat(3, 1fr);
 	}
-    .clients__logo > img {
-	    width: 5.5em;
-    }
+	.clients__logo > img {
+		width: 5.5em;
+	}
 }
 @media all and (min-width: 769px) and (max-width: 992px) {
 	.clients__logo {
 		grid-template-columns: repeat(3, 1fr);
 	}
-    .clients__logo > img {
-	    width: 6em;
-    }
+	.clients__logo > img {
+		width: 6em;
+	}
 }
 @media all and (min-width: 993px) and (max-width: 1200px) {
 	.clients__logo {
 		grid-template-columns: repeat(5, 1fr);
 	}
-    .clients__logo > img {
-	    width: 6.5em;
-    }
+	.clients__logo > img {
+		width: 6.5em;
+	}
 }
 
 /*
 ******************************
-******************************
     contact
-******************************
 ******************************
 */
 .contact {
@@ -421,8 +433,8 @@ button {
 	min-height: 90vh;
 }
 .contact__wrapper {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 .contact article {
 	width: 33vw;
@@ -430,7 +442,7 @@ button {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-    padding-bottom: 10vh;
+	padding-bottom: 10vh;
 }
 .contact h2 {
 	font-weight: 900;
@@ -440,10 +452,10 @@ button {
 	border-bottom: solid var(--yellow-logo) 2px;
 }
 .contact__wrapper p {
-    font-weight: 400;
+	font-weight: 400;
 }
 .contact__form {
-    margin-top: 29vh;
+	margin-top: 29vh;
 }
 form label {
 	font-size: 1.6rem;
@@ -460,10 +472,10 @@ form textarea {
 	height: 18vh;
 	resize: none;
 }
-input[type="text"],
-input[type="email"],
-input[type="text"]:not(output):not(:focus),
-input[type="email"]:not(output):not(:focus),
+input[type='text'],
+input[type='email'],
+input[type='text']:not(output):not(:focus),
+input[type='email']:not(output):not(:focus),
 textarea {
 	border-bottom: 2px solid var(--background);
 	background: transparent;
@@ -472,10 +484,10 @@ textarea {
 	box-shadow: none;
 	outline: none;
 }
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="text"]:not(output):focus,
-input[type="email"]:not(output):focus,
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='text']:not(output):focus,
+input[type='email']:not(output):focus,
 textarea:focus {
 	border-bottom: 2px solid #577bc1;
 	transition: 300ms;
@@ -484,12 +496,12 @@ textarea:focus {
 	color: var(--background);
 }
 .form__wrapper button {
-    color: var(--yellow-logo) !important;
-    border-color: var(--yellow-logo) !important;
+	color: var(--yellow-logo) !important;
+	border-color: var(--yellow-logo) !important;
 }
 .form__wrapper button:hover {
-    color: #171b20 !important;
-    background-color: var(--yellow-logo) !important;
+	color: #171b20 !important;
+	background-color: var(--yellow-logo) !important;
 }
 
 /* Responsive query */
@@ -501,12 +513,12 @@ textarea:focus {
 		width: 100%;
 		padding-bottom: 10vh;
 	}
-    .contact-title {
-        margin-top: 30vh;
-    }
-    .contact__form {
-        margin-top: 0;
-    }
+	.contact-title {
+		margin-top: 30vh;
+	}
+	.contact__form {
+		margin-top: 0;
+	}
 	form input,
 	textarea,
 	label {
@@ -516,9 +528,7 @@ textarea:focus {
 
 /*
 ******************************
-******************************
     footer
-******************************
 ******************************
 */
 .footer {
@@ -541,7 +551,7 @@ textarea:focus {
 }
 .footer__menu > a {
 	color: black;
-    text-decoration: none;
+	text-decoration: none;
 }
 .footer__menu > a:hover {
 	color: var(--yellow-logo);
@@ -556,7 +566,7 @@ textarea:focus {
 }
 .footer__mark a {
 	color: black;
-    text-decoration: none;
+	text-decoration: none;
 }
 .footer__mark a:hover {
 	color: var(--yellow-logo);
@@ -595,17 +605,12 @@ textarea:focus {
 /*
 ******************************
 ******************************
-******************************
-******************************
     Quienes Somos
 ******************************
 ******************************
-******************************
-******************************
-*
+*/
 .quienes__somos {
-	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/quienes_somos_background.jpg)
-		top 26vh right 13vw/25vw no-repeat;
+    margin-top: 20vh;
 }
 .historia {
 	padding: 20vh 40vw 0 20vw;
@@ -648,7 +653,7 @@ textarea:focus {
 	border-top: 1px solid #13a4dd;
 }
 
-/* Responsive query *
+/* Responsive query */
 @media all and (max-width: 480px) {
 	.quienes__somos {
 		background: none;
@@ -695,14 +700,10 @@ textarea:focus {
 /*
 ******************************
 ******************************
-******************************
-******************************
     faqs
 ******************************
 ******************************
-******************************
-******************************
-*
+*/
 .faqs {
 	padding: 20vh 15vw 5vh 15vw;
 	background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/faqs.jpg)
@@ -734,7 +735,7 @@ textarea:focus {
 	padding-bottom: 5vh;
 }
 
-/* Responsive query *
+/* Responsive query */
 @media all and (max-width: 480px) {
 	.faqs {
 		padding: 20vh 5vw 5vh 5vw;
@@ -765,14 +766,10 @@ textarea:focus {
 /*
 ******************************
 ******************************
-******************************
-******************************
     condiciones
 ******************************
 ******************************
-******************************
-******************************
-*
+*/
 .condiciones {
 	margin: 20vh 15vw 5vw 15vw;
 }
@@ -780,7 +777,7 @@ textarea:focus {
 	margin: 10vh 5vw 5vw 5vw;
 }
 
-/* Responsive query *
+/* Responsive query */
 @media all and (max-width: 480px) {
 	.condiciones {
 		margin: 20vh 5vw 5vw 5vw;
@@ -797,16 +794,3 @@ textarea:focus {
 		margin: 10vh 5vw 5vw 5vw;
 	}
 }
-
-/*
-Breakpoint
-    @media all and (min-width:1200px){ … }
-
-    @media all and (min-width: 960px) and (max-width: 1199px) { … }
-
-    @media all and (min-width: 768px) and (max-width: 959px) { … }
-
-    @media all and (min-width: 480px) and (max-width: 767px){ … }
-
-    @media all and (max-width: 479px) { … }
-*/
