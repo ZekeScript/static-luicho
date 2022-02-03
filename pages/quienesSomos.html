@@ -1,73 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Distribuidora Luicho - Quienes Somos</title>
-        <script
-			src="https://kit.fontawesome.com/7ce4d1e53b.js"
-			crossorigin="anonymous"
-		></script>
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-			crossorigin="anonymous"
-		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&family=Roboto:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="../css/main.css" />
-	</head>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Distribuidora Luicho</title>
+        
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/7ce4d1e53b.js" crossorigin="anonymous"></script>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Lato:wght@100;400;700;900&family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet" />
+
+        <!-- AOS Library -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <!-- Bootstrap CSS-->
+        <link rel="stylesheet" href="../bootstrap-local/css/bootstrap.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+
 	<body>
+    <body>
+
+        <!-- Bootstrap JS -->
+        <script src="../bootstrap-local/js/bootstrap.js"></script>
 		<header>
 			<!-- navbar -->
-			<nav class="navbar">
-				<section class="navbar__wrapper--logo">
-					<!-- brand logo -->
-					<a class="navbar__logo" href="../index.html"
-						><img
-							src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/DL_logo.png"
-							width="80"
-							alt=""
-					/></a>
-					<!-- end logo -->
-				</section>
-				<section class="navbar__wrapper">
-					<!-- navigation menu -->
-					<a
-						class="navbar__link"
-						href="./quienesSomos.html"
-						rel="noopener noreferrer"
-						>Quienes somos</a
-					>
-					<a
-						class="navbar__link"
-						href="./productos.html"
-						rel="noopener noreferrer"
-						>Productos</a
-					>
-					<a
-						class="navbar__link"
-						href="./faqs.html"
-						rel="noopener noreferrer"
-						>FAQS</a
-					>
-					<!-- end menu -->
-				</section>
-			</nav>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <section class="container-fluid nav-wrapper">
+                    <article class="navbar-wrapper-brand brand">
+                        <a class="navbar-brand" href="../index.html">
+                            <img width="80" height="80"         class="d-inline-block align-text-top"
+                                src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/DL_logo.png"
+                            />
+                        </a>
+                    </article>
+                    <article class="navbar-wrapper-toggle">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </article>
+                    <article class="collapse navbar-collapse bg-dark" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link line-animation" aria-current="page" href="../index.html"><i
+                                    class="fas fa-home"></i></a>
+                            <a class="nav-link active disabled" href="./quienesSomos.html">Quienes somos</a>
+                            <a class="nav-link line-animation" href="./productos.html">Productos</a>
+                            <a class="nav-link line-animation" href="./faqs.html">FAQS</a>
+                        </div>
+                    </article>
+                </section>
+            </nav>
 			<!-- end navbar -->
 		</header>
-		<main  class="quienes__somos">
+		<main  class="quienes__somos px-4 pt-5 my-5">
 			<!-- Cada seccion del main en esta pagina contiene informacion relevante de la empresa -->
-			<section class="historia">
+                <div class="px-4 pt-5 my-5 text-center">
+                    <h1 class="display-4 fw-bold">Quienes Somos</h1>
+                    <div class="col-lg-6 mx-auto">
+                        <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    </div>
+                    <div class="overflow-hidden" style="max-height: 30vh;">
+                        <div class="container px-5">
+                            <img src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/quienes_somos.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+			<section class="historia col-xl-8 mx-auto">
 				<h2>Historia</h2>
 				<hr />
-				<p>
+				<p class="lead mb-4">
 					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
 					fugiat voluptate ullam esse deserunt alias molestiae perspiciatis, rem
 					sit debitis eligendi incidunt, iusto blanditiis ex, adipisci earum?
@@ -89,10 +100,10 @@
 					architecto numquam. Fugiat, repudiandae?
 				</p>
 			</section>
-			<section class="equipamiento">
+			<section class="equipamiento col-xl-8 mx-auto">
 				<h2>Equipamiento</h2>
 				<hr />
-				<p>
+				<p class="lead mb-4">
 					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates
 					dicta necessitatibus autem numquam, fugiat officia ea. Iste
 					perferendis, eligendi eaque voluptas itaque incidunt consequatur eum,
@@ -103,10 +114,10 @@
 					Praesentium magnam possimus voluptate autem, velit dolores deleniti!
 				</p>
 			</section>
-			<section class="calidad">
+			<section class="calidad col-xl-8 mx-auto">
 				<h2>Calidad - Precio</h2>
 				<hr />
-				<p>
+				<p class="lead mb-4">
 					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam,
 					molestias vero ducimus qui excepturi reprehenderit quis nulla
 					perspiciatis? Earum, necessitatibus distinctio provident officia omnis
@@ -117,10 +128,10 @@
 					tenetur quos excepturi ea consequatur molestias quia consectetur.
 				</p>
 			</section>
-			<section class="produccion">
+			<section class="produccion col-xl-8 mx-auto">
 				<h2>Produccion</h2>
 				<hr />
-				<p>
+				<p class="lead mb-4">
 					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure,
 					officiis cupiditate magni ab autem ipsam voluptate similique
 					doloremque quasi quas fugiat! Quas id veritatis delectus nesciunt
@@ -131,10 +142,10 @@
 					pariatur quis veritatis optio nobis ex illo nesciunt.
 				</p>
 			</section>
-			<section class="atencion">
+			<section class="atencion col-xl-8 mx-auto">
 				<h2>Atencion al Cliente</h2>
 				<hr />
-				<p>
+				<p class="lead mb-4">
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit fugiat
 					nostrum quibusdam consequatur. Soluta quis necessitatibus asperiores
 					deserunt mollitia inventore unde atque fugiat minima voluptate non
@@ -145,10 +156,10 @@
 					pariatur quae! Vero quis modi ipsum nemo earum.
 				</p>
 			</section>
-			<section class="mision">
+			<section class="mision col-xl-8 mx-auto">
 				<h2>Mision</h2>
 				<hr />
-				<p>
+				<p class="lead mb-4">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex doloremque
 					expedita ut optio quaerat cum ad quibusdam eaque voluptatum laudantium
 					amet praesentium, facilis labore accusamus saepe molestias provident
@@ -159,10 +170,10 @@
 					odit ut fugit deleniti facilis!
 				</p>
 			</section>
-			<section class="vision">
+			<section class="vision col-xl-8 mx-auto">
 				<h2>Vision</h2>
 				<hr />
-				<p>
+				<p class="lead mb-4">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsam
 					beatae voluptate nostrum doloribus ex sint sit dolorum officia?
 					Obcaecati natus eveniet magni voluptate sapiente incidunt omnis a
@@ -173,10 +184,10 @@
 					debitis quae placeat.
 				</p>
 			</section>
-			<section class="valores">
+			<section class="valores col-xl-8 mx-auto">
 				<h2>Valores</h2>
 				<hr />
-				<p>
+				<p class="lead mb-4">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
 					commodi neque dolores, incidunt aliquid reprehenderit doloribus
 					sapiente! Quasi, recusandae dolor sunt repellendus, rem sequi officia
@@ -189,77 +200,50 @@
 				</p>
 			</section>
 		</main>
-		<footer class="footer">
-			<section class="footer__wrapper">
-				<article class="footer__menu">
-					<!-- footer nav -->
-					<a
-						class="footer__link"
-						href="./quienesSomos.html"
-						rel="noopener noreferrer"
-						>Quienes somos</a
-					>
-					<a
-						class="footer__link"
-						href="./productos.html"
-						rel="noopener noreferrer"
-						>Productos</a
-					>
-					<a
-						class="footer__link"
-						href="./faqs.html"
-						rel="noopener noreferrer"
-						>FAQS</a
-					>
-					<a
-						class="footer__link"
-						href="./condiciones.html"
-						rel="noopener noreferrer"
-						>Terminos y condiciones</a
-					>
-					<!-- end footer nav -->
-				</article>
-				<!-- socialmedia links -->
-				<article class="footer__socialmedia">
-					<div class="socialmedia__facebook">
-						<a
-							href="https://www.facebook.com/DistribuidoraLuicho"
-							target="_blank"
-							><i class="fab fa-facebook" style="font-size: 2rem"></i
-						></a>
-					</div>
-					<div class="socialmedia__instagram">
-						<a
-							href="https://www.instagram.com/distribuidoraluicho_/"
-							target="_blank"
-							><i class="fab fa-instagram" style="font-size: 2rem"></i
-						></a>
-					</div>
-					<div class="socialmedia__whatsapp">
-						<a
-							href="https://wa.me/543794335737/?text=Me%20interesa%20el%20producto"
-							target="_blank"
-							><i class="fab fa-whatsapp" style="font-size: 2rem"></i
-						></a>
-					</div>
-					<div class="socialmedia__mail">
-						<a href="mailto:Distribuidoraluicho@yahoo.com" target="_blank"
-							><i
-								class="fas fa-envelope-open-text"
-								style="font-size: 2rem"
-							></i
-						></a>
-					</div>
-				</article>
-				<!-- end socialmedia -->
-			</section>
-			<hr />
-			<section class="footer__mark">
-				<p>
-					Powered by
-					<a href="https://github.com/estga" target="_blank">estga</a>
-				</p>
-			</section>
-		</footer>
+        <footer class="footer">            
+            <section class="footer__wrapper d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+                <article class="footer__menu col-md-4 d-flex align-items-center">
+                    <!-- footer nav -->
+                    <a class="footer__link mb-3 me-2 mb-md-0 text-decoration-none lh-1" href="../pages/quienesSomos.html" rel="noopener noreferrer">Quienes somos</a>
+                    <a class="footer__link mb-3 me-2 mb-md-0 text-decoration-none lh-1" href="../pages/productos.html" rel="noopener noreferrer">Productos</a>
+                    <a class="footer__link mb-3 me-2 mb-md-0 text-decoration-none lh-1" href="../pages/faqs.html" rel="noopener noreferrer">FAQS</a>
+                    <a class="footer__link mb-3 me-2 mb-md-0 text-decoration-none lh-1" href="../pages/condiciones.html" rel="noopener noreferrer">Terminos y
+                        condiciones</a>
+                    <!-- end footer nav -->
+                </article>
+                <!-- socialmedia links -->
+                <ul class="footer__socialmedia nav col-md-4 justify-content-center list-unstyled d-flex col-3 offset-1">
+                    <li class="socialmedia__facebook ms-3">
+                        <a href="https://www.facebook.com/DistribuidoraLuicho" target="_blank"><i
+                                class="fab fa-facebook" style="font-size: 2rem"></i></a>
+                    </li>
+                    <li class="socialmedia__instagram ms-3">
+                        <a href="https://www.instagram.com/distribuidoraluicho_/" target="_blank"><i
+                                class="fab fa-instagram" style="font-size: 2rem"></i></a>
+                    </li>
+                    <li class="socialmedia__whatsapp ms-3">
+                        <a href="https://wa.me/543794335737/?text=Me%20interesa%20el%20producto" target="_blank"><i
+                                class="fab fa-whatsapp" style="font-size: 2rem"></i></a>
+                    </li>
+                    <li class="socialmedia__mail ms-3">
+                        <a href="mailto:Distribuidoraluicho@yahoo.com" target="_blank"><i
+                                class="fas fa-envelope-open-text" style="font-size: 2rem"></i></a>
+                    </li>
+                </ul>
+                <!-- end socialmedia -->
+            </section>
+            <hr />
+            <section class="footer__mark">
+                <p>
+                    <i class="fas fa-bolt"></i> by
+                    <a href="https://github.com/estga" target="_blank">estga</a>
+                </p>
+            </section>
+        </footer>
+        <!-- AOS JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 	</body>
 </html>
