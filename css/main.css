@@ -1,7 +1,7 @@
 /* 
-******************************
+****************************************
     reset
-******************************
+****************************************
 */
 * {
 	margin: 0;
@@ -31,9 +31,9 @@ button {
 }
 
 /*
-******************************
+****************************************
     navbar
-******************************
+****************************************
 */
 .navbar {
 	position: fixed;
@@ -106,9 +106,9 @@ button {
 }
 
 /*
-******************************
+****************************************
     welcome
-******************************
+****************************************
 */
 .welcome {
 	margin-top: 6.5vh;
@@ -145,11 +145,13 @@ button {
 	justify-self: right;
 	align-self: center;
 }
-.welcome .display-1 {
+.welcome 
+.display-1 {
 	font-weight: 1000;
 	color: var(--yellow-logo);
 }
-.welcome .display-6 {
+.welcome 
+.display-6 {
 	font-weight: 500;
 	color: var(--background);
 }
@@ -159,12 +161,14 @@ button {
 	right: 10vw;
 	bottom: 150px;
 }
-.socialmedia i {
+.socialmedia 
+i {
 	font-size: 2.25rem;
 	width: 45px;
 	color: #807b5a;
 }
-.socialmedia i:hover {
+.socialmedia 
+i:hover {
 	color: var(--yellow-logo);
 	transition: 300ms;
 }
@@ -175,17 +179,20 @@ button {
 	top: 86vh;
 	z-index: 1;
 }
-.fixed_button i {
+.fixed_button 
+i {
 	color: #2b2b2b;
 	font-size: 4rem;
 }
-.fixed_button i:hover {
+.fixed_button 
+i:hover {
 	color: #25d366;
 	transition: 600ms;
 }
 
 /* Responsive query */
-@media all and (max-width: 480px) {
+@media all 
+and (max-width: 480px) {
 	.welcome__center {
 		grid-template-areas: 'presentation presentation';
 	}
@@ -204,7 +211,9 @@ button {
 		display: none;
 	}
 }
-@media all and (min-width: 481px) and (max-width: 768px) {
+@media all 
+and (min-width: 481px) 
+and (max-width: 768px) {
 	.welcome__center {
 		grid-template-areas: 'presentation presentation';
 	}
@@ -217,17 +226,20 @@ button {
 }
 
 /*
-******************************
+****************************************
     brand
-******************************
+****************************************
 */
 .brand__presentation {
 	margin-top: 10vh;
 }
-.brand__presentation > .bg-light {
+.brand__presentation 
+> .bg-light {
 	background: #fddb00a8 !important;
 }
-.brand__presentation .icon-square i {
+.brand__presentation 
+.icon-square 
+i {
 	font-size: 2em;
 }
 .bd-placeholder-img {
@@ -246,25 +258,27 @@ button {
 }
 
 /*
-******************************
+****************************************
     mania
-******************************
+****************************************
 */
 .mania__presentation {
 	margin-top: 10vh;
 }
-.wrapper__mania-presentation p {
+.wrapper__mania-presentation 
+p {
 	font-weight: 400;
 }
-.wrapper__mania-presentation a:hover {
+.wrapper__mania-presentation 
+a:hover {
 	background-color: #f8f9fa;
 	color: #0d6efd;
 }
 
 /*
-******************************
+****************************************
     general products
-******************************
+****************************************
 */
 .general__products {
 	margin-top: 20vh;
@@ -291,11 +305,13 @@ button {
 	transform: scale(1.2);
 	transition: 300ms;
 }
-.general__products h2 {
+.general__products 
+h2 {
 	padding-bottom: 1vh;
 	font-size: 30px;
 }
-.products__box div {
+.products__box 
+div {
 	background-color: var(--background);
 	border-radius: 20px;
 	padding: 2%;
@@ -327,7 +343,8 @@ button {
 }
 
 /* Responsive query */
-@media all and (max-width: 576px) {
+@media all 
+and (max-width: 576px) {
 	.general__products {
 		grid-template-areas:
 			'restaurant'
@@ -338,7 +355,9 @@ button {
 			'kiosco';
 	}
 }
-@media all and (min-width: 577px) and (max-width: 768px) {
+@media all 
+and (min-width: 577px) 
+and (max-width: 768px) {
 	.general__products {
 		grid-template-areas:
 			'restaurant restaurant' 'verduleria carniceria'
@@ -346,7 +365,9 @@ button {
 			'kiosco kiosco';
 	}
 }
-@media all and (min-width: 769px) and (max-width: 992px) {
+@media all 
+and (min-width: 769px) 
+and (max-width: 992px) {
 	.general__products {
 		grid-template-areas:
 			'restaurant verduleria'
@@ -356,17 +377,19 @@ button {
 }
 
 /*
-******************************
+****************************************
     our clients
-******************************
+****************************************
 */
 .our__clients {
 	margin-top: 20vh !important;
 }
-.clients__title p {
+.clients__title 
+p {
 	font-weight: 400;
 }
-.clients__title span {
+.clients__title 
+span {
 	border-bottom: solid var(--background-nav) 2px;
 }
 .clients__logo {
@@ -376,14 +399,16 @@ button {
 	justify-items: center;
 	align-items: center;
 }
-.clients__logo > img {
+.clients__logo 
+> img {
 	border-radius: 40px;
 	width: 7em;
 	border: solid 2px var(--background-nav) !important;
 }
 
 /* Responsive query */
-@media all and (max-width: 576px) {
+@media all 
+and (max-width: 576px) {
 	.clients__logo {
 		grid-template-columns: repeat(3, 1fr);
 	}
@@ -391,35 +416,44 @@ button {
 		width: 5em;
 	}
 }
-@media all and (min-width: 577px) and (max-width: 768px) {
+@media all 
+and (min-width: 577px) 
+and (max-width: 768px) {
 	.clients__logo {
 		grid-template-columns: repeat(3, 1fr);
 	}
-	.clients__logo > img {
+	.clients__logo 
+    > img {
 		width: 5.5em;
 	}
 }
-@media all and (min-width: 769px) and (max-width: 992px) {
+@media all 
+and (min-width: 769px) 
+and (max-width: 992px) {
 	.clients__logo {
 		grid-template-columns: repeat(3, 1fr);
 	}
-	.clients__logo > img {
+	.clients__logo 
+    > img {
 		width: 6em;
 	}
 }
-@media all and (min-width: 993px) and (max-width: 1200px) {
+@media all 
+and (min-width: 993px) 
+and (max-width: 1200px) {
 	.clients__logo {
 		grid-template-columns: repeat(5, 1fr);
 	}
-	.clients__logo > img {
+	.clients__logo 
+    > img {
 		width: 6.5em;
 	}
 }
 
 /*
-******************************
+****************************************
     contact
-******************************
+****************************************
 */
 .contact {
 	clip-path: polygon(0 100%, 100% 100%, 100% 20%, 40% 20%, 28% 0, 28% 20%, 0 20%);
@@ -436,7 +470,8 @@ button {
 	display: flex;
 	justify-content: space-between;
 }
-.contact article {
+.contact 
+article {
 	width: 33vw;
 	display: flex;
 	flex-direction: column;
@@ -444,14 +479,17 @@ button {
 	align-items: center;
 	padding-bottom: 10vh;
 }
-.contact h2 {
+.contact 
+h2 {
 	font-weight: 900;
 	padding-bottom: 2vh;
 }
-.contact span {
+.contact 
+span {
 	border-bottom: solid var(--yellow-logo) 2px;
 }
-.contact__wrapper p {
+.contact__wrapper 
+p {
 	font-weight: 400;
 }
 .contact__form {
@@ -468,7 +506,8 @@ textarea {
 	width: 33vw;
 	margin-bottom: 2vh;
 }
-form textarea {
+form 
+textarea {
 	height: 18vh;
 	resize: none;
 }
@@ -495,17 +534,20 @@ textarea:focus {
 ::placeholder {
 	color: var(--background);
 }
-.form__wrapper button {
+.form__wrapper 
+button {
 	color: var(--yellow-logo) !important;
 	border-color: var(--yellow-logo) !important;
 }
-.form__wrapper button:hover {
+.form__wrapper 
+button:hover {
 	color: #171b20 !important;
 	background-color: var(--yellow-logo) !important;
 }
 
 /* Responsive query */
-@media all and (max-width: 768px) {
+@media all 
+and (max-width: 768px) {
 	.contact__wrapper {
 		flex-direction: column;
 	}
@@ -527,9 +569,9 @@ textarea:focus {
 }
 
 /*
-******************************
+****************************************
     footer
-******************************
+****************************************
 */
 .footer {
 	position: relative;
@@ -537,7 +579,8 @@ textarea:focus {
 	background-color: var(--background-nav);
 	padding: 1vh 0;
 }
-.footer hr {
+.footer 
+hr {
 	border-top: solid 1px var(--yellow-logo);
 }
 .footer__wrapper {
@@ -549,11 +592,13 @@ textarea:focus {
 	display: flex;
 	flex-direction: column;
 }
-.footer__menu > a {
+.footer__menu 
+> a {
 	color: black;
 	text-decoration: none;
 }
-.footer__menu > a:hover {
+.footer__menu 
+> a:hover {
 	color: var(--yellow-logo);
 	transition: 600ms;
 	text-decoration: none;
@@ -564,118 +609,88 @@ textarea:focus {
 	align-items: baseline;
 	justify-content: center;
 }
-.footer__mark a {
+.footer__mark 
+a {
 	color: black;
 	text-decoration: none;
 }
-.footer__mark a:hover {
+.footer__mark 
+a:hover {
 	color: var(--yellow-logo);
 	transition: 600ms;
 	text-decoration: none;
 }
-.footer__mark i {
+.footer__mark 
+i {
 	color: var(--yellow-logo);
 }
 .footer__socialmedia {
 	display: flex;
 }
-.footer__socialmedia > div {
+.footer__socialmedia 
+> div {
 	padding: 0 0.5vw;
 }
-.footer__socialmedia i {
+.footer__socialmedia 
+i {
 	color: #171b20;
 }
-.footer__socialmedia i:hover {
+.footer__socialmedia 
+i:hover {
 	color: var(--yellow-logo);
 	transition: 600ms;
 }
 
 /* Responsive query */
-@media all and (max-width: 480px) {
+@media all 
+and (max-width: 480px) {
 	.footer__socialmedia > div {
 		padding: 0 1.2vw;
 	}
 }
-@media all and (min-width: 481px) and (max-width: 768px) {
-	.footer__socialmedia > div {
+@media all 
+and (min-width: 481px) 
+and (max-width: 768px) {
+	.footer__socialmedia 
+    > div {
 		padding: 0 1vw;
 	}
 }
 
 /*
-******************************
-******************************
+****************************************
+****************************************
     Quienes Somos
-******************************
-******************************
+****************************************
+****************************************
 */
 .quienes__somos {
     margin-top: 20vh;
 }
-.quienes__somos section {
+.quienes__somos 
+section {
     margin-bottom: 7vh;
 }
-.quienes__somos p {
+.quienes__somos 
+p {
 	font-weight: 400;
 }
-.quienes__somos h2 {
+.quienes__somos 
+h2 {
 	color: #13a4dd;
 	font-weight: 900;
 }
-.quienes__somos hr {
+.quienes__somos 
+hr {
 	border-top: 2px solid #13a4dd;
 }
 
-/* Responsive query *
-@media all and (max-width: 480px) {
-	.quienes__somos {
-		background: none;
-	}
-	.historia {
-		padding: 10vh 10vw 0 10vw;
-	}
-	.equipamiento {
-		padding: 10vh 10vw 0 10vw;
-	}
-	.calidad,
-	.produccion,
-	.atencion,
-	.mision,
-	.vision {
-		padding: 10vh 10vw 0 10vw;
-	}
-	.valores {
-		padding: 10vh 10vw 10vh 10vw;
-	}
-}
-@media all and (min-width: 481px) and (max-width: 768px) {
-	.quienes__somos {
-		background: none;
-	}
-	.historia {
-		padding: 10vh 10vw 0 10vw;
-	}
-	.equipamiento {
-		padding: 10vh 10vw 0 10vw;
-	}
-	.calidad,
-	.produccion,
-	.atencion,
-	.mision,
-	.vision {
-		padding: 10vh 10vw 0 10vw;
-	}
-	.valores {
-		padding: 10vh 10vw 10vh 10vw;
-	}
-}
-
 /*
-******************************
-******************************
+****************************************
+****************************************
     faqs
-******************************
-******************************
+****************************************
+****************************************
 */
 .faqs {
 	padding: 20vh 15vw 5vh 15vw;
@@ -689,27 +704,33 @@ textarea:focus {
 	margin-top: 60vh;
 	width: 33vw;
 }
-.bulto__abierto h2 {
+.bulto__abierto 
+h2 {
 	color: #13a4dd;
 	font-weight: 900;
 }
-.bulto__abierto hr {
+.bulto__abierto 
+hr {
 	border-top: 1px solid #13a4dd;
 }
-.bulto__cerrado h2 {
+.bulto__cerrado 
+h2 {
 	color: #7813dd;
 	font-weight: 900;
 }
-.bulto__cerrado hr {
+.bulto__cerrado 
+hr {
 	border-top: 1px solid #7813dd;
 }
-.faqs h2 {
+.faqs 
+h2 {
 	text-align: center;
 	padding-bottom: 5vh;
 }
 
 /* Responsive query */
-@media all and (max-width: 480px) {
+@media all 
+and (max-width: 480px) {
 	.faqs {
 		padding: 20vh 5vw 5vh 5vw;
 		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/faqs.jpg)
@@ -722,7 +743,9 @@ textarea:focus {
 		width: 90vw;
 	}
 }
-@media all and (min-width: 481px) and (max-width: 768px) {
+@media all 
+and (min-width: 481px) 
+and (max-width: 768px) {
 	.faqs {
 		padding: 20vh 5vw 5vh 5vw;
 		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/faqs.jpg)
@@ -737,33 +760,39 @@ textarea:focus {
 }
 
 /*
-******************************
-******************************
+****************************************
+****************************************
     condiciones
-******************************
-******************************
+****************************************
+****************************************
 */
 .condiciones {
 	margin: 20vh 15vw 5vw 15vw;
 }
-.condiciones article {
+.condiciones 
+article {
 	margin: 10vh 5vw 5vw 5vw;
 }
 
 /* Responsive query */
-@media all and (max-width: 480px) {
+@media all 
+and (max-width: 480px) {
 	.condiciones {
 		margin: 20vh 5vw 5vw 5vw;
 	}
-	.condiciones article {
+	.condiciones 
+    article {
 		margin: 10vh 5vw 5vw 5vw;
 	}
 }
-@media all and (min-width: 481px) and (max-width: 768px) {
+@media all 
+and (min-width: 481px) 
+and (max-width: 768px) {
 	.condiciones {
 		margin: 20vh 10vw 5vw 10vw;
 	}
-	.condiciones article {
+	.condiciones 
+    article {
 		margin: 10vh 5vw 5vw 5vw;
 	}
 }
