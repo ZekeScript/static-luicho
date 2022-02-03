@@ -55,7 +55,7 @@ button {
 	z-index: 2;
 }
 .brand {
-	box-shadow: 0px 35px 30px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 33px 25px rgba(0, 0, 0, 0.2);
 }
 .navbar-wrapper-toggle {
 	align-self: baseline;
@@ -756,8 +756,14 @@ and (max-width: 768px) {
 ****************************************
 */
 .condiciones {
-	margin-top: 20vh;
+	margin-top: 10vh;
     margin-bottom: 10vw;
+}
+.condiciones 
+.detail 
+article {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 .condiciones 
 p {
