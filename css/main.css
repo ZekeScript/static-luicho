@@ -627,6 +627,7 @@ i {
 }
 .footer__socialmedia 
 i {
+    width: 25px;
 	color: #171b20;
 }
 .footer__socialmedia 
@@ -675,7 +676,8 @@ hr {
 ****************************************
 */
 .faqs {
-    margin: 15vh 0 15vh 0;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 .faqs 
 p {
@@ -683,7 +685,8 @@ p {
 }
 .faqs 
 .detail {
-    margin-top: 15vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     justify-content: space-between;
 }
 .bulto__abierto,
@@ -717,12 +720,8 @@ h2 {
 /* Responsive query */
 @media all 
 and (max-width: 576px) {
-    .faqs {
-        margin: 10vh 0 10vh 0;
-    }
 	.faqs 
     .detail {
-        margin-top: 10vh;
 		flex-direction: column;
 	}
 	.bulto__abierto,
@@ -757,32 +756,11 @@ and (max-width: 768px) {
 ****************************************
 */
 .condiciones {
-	margin: 20vh 15vw 5vw 15vw;
+	margin-top: 20vh;
+    margin-bottom: 10vw;
 }
 .condiciones 
-article {
-	margin: 10vh 5vw 5vw 5vw;
+p {
+    font-weight: 400;
 }
 
-/* Responsive query */
-@media all 
-and (max-width: 576px) {
-	.condiciones {
-		margin: 20vh 5vw 5vw 5vw;
-	}
-	.condiciones 
-    article {
-		margin: 10vh 5vw 5vw 5vw;
-	}
-}
-@media all 
-and (min-width: 577px) 
-and (max-width: 768px) {
-	.condiciones {
-		margin: 20vh 10vw 5vw 10vw;
-	}
-	.condiciones 
-    article {
-		margin: 10vh 5vw 5vw 5vw;
-	}
-}
