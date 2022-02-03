@@ -612,48 +612,21 @@ textarea:focus {
 .quienes__somos {
     margin-top: 20vh;
 }
-.historia {
-	padding: 20vh 40vw 0 20vw;
+.quienes__somos section {
+    margin-bottom: 7vh;
 }
-.equipamiento {
-	padding: 10vh 40vw 0 20vw;
+.quienes__somos p {
+	font-weight: 400;
 }
-.calidad,
-.produccion,
-.atencion,
-.mision,
-.vision {
-	padding: 10vh 20vw 0 20vw;
-}
-.valores {
-	padding: 10vh 20vw 10vh 20vw;
-}
-.quienes__somos__text > section {
-	padding: 5vh 0;
-}
-.historia h2,
-.equipamiento h2,
-.calidad h2,
-.produccion h2,
-.atencion h2,
-.mision h2,
-.vision h2,
-.valores h2 {
+.quienes__somos h2 {
 	color: #13a4dd;
 	font-weight: 900;
 }
-.historia hr,
-.equipamiento hr,
-.calidad hr,
-.produccion hr,
-.atencion hr,
-.mision hr,
-.vision hr,
-.valores hr {
-	border-top: 1px solid #13a4dd;
+.quienes__somos hr {
+	border-top: 2px solid #13a4dd;
 }
 
-/* Responsive query */
+/* Responsive query *
 @media all and (max-width: 480px) {
 	.quienes__somos {
 		background: none;
