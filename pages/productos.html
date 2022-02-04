@@ -4,100 +4,348 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Distribuidora Luicho - Productos</title>
-        <script
+		<title>Distribuidora Luicho</title>
+
+		<!-- Font Awesome -->
+		<script
 			src="https://kit.fontawesome.com/7ce4d1e53b.js"
 			crossorigin="anonymous"
 		></script>
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-			crossorigin="anonymous"
-		/>
+
+		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&family=Roboto:wght@400;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Lato:wght@100;400;700;900&family=Roboto:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
+
+		<!-- AOS Library -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+		<!-- Bootstrap CSS-->
+		<link rel="stylesheet" href="../bootstrap-local/css/bootstrap.css" />
 		<link rel="stylesheet" href="../css/main.css" />
 	</head>
 	<body>
+		<!-- Bootstrap JS -->
+		<script src="../bootstrap-local/js/bootstrap.js"></script>
+
 		<header>
 			<!-- navbar -->
-			<nav class="navbar">
-				<section class="navbar__wrapper--logo">
-					<!-- brand logo -->
-					<a class="navbar__logo" href="../index.html"
-						><img
-							src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/DL_logo.png"
-							width="80"
-							alt=""
-					/></a>
-					<!-- end logo -->
-				</section>
-				<section class="navbar__wrapper">
-					<!-- navigation menu -->
-					<a
-						class="navbar__link"
-						href="./quienesSomos.html"
-						rel="noopener noreferrer"
-						>Quienes somos</a
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<section class="container-fluid nav-wrapper">
+					<article class="navbar-wrapper-brand brand">
+						<a class="navbar-brand" href="../index.html">
+							<img
+								width="80"
+								height="80"
+								class="d-inline-block align-text-top"
+								src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/DL_logo.png"
+							/>
+						</a>
+					</article>
+					<article class="navbar-wrapper-toggle">
+						<button
+							class="navbar-toggler"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarNavAltMarkup"
+							aria-controls="navbarNavAltMarkup"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					</article>
+					<article
+						class="collapse navbar-collapse bg-dark"
+						id="navbarNavAltMarkup"
 					>
-					<a
-						class="navbar__link"
-						href="./productos.html"
-						rel="noopener noreferrer"
-						>Productos</a
-					>
-					<a
-						class="navbar__link"
-						href="./faqs.html"
-						rel="noopener noreferrer"
-						>FAQS</a
-					>
-					<!-- end menu -->
+						<div class="navbar-nav">
+							<a
+								class="nav-link line-animation"
+								aria-current="page"
+								href="../index.html"
+								><i class="fas fa-home"></i
+							></a>
+							<a
+								class="nav-link line-animation"
+								href="../pages/quienesSomos.html"
+								>Quienes somos</a
+							>
+							<a
+								class="nav-link active disabled"
+								href="../pages/productos.html"
+								>Productos</a
+							>
+							<a class="nav-link line-animation" href="../pages/faqs.html"
+								>FAQS</a
+							>
+						</div>
+					</article>
 				</section>
 			</nav>
 			<!-- end navbar -->
 		</header>
-		<main>
+		<main class="productos">
 			<!-- aside con los filtros de busqueda -->
-			<aside>
-				<h2>Productos</h2>
-				<section>
-					<!-- aca van los filtros -->
+			<section
+				class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light"
+			>
+				<article class="col-md-5 p-lg-5 mx-auto my-5">
+					<h1 class="display-4 fw-normal">Productos</h1>
+					<p class="lead fw-normal">
+						Nos especializamos en productos y envases descartables, para
+						alimentos, bebidas, higiene y embalaje. Tambien producimos insumos
+						de limpieza y desinfeccion bajo nuestra marca Manía.
+					</p>
+				</article>
+			</section>
+			<section class="album py-5 bg-light">
+				<section class="container">
+
+					<section class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+						<article class="col">
+							<div class="card shadow-sm" style="width: 18rem">
+								<img src="https://raw.githubusercontent.com/estga/super-chainsaw/productos-with-bootstrap/images/productos/6126df9c-tripodes.jpg" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">
+										Some quick example text to build on the card title
+										and make up the bulk of the card's content.
+									</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</article>
+						<article class="col">
+							<div class="card shadow-sm" style="width: 18rem">
+								<img src="https://raw.githubusercontent.com/estga/super-chainsaw/productos-with-bootstrap/images/productos/Arranque-AD-Allegra-scaled.jpg" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">
+										Some quick example text to build on the card title
+										and make up the bulk of the card's content.
+									</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</article>
+						<article class="col">
+							<div class="card shadow-sm" style="width: 18rem">
+								<img src="https://raw.githubusercontent.com/estga/super-chainsaw/productos-with-bootstrap/images/productos/D_NQ_NP_2X_627248-MLA44753325960_012021-F.webp" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">
+										Some quick example text to build on the card title
+										and make up the bulk of the card's content.
+									</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</article>
+
+						<article class="col">
+							<div class="card shadow-sm" style="width: 18rem">
+								<img src="https://raw.githubusercontent.com/estga/super-chainsaw/productos-with-bootstrap/images/productos/D_NQ_NP_644057-MLA48701128806_122021-W.jpg" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">
+										Some quick example text to build on the card title
+										and make up the bulk of the card's content.
+									</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</article>
+						<article class="col">
+							<div class="card shadow-sm" style="width: 18rem">
+								<img src="https://raw.githubusercontent.com/estga/super-chainsaw/productos-with-bootstrap/images/productos/D_NQ_NP_673068-MLA46667926157_072021-O.webp" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">
+										Some quick example text to build on the card title
+										and make up the bulk of the card's content.
+									</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</article>
+						<article class="col">
+							<div class="card shadow-sm" style="width: 18rem">
+								<img src="https://raw.githubusercontent.com/estga/super-chainsaw/productos-with-bootstrap/images/productos/D_NQ_NP_755977-MLA45753917569_042021-O.webp" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">
+										Some quick example text to build on the card title
+										and make up the bulk of the card's content.
+									</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</article>
+
+						<article class="col">
+							<div class="card shadow-sm" style="width: 18rem">
+								<img src="https://raw.githubusercontent.com/estga/super-chainsaw/productos-with-bootstrap/images/productos/D_NQ_NP_832763-MLA45369365361_032021-O.webp" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">
+										Some quick example text to build on the card title
+										and make up the bulk of the card's content.
+									</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</article>
+						<article class="col">
+							<div class="card shadow-sm" style="width: 18rem">
+								<img src="https://raw.githubusercontent.com/estga/super-chainsaw/productos-with-bootstrap/images/productos/D_NQ_NP_897336-MLA42095444034_062020-O.webp" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">
+										Some quick example text to build on the card title
+										and make up the bulk of the card's content.
+									</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</article>
+						<article class="col">
+							<div class="card shadow-sm" style="width: 18rem">
+								<img src="https://raw.githubusercontent.com/estga/super-chainsaw/productos-with-bootstrap/images/productos/baldes.jpg" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">
+										Some quick example text to build on the card title
+										and make up the bulk of the card's content.
+									</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</article>
+                        <article class="col">
+							<div class="card shadow-sm" style="width: 18rem">
+								<img src="https://raw.githubusercontent.com/estga/super-chainsaw/productos-with-bootstrap/images/productos/bolsa-ad-15x20-x-1000----------------------------.jpg" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">
+										Some quick example text to build on the card title
+										and make up the bulk of the card's content.
+									</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</article>
+                        <article class="col">
+							<div class="card shadow-sm" style="width: 18rem">
+								<img src="https://raw.githubusercontent.com/estga/super-chainsaw/productos-with-bootstrap/images/productos/bolsas-emblocadas-20x30-x100u.jpg" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">
+										Some quick example text to build on the card title
+										and make up the bulk of the card's content.
+									</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</article>
+                        <article class="col">
+							<div class="card shadow-sm" style="width: 18rem">
+								<img src="https://raw.githubusercontent.com/estga/super-chainsaw/productos-with-bootstrap/images/productos/descarga%20(1).jpeg" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">
+										Some quick example text to build on the card title
+										and make up the bulk of the card's content.
+									</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</article>
+                        <article class="col">
+							<div class="card shadow-sm" style="width: 18rem">
+								<img src="https://raw.githubusercontent.com/estga/super-chainsaw/productos-with-bootstrap/images/productos/escobillon.jpg" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">
+										Some quick example text to build on the card title
+										and make up the bulk of the card's content.
+									</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</article>
+                        <article class="col">
+							<div class="card shadow-sm" style="width: 18rem">
+								<img src="https://raw.githubusercontent.com/estga/super-chainsaw/productos-with-bootstrap/images/productos/esponja.jpg" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">
+										Some quick example text to build on the card title
+										and make up the bulk of the card's content.
+									</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</article>
+                        <article class="col">
+							<div class="card shadow-sm" style="width: 18rem">
+								<img src="https://raw.githubusercontent.com/estga/super-chainsaw/productos-with-bootstrap/images/productos/franela.jpg" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">
+										Some quick example text to build on the card title
+										and make up the bulk of the card's content.
+									</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</article>
+                        <article class="col">
+							<div class="card shadow-sm" style="width: 18rem">
+								<img src="https://raw.githubusercontent.com/estga/super-chainsaw/productos-with-bootstrap/images/productos/trapo.jpg" class="card-img-top" alt="..." />
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">
+										Some quick example text to build on the card title
+										and make up the bulk of the card's content.
+									</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</article>
+					</section>
 				</section>
-			</aside>
-			<section>
-				<!-- aca van las fotos de los productos con su respectivo detalle y precio -->
 			</section>
 		</main>
 		<footer class="footer">
-			<section class="footer__wrapper">
-				<article class="footer__menu">
+			<section
+				class="footer__wrapper d-flex flex-wrap justify-content-between align-items-center py-3 my-4"
+			>
+				<article class="footer__menu col-md-4 d-flex align-items-center">
 					<!-- footer nav -->
 					<a
-						class="footer__link"
+						class="footer__link mb-3 me-2 mb-md-0 text-decoration-none lh-1"
 						href="./quienesSomos.html"
 						rel="noopener noreferrer"
 						>Quienes somos</a
 					>
 					<a
-						class="footer__link"
+						class="footer__link mb-3 me-2 mb-md-0 text-decoration-none lh-1"
 						href="./productos.html"
 						rel="noopener noreferrer"
 						>Productos</a
 					>
 					<a
-						class="footer__link"
+						class="footer__link mb-3 me-2 mb-md-0 text-decoration-none lh-1"
 						href="./faqs.html"
 						rel="noopener noreferrer"
 						>FAQS</a
 					>
 					<a
-						class="footer__link"
+						class="footer__link mb-3 me-2 mb-md-0 text-decoration-none lh-1"
 						href="./condiciones.html"
 						rel="noopener noreferrer"
 						>Terminos y condiciones</a
@@ -105,46 +353,53 @@
 					<!-- end footer nav -->
 				</article>
 				<!-- socialmedia links -->
-				<article class="footer__socialmedia">
-					<div class="socialmedia__facebook">
+				<ul
+					class="footer__socialmedia nav col-md-4 justify-content-center list-unstyled d-flex col-4 offset-1"
+				>
+					<li class="socialmedia__facebook ms-3">
 						<a
 							href="https://www.facebook.com/DistribuidoraLuicho"
 							target="_blank"
 							><i class="fab fa-facebook" style="font-size: 2rem"></i
 						></a>
-					</div>
-					<div class="socialmedia__instagram">
+					</li>
+					<li class="socialmedia__instagram ms-3">
 						<a
 							href="https://www.instagram.com/distribuidoraluicho_/"
 							target="_blank"
 							><i class="fab fa-instagram" style="font-size: 2rem"></i
 						></a>
-					</div>
-					<div class="socialmedia__whatsapp">
+					</li>
+					<li class="socialmedia__whatsapp ms-3">
 						<a
 							href="https://wa.me/543794335737/?text=Me%20interesa%20el%20producto"
 							target="_blank"
 							><i class="fab fa-whatsapp" style="font-size: 2rem"></i
 						></a>
-					</div>
-					<div class="socialmedia__mail">
+					</li>
+					<li class="socialmedia__mail ms-3">
 						<a href="mailto:Distribuidoraluicho@yahoo.com" target="_blank"
 							><i
 								class="fas fa-envelope-open-text"
 								style="font-size: 2rem"
 							></i
 						></a>
-					</div>
-				</article>
+					</li>
+				</ul>
 				<!-- end socialmedia -->
 			</section>
 			<hr />
 			<section class="footer__mark">
 				<p>
-					Powered by
+					<i class="fas fa-bolt"></i> by
 					<a href="https://github.com/estga" target="_blank">estga</a>
 				</p>
 			</section>
 		</footer>
+		<!-- AOS JS -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 	</body>
 </html>
