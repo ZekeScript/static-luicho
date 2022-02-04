@@ -579,7 +579,6 @@ textarea:focus {
 }
 .footer__socialmedia {
 	flex-wrap: nowrap;
-    border: solid;
     justify-content: end;
 }
 .footer__socialmedia i {
