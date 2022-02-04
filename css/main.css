@@ -13,7 +13,6 @@
 	--yellow-logo: #fdda00;
 	--background-nav: #18306d;
 	--background: #fff;
-    --bs-primary: #136bd1 !important;
 }
 body {
 	background: var(--background);
