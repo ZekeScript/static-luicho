@@ -13,6 +13,7 @@
 	--yellow-logo: #fdda00;
 	--background-nav: #18306d;
 	--background: #fff;
+    --bs-primary: #136bd1 !important;
 }
 body {
 	background: var(--background);
@@ -261,10 +262,6 @@ button {
 }
 .wrapper__mania-presentation p {
 	font-weight: 400;
-}
-.wrapper__mania-presentation a:hover {
-	background-color: #f8f9fa;
-	color: #0d6efd;
 }
 
 /*
