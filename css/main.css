@@ -119,20 +119,18 @@ button {
 	left: -60px;
 	position: absolute;
 	width: 300px;
-    overflow-x: hidden;
+	overflow-x: hidden;
 }
 .plasticbag {
 	width: 300px;
 	position: absolute;
 	top: -50px;
 	right: -50px;
-    overflow-x: hidden;
+	overflow-x: hidden;
 }
-.sponge 
-img,
-.plasticbag 
-img {
-    width: 100%;
+.sponge img,
+.plasticbag img {
+	width: 100%;
 }
 .pizzabox {
 	grid-area: pizzabox;
@@ -514,6 +512,9 @@ textarea:focus {
 
 /* Responsive query */
 @media all and (max-width: 768px) {
+	.contact {
+		background-size: 100vw;
+	}
 	.contact__wrapper {
 		flex-direction: column;
 	}
@@ -586,7 +587,7 @@ textarea:focus {
 }
 .footer__socialmedia {
 	flex-wrap: nowrap;
-    justify-content: end;
+	justify-content: end;
 }
 .footer__socialmedia i {
 	width: 20px;
@@ -609,11 +610,11 @@ textarea:focus {
 }
 .quienes__somos .description {
 	margin-top: 5vh;
-    margin-bottom: 10vh;
+	margin-bottom: 10vh;
 }
 .description article {
 	margin-top: 5vh;
-    margin-bottom: 5vh;
+	margin-bottom: 5vh;
 }
 .quienes__somos p {
 	font-weight: 400;
