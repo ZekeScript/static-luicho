@@ -119,13 +119,20 @@ button {
 	left: -60px;
 	position: absolute;
 	width: 300px;
+    overflow-x: hidden;
 }
 .plasticbag {
 	width: 300px;
 	position: absolute;
 	top: -50px;
 	right: -50px;
-    overflow: hidden;
+    overflow-x: hidden;
+}
+.sponge 
+img,
+.plasticbag 
+img {
+    width: 100%;
 }
 .pizzabox {
 	grid-area: pizzabox;
