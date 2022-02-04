@@ -598,13 +598,15 @@ textarea:focus {
 ****************************************
 */
 .quienes__somos {
-	margin: 10vh 0 10vh 0;
+	margin-top: 10vh;
 }
 .quienes__somos .description {
-	margin: 5vh 0 5vh 0;
+	margin-top: 5vh;
+    margin-bottom: 10vh;
 }
 .description article {
-	margin: 5vh 0 5vh 0;
+	margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 .quienes__somos p {
 	font-weight: 400;
