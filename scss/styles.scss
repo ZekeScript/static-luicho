@@ -1,3 +1,99 @@
-// Esto es un comentario de scss
+/* 
+****************************************
+    reset
+****************************************
+*/
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+:root {
+	--yellow-logo: #fdda00;
+	--background-nav: #18306d;
+	--background: #fff;
+}
+body {
+	background: var(--background);
+	color: #222831;
+	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
+}
+body,
+input,
+button {
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+}
+button {
+	cursor: pointer;
+}
 
-/* Esto es un comentario de css */
+/*
+****************************************
+    navbar
+****************************************
+*/
+.bg-dark {
+	background-color: #18306d !important;
+}
+.navbar {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+	z-index: 3;
+	.nav-wrapper {
+		padding-inline: 10vw;
+		.brand {
+			width: 80px;
+			height: 56px;
+			z-index: 2;
+			box-shadow: 0px 33px 25px rgba(0, 0, 0, 0.2);
+			img:hover {
+				animation: navbarLogo 600ms linear forwards;
+			}
+			@keyframes navbarLogo {
+				50% {
+					transform: scaleX(-1);
+				}
+				100% {
+					transform: scaleX(1);
+				}
+			}
+		}
+		.navbar-wrapper-toggle {
+			align-self: baseline;
+		}
+		.navbar-collapse {
+			justify-content: right;
+			.navbar-nav {
+				display: flex;
+				align-items: center;
+				.line-animation {
+					position: relative;
+					&:hover {
+						animation: navbarMenu linear forwards;
+						transition: color 300ms linear;
+						color: #f8f9fa !important;
+						&::before {
+							width: 100%;
+						}
+					}
+					&::before {
+						position: absolute;
+						bottom: 0px;
+						left: 0px;
+						content: '';
+						background: var(--yellow-logo);
+						width: 0%;
+						height: 2px;
+						transition: width 300ms linear;
+					}
+				}
+			}
+		}
+	}
+}
