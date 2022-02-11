@@ -97,3 +97,496 @@ button {
 		}
 	}
 }
+
+/*
+****************************************
+    welcome
+****************************************
+*/
+.sponge {
+	top: -70px;
+	left: -60px;
+	position: absolute;
+	width: 300px;
+	overflow-x: hidden;
+	img {
+		width: 100%;
+	}
+}
+.plasticbag {
+	width: 300px;
+	position: absolute;
+	top: -50px;
+	right: -50px;
+	overflow-x: hidden;
+	img {
+		width: 100%;
+	}
+}
+.welcome {
+	margin-top: 6.5vh;
+	height: 85vh;
+	.welcome__center {
+		top: 27vh;
+		height: 50vh;
+		width: 100vw;
+		position: absolute;
+		display: grid;
+		grid-template-areas: 'presentation pizzabox';
+		.presentation {
+			grid-area: presentation;
+			justify-self: end;
+			align-self: center;
+			.display-1 {
+				font-weight: 1000;
+				color: var(--yellow-logo);
+			}
+			.display-6 {
+				font-weight: 500;
+				color: var(--background);
+			}
+		}
+		.pizzabox {
+			grid-area: pizzabox;
+			max-width: 50vw;
+			justify-self: end;
+			align-self: center;
+		}
+	}
+	.socialmedia {
+		position: absolute;
+		display: flex;
+		right: 10vw;
+		bottom: 150px;
+		i {
+			font-size: 2.25rem;
+			width: 45px;
+			color: #807b5a;
+			&:hover {
+				color: var(--yellow-logo);
+				transition: 300ms;
+			}
+		}
+	}
+}
+
+/* Responsive query */
+@media all and (max-width: 576px) {
+	.sponge {
+		top: 10px;
+		width: 200px;
+	}
+	.plasticbag {
+		top: 40px;
+		width: 200px;
+	}
+	.welcome__center {
+		grid-template-areas: 'presentation presentation';
+		.presentation {
+			justify-self: center;
+		}
+		.pizzabox {
+			display: none;
+		}
+	}
+}
+@media all and (min-width: 577px) and (max-width: 768px) {
+	.welcome__center {
+		grid-template-areas: 'presentation presentation';
+		.presentation {
+			justify-self: center;
+		}
+		.pizzabox {
+			display: none;
+		}
+	}
+}
+
+/*
+****************************************
+    brand
+****************************************
+*/
+.brand__presentation {
+	margin-top: 10vh;
+	article:first-child {
+		background: #fddb00a8 !important;
+	}
+	.icon-square {
+		i {
+			font-size: 2em;
+		}
+	}
+}
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+/* Responsive query */
+@media (min-width: 768px) {
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	}
+}
+
+/*
+****************************************
+    mania
+****************************************
+*/
+.mania__presentation {
+	margin-top: 10vh;
+	p {
+		font-weight: 400;
+	}
+}
+.fixed_button {
+	float: right;
+	margin-right: 3vw;
+	position: sticky;
+	top: 86vh;
+	z-index: 1;
+	i {
+		color: #2b2b2b;
+		font-size: 4rem;
+		&:hover {
+			color: #25d366;
+			transition: 600ms;
+		}
+	}
+}
+
+/*
+****************************************
+    general products
+****************************************
+*/
+.general__products {
+	margin-top: 20vh;
+	display: grid;
+	grid-template-areas:
+		'restaurant verduleria panaderia'
+		'carniceria kiosco     kiosco';
+	gap: 2%;
+	width: 100%;
+	padding-right: 3rem;
+	padding-left: 3rem;
+	margin-right: auto;
+	margin-left: auto;
+	.products__box {
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		padding: 10%;
+		h2 {
+			padding-bottom: 1vh;
+			font-size: 30px;
+		}
+		div {
+			background-color: var(--background);
+			border-radius: 20px;
+			padding: 2%;
+		}
+	}
+	.restaurant {
+		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/restaurant_background.jpg)
+			center/cover no-repeat;
+		grid-area: restaurant;
+	}
+	.kiosco {
+		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background_supermarket.jpg)
+			center/cover no-repeat;
+		grid-area: kiosco;
+	}
+	.verduleria {
+		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/greengrocery_pattern.jpg)
+			center/cover no-repeat;
+		grid-area: verduleria;
+	}
+	.panaderia {
+		background: url(https://github.com/estga/super-chainsaw/blob/main/images/bakery_pattern.jpg?raw=true)
+			center/cover no-repeat;
+		grid-area: panaderia;
+	}
+	.carniceria {
+		background: url(https://github.com/estga/super-chainsaw/blob/main/images/meat_pattern.jpg?raw=true)
+			center/cover no-repeat;
+		grid-area: carniceria;
+	}
+}
+
+/* Responsive query */
+@media all and (max-width: 576px) {
+	.general__products {
+		grid-template-areas:
+			'restaurant'
+			'verduleria'
+			'panaderia'
+			'carniceria'
+			'kiosco'
+			'kiosco';
+	}
+}
+@media all and (min-width: 577px) and (max-width: 768px) {
+	.general__products {
+		grid-template-areas:
+			'restaurant restaurant' 'verduleria carniceria'
+			'panaderia panaderia'
+			'kiosco kiosco';
+	}
+}
+@media all and (min-width: 769px) and (max-width: 992px) {
+	.general__products {
+		grid-template-areas:
+			'restaurant verduleria'
+			'panaderia carniceria'
+			'kiosco kiosco';
+	}
+}
+
+/*
+****************************************
+    our clients
+****************************************
+*/
+.our__clients {
+	margin-top: 20vh !important;
+	p {
+		font-weight: 400;
+	}
+	span {
+		border-bottom: solid var(--background-nav) 2px;
+	}
+	.clients__logo {
+		margin-top: 7vh;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		justify-items: center;
+		align-items: center;
+		img {
+			border-radius: 40px;
+			width: 7em;
+			border: solid 2px var(--background-nav) !important;
+		}
+	}
+}
+
+/* Responsive query */
+@media all and (max-width: 576px) {
+	.clients__logo {
+		grid-template-columns: repeat(3, 1fr);
+		img {
+			width: 5em;
+		}
+	}
+}
+@media all and (min-width: 577px) and (max-width: 768px) {
+	.clients__logo {
+		grid-template-columns: repeat(3, 1fr);
+		img {
+			width: 5.5em;
+		}
+	}
+}
+@media all and (min-width: 769px) and (max-width: 992px) {
+	.clients__logo {
+		grid-template-columns: repeat(3, 1fr);
+		img {
+			width: 6em;
+		}
+	}
+}
+@media all and (min-width: 993px) and (max-width: 1200px) {
+	.clients__logo {
+		grid-template-columns: repeat(5, 1fr);
+		img {
+			width: 6.5em;
+		}
+	}
+}
+
+/*
+****************************************
+    contact
+****************************************
+*/
+.contact {
+	clip-path: polygon(0 100%, 100% 100%, 100% 20%, 40% 20%, 28% 0, 28% 20%, 0 20%);
+	background: #222831
+		url(https://raw.githubusercontent.com/estga/furry-journey/main/images/mailGraphic.png)
+		center left/66vh no-repeat;
+	background-blend-mode: multiply;
+	position: relative;
+	z-index: 2;
+	color: var(--background);
+	min-height: 90vh;
+	.contact__wrapper {
+		display: flex;
+		justify-content: space-between;
+		article {
+			width: 33vw;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding-bottom: 10vh;
+			&:first-child {
+				h2 {
+					font-weight: 900;
+					padding-bottom: 2vh;
+				}
+				span {
+					border-bottom: solid var(--yellow-logo) 2px;
+				}
+				p {
+					font-weight: 400;
+				}
+			}
+		}
+		.form__wrapper {
+			.contact__form {
+				margin-top: 29vh;
+				label {
+					font-size: 1.6rem;
+				}
+				input,
+				textarea {
+					border: none;
+					padding: 1rem;
+					height: 6vh;
+					width: 33vw;
+					margin-bottom: 2vh;
+				}
+				textarea {
+					height: 18vh;
+					resize: none;
+				}
+				input[type='text'],
+				input[type='email'],
+				input[type='text']:not(output):not(:focus),
+				input[type='email']:not(output):not(:focus),
+				textarea {
+					border-bottom: 2px solid var(--background);
+					background: transparent;
+					color: var(--background);
+					font-size: var(--font-s);
+					box-shadow: none;
+					outline: none;
+				}
+				input[type='text']:focus,
+				input[type='email']:focus,
+				input[type='text']:not(output):focus,
+				input[type='email']:not(output):focus,
+				textarea:focus {
+					border-bottom: 2px solid #577bc1;
+					transition: 300ms;
+				}
+				::placeholder {
+					color: var(--background);
+				}
+			}
+			button {
+				color: var(--yellow-logo) !important;
+				border-color: var(--yellow-logo) !important;
+				&:hover {
+					color: #171b20 !important;
+					background-color: var(--yellow-logo) !important;
+				}
+			}
+		}
+	}
+}
+
+/* Responsive query */
+@media all and (max-width: 768px) {
+	.contact {
+		background-size: 100vw;
+		.contact__wrapper {
+			flex-direction: column;
+			article {
+				width: 100%;
+				padding-bottom: 10vh;
+				&:first-child {
+					margin-top: 30vh;
+				}
+			}
+			.contact__form {
+				margin-top: 0;
+				form input,
+				textarea,
+				label {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+/*
+****************************************
+    footer
+****************************************
+*/
+.footer {
+	position: relative;
+	z-index: 2;
+	background-color: var(--background-nav);
+	padding: 1vh 0;
+    .footer__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .footer__menu {
+            display: flex;
+            flex-direction: column;
+            .footer__link {
+                color: black;
+                text-decoration: none;
+                &:hover {
+                    color: var(--yellow-logo);
+                    transition: 600ms;
+                    text-decoration: none;
+                }
+            }
+        }
+        .footer__socialmedia {
+            flex-wrap: nowrap;
+            justify-content: end;
+            i {
+                width: 20px;
+                color: #171b20;
+                &:hover {
+                    color: var(--yellow-logo);
+                    transition: 600ms;
+                }
+            }
+        }
+    }
+    hr {
+        border-top: solid 1px var(--yellow-logo);
+    }
+    .footer__mark {
+        color: black;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        a {
+            color: black;
+            text-decoration: none;
+            &:hover {
+                color: var(--yellow-logo);
+                transition: 600ms;
+                text-decoration: none;
+            }
+        }
+        i {
+            color: var(--yellow-logo);
+        }
+    }
+}
