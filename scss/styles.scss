@@ -1,3 +1,7 @@
+// Import
+@import "fonts";
+@import "colors";
+
 /* 
 ****************************************
     reset
@@ -9,13 +13,8 @@
 	outline: 0;
 	box-sizing: border-box;
 }
-:root {
-	--yellow-logo: #fdda00;
-	--background-nav: #18306d;
-	--background: #fff;
-}
 body {
-	background: var(--background);
+	background: $--background;
 	color: #222831;
 	-webkit-font-smoothing: antialiased;
 	overflow-x: hidden;
@@ -24,7 +23,7 @@ body,
 input,
 button {
 	font-size: 16px;
-	font-family: 'Lato', sans-serif;
+	font-family: $font;
 }
 button {
 	cursor: pointer;
@@ -87,7 +86,7 @@ button {
 						bottom: 0px;
 						left: 0px;
 						content: '';
-						background: var(--yellow-logo);
+						background: $--yellow-logo;
 						width: 0%;
 						height: 2px;
 						transition: width 300ms linear;
@@ -139,11 +138,11 @@ button {
 			align-self: center;
 			.display-1 {
 				font-weight: 1000;
-				color: var(--yellow-logo);
+				color: $--yellow-logo;
 			}
 			.display-6 {
 				font-weight: 500;
-				color: var(--background);
+				color: $--background;
 			}
 		}
 		.pizzabox {
@@ -163,7 +162,7 @@ button {
 			width: 45px;
 			color: #807b5a;
 			&:hover {
-				color: var(--yellow-logo);
+				color: $--yellow-logo;
 				transition: 300ms;
 			}
 		}
@@ -289,33 +288,33 @@ button {
 			font-size: 30px;
 		}
 		div {
-			background-color: var(--background);
+			background-color: $--background;
 			border-radius: 20px;
 			padding: 2%;
 		}
 	}
 	.restaurant {
-		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/restaurant_background.jpg)
+		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background_restaurant.jpg)
 			center/cover no-repeat;
 		grid-area: restaurant;
 	}
 	.kiosco {
-		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background_supermarket.jpg)
+		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background_kiosco.jpg)
 			center/cover no-repeat;
 		grid-area: kiosco;
 	}
 	.verduleria {
-		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/greengrocery_pattern.jpg)
+		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background_verduleria.jpg)
 			center/cover no-repeat;
 		grid-area: verduleria;
 	}
 	.panaderia {
-		background: url(https://github.com/estga/super-chainsaw/blob/main/images/bakery_pattern.jpg?raw=true)
+		background: url(https://github.com/estga/super-chainsaw/blob/main/images/background_panaderia.jpg?raw=true)
 			center/cover no-repeat;
 		grid-area: panaderia;
 	}
 	.carniceria {
-		background: url(https://github.com/estga/super-chainsaw/blob/main/images/meat_pattern.jpg?raw=true)
+		background: url(https://github.com/estga/super-chainsaw/blob/main/images/background_carniceria.jpg?raw=true)
 			center/cover no-repeat;
 		grid-area: carniceria;
 	}
@@ -336,7 +335,8 @@ button {
 @media all and (min-width: 577px) and (max-width: 768px) {
 	.general__products {
 		grid-template-areas:
-			'restaurant restaurant' 'verduleria carniceria'
+			'restaurant restaurant'
+            'verduleria carniceria'
 			'panaderia panaderia'
 			'kiosco kiosco';
 	}
@@ -361,7 +361,7 @@ button {
 		font-weight: 400;
 	}
 	span {
-		border-bottom: solid var(--background-nav) 2px;
+		border-bottom: solid $--background-nav 2px;
 	}
 	.clients__logo {
 		margin-top: 7vh;
@@ -372,7 +372,7 @@ button {
 		img {
 			border-radius: 40px;
 			width: 7em;
-			border: solid 2px var(--background-nav) !important;
+			border: solid 2px $--background-nav !important;
 		}
 	}
 }
@@ -424,7 +424,7 @@ button {
 	background-blend-mode: multiply;
 	position: relative;
 	z-index: 2;
-	color: var(--background);
+	color: $--background;
 	min-height: 90vh;
 	.contact__wrapper {
 		display: flex;
@@ -442,7 +442,7 @@ button {
 					padding-bottom: 2vh;
 				}
 				span {
-					border-bottom: solid var(--yellow-logo) 2px;
+					border-bottom: solid $--yellow-logo 2px;
 				}
 				p {
 					font-weight: 400;
@@ -472,10 +472,9 @@ button {
 				input[type='text']:not(output):not(:focus),
 				input[type='email']:not(output):not(:focus),
 				textarea {
-					border-bottom: 2px solid var(--background);
+					border-bottom: 2px solid $--background;
 					background: transparent;
-					color: var(--background);
-					font-size: var(--font-s);
+					color: $--background;
 					box-shadow: none;
 					outline: none;
 				}
@@ -488,15 +487,15 @@ button {
 					transition: 300ms;
 				}
 				::placeholder {
-					color: var(--background);
+					color: $--background;
 				}
 			}
 			button {
-				color: var(--yellow-logo) !important;
-				border-color: var(--yellow-logo) !important;
+				color: $--yellow-logo !important;
+				border-color: $--yellow-logo !important;
 				&:hover {
 					color: #171b20 !important;
-					background-color: var(--yellow-logo) !important;
+					background-color: $--yellow-logo !important;
 				}
 			}
 		}
@@ -536,7 +535,7 @@ button {
 .footer {
 	position: relative;
 	z-index: 2;
-	background-color: var(--background-nav);
+	background-color: $--background-nav;
 	padding: 1vh 0;
     .footer__wrapper {
         display: flex;
@@ -549,7 +548,7 @@ button {
                 color: black;
                 text-decoration: none;
                 &:hover {
-                    color: var(--yellow-logo);
+                    color: $--yellow-logo;
                     transition: 600ms;
                     text-decoration: none;
                 }
@@ -562,14 +561,14 @@ button {
                 width: 20px;
                 color: #171b20;
                 &:hover {
-                    color: var(--yellow-logo);
+                    color: $--yellow-logo;
                     transition: 600ms;
                 }
             }
         }
     }
     hr {
-        border-top: solid 1px var(--yellow-logo);
+        border-top: solid 1px $--yellow-logo;
     }
     .footer__mark {
         color: black;
@@ -580,13 +579,13 @@ button {
             color: black;
             text-decoration: none;
             &:hover {
-                color: var(--yellow-logo);
+                color: $--yellow-logo;
                 transition: 600ms;
                 text-decoration: none;
             }
         }
         i {
-            color: var(--yellow-logo);
+            color: $--yellow-logo;
         }
     }
 }
