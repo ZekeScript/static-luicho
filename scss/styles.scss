@@ -1,3 +1,7 @@
+@import "colors";
+@import "url-map";
+@import "fonts";
+
 /* 
 ****************************************
     reset
@@ -293,32 +297,14 @@ button {
 			border-radius: 20px;
 			padding: 2%;
 		}
-	}
-	.restaurant {
-		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/restaurant_background.jpg)
-			center/cover no-repeat;
-		grid-area: restaurant;
-	}
-	.kiosco {
-		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background_supermarket.jpg)
-			center/cover no-repeat;
-		grid-area: kiosco;
-	}
-	.verduleria {
-		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/greengrocery_pattern.jpg)
-			center/cover no-repeat;
-		grid-area: verduleria;
-	}
-	.panaderia {
-		background: url(https://github.com/estga/super-chainsaw/blob/main/images/bakery_pattern.jpg?raw=true)
-			center/cover no-repeat;
-		grid-area: panaderia;
-	}
-	.carniceria {
-		background: url(https://github.com/estga/super-chainsaw/blob/main/images/meat_pattern.jpg?raw=true)
-			center/cover no-repeat;
-		grid-area: carniceria;
-	}
+	}// uso del mapa
+	@each $name-url, $url in $url-map {
+        .#{$name-url} {
+		    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background_#{$url}.jpg)
+			    center/cover no-repeat;
+		    grid-area: #{$url};
+	    }
+    }
 }
 
 /* Responsive query */
