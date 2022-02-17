@@ -1,5 +1,6 @@
 /* Variables */
 /* Colores */
+/* Map */
 /* 
 ****************************************
     reset
@@ -241,21 +242,21 @@ button {
       background-color: #fff;
       border-radius: 20px;
       padding: 2%; }
-  .general__products .restaurant {
-    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background_restaurant.jpg) center/cover no-repeat;
-    grid-area: restaurant; }
-  .general__products .kiosco {
-    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background_kiosco.jpg) center/cover no-repeat;
-    grid-area: kiosco; }
-  .general__products .verduleria {
-    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background_verduleria.jpg) center/cover no-repeat;
-    grid-area: verduleria; }
-  .general__products .panaderia {
-    background: url(https://github.com/estga/super-chainsaw/blob/main/images/background_panaderia.jpg?raw=true) center/cover no-repeat;
-    grid-area: panaderia; }
-  .general__products .carniceria {
-    background: url(https://github.com/estga/super-chainsaw/blob/main/images/background_carniceria.jpg?raw=true) center/cover no-repeat;
-    grid-area: carniceria; }
+  .general__products .restaurant restaurant {
+    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background_url.jpg) center/cover no-repeat;
+    grid-area: restaurant restaurant; }
+  .general__products .kiosco kiosco {
+    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background_url.jpg) center/cover no-repeat;
+    grid-area: kiosco kiosco; }
+  .general__products .verduleria verduleria {
+    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background_url.jpg) center/cover no-repeat;
+    grid-area: verduleria verduleria; }
+  .general__products .panaderia panaderia {
+    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background_url.jpg) center/cover no-repeat;
+    grid-area: panaderia panaderia; }
+  .general__products .carniceria carniceria {
+    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background_url.jpg) center/cover no-repeat;
+    grid-area: carniceria carniceria; }
 
 /* Responsive query */
 @media all and (max-width: 576px) {

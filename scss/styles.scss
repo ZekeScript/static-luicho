@@ -1,6 +1,7 @@
 // Import
 @import "fonts";
 @import "colors";
+@import "url-map";
 
 /* 
 ****************************************
@@ -293,31 +294,13 @@ button {
 			padding: 2%;
 		}
 	}
-	.restaurant {
-		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background_restaurant.jpg)
-			center/cover no-repeat;
-		grid-area: restaurant;
-	}
-	.kiosco {
-		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background_kiosco.jpg)
-			center/cover no-repeat;
-		grid-area: kiosco;
-	}
-	.verduleria {
-		background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background_verduleria.jpg)
-			center/cover no-repeat;
-		grid-area: verduleria;
-	}
-	.panaderia {
-		background: url(https://github.com/estga/super-chainsaw/blob/main/images/background_panaderia.jpg?raw=true)
-			center/cover no-repeat;
-		grid-area: panaderia;
-	}
-	.carniceria {
-		background: url(https://github.com/estga/super-chainsaw/blob/main/images/background_carniceria.jpg?raw=true)
-			center/cover no-repeat;
-		grid-area: carniceria;
-	}
+    @each $url in $url-map {
+        .#{$url} {
+		    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background_#{url}.jpg)
+			    center/cover no-repeat;
+		    grid-area: #{$url};
+	    }
+    }
 }
 
 /* Responsive query */
