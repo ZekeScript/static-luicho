@@ -1,3 +1,4 @@
+/* Imports */
 @import "colors";
 @import "url-map";
 @import "fonts";
@@ -13,13 +14,8 @@
 	outline: 0;
 	box-sizing: border-box;
 }
-:root {
-	--yellow-logo: #fdda00;
-	--background-nav: #18306d;
-	--background: #fff;
-}
 body {
-	background: var(--background);
+	background: $--background;
 	color: #222831;
 	-webkit-font-smoothing: antialiased;
 	overflow-x: hidden;
@@ -28,7 +24,7 @@ body,
 input,
 button {
 	font-size: 16px;
-	font-family: 'Lato', sans-serif;
+	font-family: $font;
 }
 button {
 	cursor: pointer;
@@ -39,6 +35,10 @@ button {
     navbar
 ****************************************
 */
+@mixin tamanio($alto, $ancho) {     //definicion de mixin
+    height: $alto;
+    width: $ancho;
+}
 .bg-dark {
 	background-color: #18306d !important;
 }
@@ -52,8 +52,7 @@ button {
 	.nav-wrapper {
 		padding-inline: 10vw;
 		.brand {
-			width: 80px;
-			height: 56px;
+            @include tamanio(56px, 80px);       //uso de mixin
 			z-index: 2;
 			box-shadow: 0px 33px 25px rgba(0, 0, 0, 0.2);
 			img:hover {
@@ -91,9 +90,8 @@ button {
 						bottom: 0px;
 						left: 0px;
 						content: '';
-						background: var(--yellow-logo);
-						width: 0%;
-						height: 2px;
+						background: $--yellow-logo;
+                        @include tamanio(2px, 0%);      //uso de mixin
 						transition: width 300ms linear;
 					}
 				}
@@ -132,8 +130,7 @@ button {
 	height: 85vh;
 	.welcome__center {
 		top: 27vh;
-		height: 50vh;
-		width: 100vw;
+        @include tamanio(50vh, 100vw);
 		position: absolute;
 		display: grid;
 		grid-template-areas: 'presentation pizzabox';
@@ -143,18 +140,17 @@ button {
 			align-self: center;
 			.display-1 {
 				font-weight: 1000;
-				color: var(--yellow-logo);
+				color: $--yellow-logo;
 			}
 			.display-6 {
 				font-weight: 500;
-				color: var(--background);
+				color: $--background;
 			}
 		}
 		.pizzabox {
+            @extend .presentation; //extend y reescritura de grid-area
 			grid-area: pizzabox;
 			max-width: 50vw;
-			justify-self: end;
-			align-self: center;
 		}
 	}
 	.socialmedia {
@@ -167,7 +163,7 @@ button {
 			width: 45px;
 			color: #807b5a;
 			&:hover {
-				color: var(--yellow-logo);
+				color: $--yellow-logo;
 				transition: 300ms;
 			}
 		}
@@ -293,11 +289,11 @@ button {
 			font-size: 30px;
 		}
 		div {
-			background-color: var(--background);
+			background-color: $--background;
 			border-radius: 20px;
 			padding: 2%;
 		}
-	}// uso del mapa
+	}// uso del mapa url-map
 	@each $name-url, $url in $url-map {
         .#{$name-url} {
 		    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background_#{$url}.jpg)
@@ -347,7 +343,7 @@ button {
 		font-weight: 400;
 	}
 	span {
-		border-bottom: solid var(--background-nav) 2px;
+		border-bottom: solid $--background-nav 2px;
 	}
 	.clients__logo {
 		margin-top: 7vh;
@@ -358,7 +354,7 @@ button {
 		img {
 			border-radius: 40px;
 			width: 7em;
-			border: solid 2px var(--background-nav) !important;
+			border: solid 2px $--background-nav !important;
 		}
 	}
 }
@@ -410,7 +406,7 @@ button {
 	background-blend-mode: multiply;
 	position: relative;
 	z-index: 2;
-	color: var(--background);
+	color: $--background;
 	min-height: 90vh;
 	.contact__wrapper {
 		display: flex;
@@ -428,7 +424,7 @@ button {
 					padding-bottom: 2vh;
 				}
 				span {
-					border-bottom: solid var(--yellow-logo) 2px;
+					border-bottom: solid $--yellow-logo 2px;
 				}
 				p {
 					font-weight: 400;
@@ -445,8 +441,7 @@ button {
 				textarea {
 					border: none;
 					padding: 1rem;
-					height: 6vh;
-					width: 33vw;
+                    @include tamanio(6vh, 33vw);        //uso de mixin
 					margin-bottom: 2vh;
 				}
 				textarea {
@@ -458,10 +453,9 @@ button {
 				input[type='text']:not(output):not(:focus),
 				input[type='email']:not(output):not(:focus),
 				textarea {
-					border-bottom: 2px solid var(--background);
+					border-bottom: 2px solid $--background;
 					background: transparent;
-					color: var(--background);
-					font-size: var(--font-s);
+					color: $--background;
 					box-shadow: none;
 					outline: none;
 				}
@@ -474,15 +468,15 @@ button {
 					transition: 300ms;
 				}
 				::placeholder {
-					color: var(--background);
+					color: $--background;
 				}
 			}
 			button {
-				color: var(--yellow-logo) !important;
-				border-color: var(--yellow-logo) !important;
+				color: $--yellow-logo !important;
+				border-color: $--yellow-logo !important;
 				&:hover {
 					color: #171b20 !important;
-					background-color: var(--yellow-logo) !important;
+					background-color: $--yellow-logo !important;
 				}
 			}
 		}
@@ -522,7 +516,7 @@ button {
 .footer {
 	position: relative;
 	z-index: 2;
-	background-color: var(--background-nav);
+	background-color: $--background-nav;
 	padding: 1vh 0;
     .footer__wrapper {
         display: flex;
@@ -535,7 +529,7 @@ button {
                 color: black;
                 text-decoration: none;
                 &:hover {
-                    color: var(--yellow-logo);
+                    color: $--yellow-logo;
                     transition: 600ms;
                     text-decoration: none;
                 }
@@ -548,14 +542,14 @@ button {
                 width: 20px;
                 color: #171b20;
                 &:hover {
-                    color: var(--yellow-logo);
+                    color: $--yellow-logo;
                     transition: 600ms;
                 }
             }
         }
     }
     hr {
-        border-top: solid 1px var(--yellow-logo);
+        border-top: solid 1px $--yellow-logo;
     }
     .footer__mark {
         color: black;
@@ -566,13 +560,13 @@ button {
             color: black;
             text-decoration: none;
             &:hover {
-                color: var(--yellow-logo);
+                color: $--yellow-logo;
                 transition: 600ms;
                 text-decoration: none;
             }
         }
         i {
-            color: var(--yellow-logo);
+            color: $--yellow-logo;
         }
     }
 }
