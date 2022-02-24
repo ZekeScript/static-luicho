@@ -100,7 +100,7 @@ button {
   width: 300px;
   position: absolute;
   top: -50px;
-  right: -50px; }
+  right: 0px; }
   .plasticbag img {
     width: 100%; }
 
