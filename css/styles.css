@@ -13,11 +13,12 @@
   outline: 0;
   box-sizing: border-box; }
 
-body {
+main {
   background: #fff;
   color: #222831;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  width: 100vw; }
 
 body,
 input,
@@ -58,8 +59,6 @@ button {
     transform: scaleX(-1); }
   100% {
     transform: scaleX(1); } }
-    .navbar .nav-wrapper .navbar-wrapper-toggle {
-      align-self: baseline; }
     .navbar .nav-wrapper .navbar-collapse {
       justify-content: right; }
       .navbar .nav-wrapper .navbar-collapse .navbar-nav {
