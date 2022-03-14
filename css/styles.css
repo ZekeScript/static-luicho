@@ -84,7 +84,7 @@ button {
             transition: width 300ms linear; }
 
 /* Responsive query */
-@media all and (max-width: 576px) {
+@media all and (max-width: 768px) {
   .nav-wrapper {
     padding-inline: 0vw; } }
 
