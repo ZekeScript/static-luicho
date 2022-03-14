@@ -83,6 +83,11 @@ button {
             width: 0%;
             transition: width 300ms linear; }
 
+/* Responsive query */
+@media all and (max-width: 576px) {
+  .nav-wrapper {
+    padding-inline: 0vw; } }
+
 /*
 ****************************************
     welcome
