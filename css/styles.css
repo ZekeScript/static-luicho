@@ -91,21 +91,21 @@ button {
 ****************************************
 */
 .welcome {
-  margin-top: 6.5vh;
   height: 85vh;
+  margin-top: 6.5vh;
   overflow-x: hidden; }
   .welcome .sponge {
-    top: 0px;
+    top: -50px;
     left: 0px;
-    position: absolute;
-    width: 300px; }
+    width: 300px;
+    position: absolute; }
     .welcome .sponge img {
       width: 100%; }
   .welcome .plasticbag {
+    top: -50px;
+    right: 0px;
     width: 300px;
-    position: absolute;
-    top: 0px;
-    right: 0px; }
+    position: absolute; }
     .welcome .plasticbag img {
       width: 100%; }
   .welcome .welcome__center {

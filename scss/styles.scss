@@ -108,23 +108,23 @@ button {
 ****************************************
 */
 .welcome {
-	margin-top: 6.5vh;
 	height: 85vh;
+	margin-top: 6.5vh;
 	overflow-x: hidden;
 	.sponge {
-		top: 0px;
+        top: -50px;
 		left: 0px;
-		position: absolute;
 		width: 300px;
+		position: absolute;
 		img {
 			width: 100%;
 		}
 	}
 	.plasticbag {
+		top: -50px;
+		right: 0px;
 		width: 300px;
 		position: absolute;
-		top: 0px;
-		right: 0px;
 		img {
 			width: 100%;
 		}
