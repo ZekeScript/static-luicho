@@ -108,28 +108,28 @@ button {
     welcome
 ****************************************
 */
-.sponge {
-	top: -70px;
-	left: -60px;
-	position: absolute;
-	width: 300px;
-	img {
-		width: 100%;
-	}
-}
-.plasticbag {
-	width: 300px;
-	position: absolute;
-	top: -50px;
-	right: -50px;
-	img {
-		width: 100%;
-	}
-}
 .welcome {
-	margin-top: 6.5vh;
+    margin-top: 6.5vh;
 	height: 85vh;
 	overflow-x: hidden;
+    .sponge {
+        top: -70px;
+        left: -60px;
+        position: absolute;
+        width: 300px;
+        img {
+            width: 100%;
+        }
+    }
+    .plasticbag {
+        width: 300px;
+        position: absolute;
+        top: -50px;
+        right: -50px;
+        img {
+            width: 100%;
+        }
+    }
 	.welcome__center {
 		top: 27vh;
 		@include tamanio(50vh, 100vw);

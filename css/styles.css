@@ -91,26 +91,24 @@ button {
     welcome
 ****************************************
 */
-.sponge {
-  top: -70px;
-  left: -60px;
-  position: absolute;
-  width: 300px; }
-  .sponge img {
-    width: 100%; }
-
-.plasticbag {
-  width: 300px;
-  position: absolute;
-  top: -50px;
-  right: -50px; }
-  .plasticbag img {
-    width: 100%; }
-
 .welcome {
   margin-top: 6.5vh;
   height: 85vh;
   overflow-x: hidden; }
+  .welcome .sponge {
+    top: -70px;
+    left: -60px;
+    position: absolute;
+    width: 300px; }
+    .welcome .sponge img {
+      width: 100%; }
+  .welcome .plasticbag {
+    width: 300px;
+    position: absolute;
+    top: -50px;
+    right: -50px; }
+    .welcome .plasticbag img {
+      width: 100%; }
   .welcome .welcome__center {
     top: 27vh;
     height: 50vh;
