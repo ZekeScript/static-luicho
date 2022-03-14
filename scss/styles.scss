@@ -51,7 +51,7 @@ button {
 	z-index: 3;
 	.nav-wrapper {
         width: 100%;
-		padding-inline: 10vw;
+		padding-inline: 10%;
 		.brand {
 			@include tamanio(56px, 80px); //uso de mixin
 			z-index: 2;
@@ -101,9 +101,9 @@ button {
 	}
 }
 /* Responsive query */
-@media all and (max-width: 768px) {
+@media all and (max-width: 992px) {
 	.nav-wrapper {
-		padding-inline: 0vw;
+		padding-inline: 0;
 	}
 }
 /*

@@ -44,7 +44,7 @@ button {
   z-index: 3; }
   .navbar .nav-wrapper {
     width: 100%;
-    padding-inline: 10vw; }
+    padding-inline: 10%; }
     .navbar .nav-wrapper .brand {
       height: 56px;
       width: 80px;
@@ -84,9 +84,9 @@ button {
             transition: width 300ms linear; }
 
 /* Responsive query */
-@media all and (max-width: 768px) {
+@media all and (max-width: 992px) {
   .nav-wrapper {
-    padding-inline: 0vw; } }
+    padding-inline: 0; } }
 
 /*
 ****************************************
