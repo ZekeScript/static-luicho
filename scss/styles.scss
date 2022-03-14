@@ -17,7 +17,6 @@
 body {
 	background: $--background;
 	color: #222831;
-	-webkit-font-smoothing: antialiased;
 	overflow-x: hidden;
 }
 body,
@@ -45,12 +44,12 @@ button {
 }
 .navbar {
 	position: fixed;
-    width: 100vw;
+	width: 100vw;
 	top: 0px;
 	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 	z-index: 3;
 	.nav-wrapper {
-        width: 100%;
+		width: 100%;
 		padding-inline: 10%;
 		.brand {
 			@include tamanio(56px, 80px); //uso de mixin
@@ -109,27 +108,27 @@ button {
 ****************************************
 */
 .welcome {
-    margin-top: 6.5vh;
+	margin-top: 6.5vh;
 	height: 85vh;
 	overflow-x: hidden;
-    .sponge {
-        top: -70px;
-        left: -60px;
-        position: absolute;
-        width: 300px;
-        img {
-            width: 100%;
-        }
-    }
-    .plasticbag {
-        width: 300px;
-        position: absolute;
-        top: -50px;
-        right: -50px;
-        img {
-            width: 100%;
-        }
-    }
+	.sponge {
+		top: -70px;
+		left: -60px;
+		position: absolute;
+		width: 300px;
+		img {
+			width: 100%;
+		}
+	}
+	.plasticbag {
+		width: 300px;
+		position: absolute;
+		top: -50px;
+		right: -50px;
+		img {
+			width: 100%;
+		}
+	}
 	.welcome__center {
 		top: 27vh;
 		@include tamanio(50vh, 100vw);
@@ -174,21 +173,23 @@ button {
 
 /* Responsive query */
 @media all and (max-width: 576px) {
-	.sponge {
-		top: 10px;
-		width: 200px;
-	}
-	.plasticbag {
-		top: 40px;
-		width: 200px;
-	}
-	.welcome__center {
-		grid-template-areas: 'presentation presentation';
-		.presentation {
-			justify-self: center;
+	.welcome {
+		.sponge {
+			top: 10px;
+			width: 200px;
 		}
-		.pizzabox {
-			display: none;
+		.plasticbag {
+			top: 40px;
+			width: 200px;
+		}
+		.welcome__center {
+			grid-template-areas: 'presentation presentation';
+			.presentation {
+				justify-self: center;
+			}
+			.pizzabox {
+				display: none;
+			}
 		}
 	}
 }

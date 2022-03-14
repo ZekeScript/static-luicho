@@ -16,7 +16,6 @@
 body {
   background: #fff;
   color: #222831;
-  -webkit-font-smoothing: antialiased;
   overflow-x: hidden; }
 
 body,
@@ -144,17 +143,17 @@ button {
 
 /* Responsive query */
 @media all and (max-width: 576px) {
-  .sponge {
+  .welcome .sponge {
     top: 10px;
     width: 200px; }
-  .plasticbag {
+  .welcome .plasticbag {
     top: 40px;
     width: 200px; }
-  .welcome__center {
+  .welcome .welcome__center {
     grid-template-areas: 'presentation presentation'; }
-    .welcome__center .presentation, .welcome .welcome__center .pizzabox {
+    .welcome .welcome__center .presentation, .welcome .welcome__center .pizzabox {
       justify-self: center; }
-    .welcome__center .pizzabox {
+    .welcome .welcome__center .pizzabox {
       display: none; } }
 
 @media all and (min-width: 577px) and (max-width: 768px) {
