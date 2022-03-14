@@ -38,12 +38,12 @@ button {
 
 .navbar {
   position: fixed;
+  width: 100vw;
   top: 0px;
-  left: 0px;
-  right: 0px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
   z-index: 3; }
   .navbar .nav-wrapper {
+    width: 100%;
     padding-inline: 10vw; }
     .navbar .nav-wrapper .brand {
       height: 56px;

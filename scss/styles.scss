@@ -45,12 +45,12 @@ button {
 }
 .navbar {
 	position: fixed;
+    width: 100vw;
 	top: 0px;
-	left: 0px;
-	right: 0px;
 	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 	z-index: 3;
 	.nav-wrapper {
+        width: 100%;
 		padding-inline: 10vw;
 		.brand {
 			@include tamanio(56px, 80px); //uso de mixin
