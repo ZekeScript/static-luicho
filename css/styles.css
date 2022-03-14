@@ -353,15 +353,13 @@ section {
       justify-content: center;
       align-items: center;
       padding-bottom: 10vh; }
-      .contact .contact__wrapper article:first-child {
-        margin-top: 100px; }
-        .contact .contact__wrapper article:first-child h2 {
-          font-weight: 900;
-          padding-bottom: 2vh; }
-        .contact .contact__wrapper article:first-child span {
-          border-bottom: solid #fdda00 2px; }
-        .contact .contact__wrapper article:first-child p {
-          font-weight: 400; }
+      .contact .contact__wrapper article:first-child h2 {
+        font-weight: 900;
+        padding-bottom: 2vh; }
+      .contact .contact__wrapper article:first-child span {
+        border-bottom: solid #fdda00 2px; }
+      .contact .contact__wrapper article:first-child p {
+        font-weight: 400; }
     .contact .contact__wrapper .form__wrapper .contact__form {
       margin-top: 29vh; }
       .contact .contact__wrapper .form__wrapper .contact__form label {
@@ -412,7 +410,7 @@ section {
         width: 100%;
         padding-bottom: 10vh; }
         .contact .contact__wrapper article:first-child {
-          margin-top: 30vh; }
+          margin-top: 40vh; }
       .contact .contact__wrapper .contact__form {
         margin-top: 0; }
         .contact .contact__wrapper .contact__form form input,
