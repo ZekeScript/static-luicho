@@ -95,8 +95,8 @@ button {
   height: 85vh;
   overflow-x: hidden; }
   .welcome .sponge {
-    top: -70px;
-    left: -60px;
+    top: 0px;
+    left: 0px;
     position: absolute;
     width: 300px; }
     .welcome .sponge img {
@@ -104,8 +104,8 @@ button {
   .welcome .plasticbag {
     width: 300px;
     position: absolute;
-    top: -50px;
-    right: -50px; }
+    top: 0px;
+    right: 0px; }
     .welcome .plasticbag img {
       width: 100%; }
   .welcome .welcome__center {
