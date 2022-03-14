@@ -421,6 +421,7 @@ section{
 ****************************************
 */
 .contact {
+    width: 100vw;
 	clip-path: polygon(0 100%, 100% 100%, 100% 20%, 40% 20%, 28% 0, 28% 20%, 0 20%);
 	background: #222831
 		url(https://raw.githubusercontent.com/estga/furry-journey/main/images/mailGraphic.png)
@@ -434,7 +435,7 @@ section{
 		display: flex;
 		justify-content: space-between;
 		article {
-			width: 33vw;
+			width: 30vw;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -536,6 +537,7 @@ section{
 ****************************************
 */
 .footer {
+    width: 100vw;
 	position: relative;
 	z-index: 2;
 	background-color: $--background-nav;
