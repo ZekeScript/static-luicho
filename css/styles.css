@@ -11,7 +11,8 @@
   margin: 0;
   padding: 0;
   outline: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  outline: solid 1px red; }
 
 body {
   background: #fff;
@@ -91,7 +92,7 @@ button {
 .welcome {
   margin-top: 6.5vh;
   height: 85vh;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden; }
   .welcome .sponge {
     top: -70px;
@@ -110,7 +111,7 @@ button {
   .welcome .welcome__center {
     top: 27vh;
     height: 50vh;
-    width: 99.9vw;
+    width: 100%;
     position: absolute;
     display: grid;
     grid-template-areas: 'presentation pizzabox'; }

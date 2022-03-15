@@ -13,6 +13,7 @@
 	padding: 0;
 	outline: 0;
 	box-sizing: border-box;
+    outline: solid 1px red;
 }
 body {
 	background: $--background;
@@ -109,7 +110,7 @@ button {
 .welcome {
 	margin-top: 6.5vh;
 	height: 85vh;
-	width: 100vw;
+	width: 100%;
 	overflow-x: hidden;
 	.sponge {
 		top: -70px;
@@ -131,7 +132,7 @@ button {
 	}
 	.welcome__center {
 		top: 27vh;
-		@include tamanio(50vh, 99.9vw);
+		@include tamanio(50vh, 100%);
 		position: absolute;
 		display: grid;
 		grid-template-areas: 'presentation pizzabox';
