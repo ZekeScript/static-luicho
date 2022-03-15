@@ -5,4 +5,4 @@ Wireframe de todas las paginas del sitio. Tanto de la version desktop como la mo
 
 Deployment https://estga.github.io/super-chainsaw/
 
-Subida al servidor: https://distribuidora-luicho.000webhostapp.com/
+Subida al servidor: https://distribuidora-luicho.000webhostapp.com/ (quedo con la version anterior al no poder conectar con el host)
