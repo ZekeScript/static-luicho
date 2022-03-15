@@ -16,6 +16,7 @@
 body {
   background: #fff;
   color: #222831;
+  -webkit-font-smoothing: antialiased;
   overflow-x: hidden; }
 
 body,
@@ -27,9 +28,6 @@ button {
 button {
   cursor: pointer; }
 
-section {
-  width: 100vw; }
-
 /*
 ****************************************
     navbar
@@ -40,13 +38,13 @@ section {
 
 .navbar {
   position: fixed;
-  width: 100vw;
   top: 0px;
+  left: 0px;
+  right: 0px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
   z-index: 3; }
   .navbar .nav-wrapper {
-    width: 100%;
-    padding-inline: 10%; }
+    padding-inline: 10vw; }
     .navbar .nav-wrapper .brand {
       height: 56px;
       width: 80px;
@@ -60,6 +58,8 @@ section {
     transform: scaleX(-1); }
   100% {
     transform: scaleX(1); } }
+    .navbar .nav-wrapper .navbar-wrapper-toggle {
+      align-self: baseline; }
     .navbar .nav-wrapper .navbar-collapse {
       justify-content: right; }
       .navbar .nav-wrapper .navbar-collapse .navbar-nav {
@@ -83,32 +83,27 @@ section {
             width: 0%;
             transition: width 300ms linear; }
 
-/* Responsive query */
-@media all and (max-width: 992px) {
-  .nav-wrapper {
-    padding-inline: 0; } }
-
 /*
 ****************************************
     welcome
 ****************************************
 */
 .welcome {
-  height: 85vh;
   margin-top: 6.5vh;
+  height: 85vh;
   overflow-x: hidden; }
   .welcome .sponge {
-    top: -40px;
-    left: 0px;
-    width: 300px;
-    position: absolute; }
+    top: -70px;
+    left: -60px;
+    position: absolute;
+    width: 300px; }
     .welcome .sponge img {
       width: 100%; }
   .welcome .plasticbag {
-    top: -40px;
-    right: 0px;
     width: 300px;
-    position: absolute; }
+    position: absolute;
+    top: -50px;
+    right: -50px; }
     .welcome .plasticbag img {
       width: 100%; }
   .welcome .welcome__center {
@@ -146,36 +141,26 @@ section {
 
 /* Responsive query */
 @media all and (max-width: 576px) {
-  .welcome .sponge {
-    top: -10px;
+  .sponge {
+    top: 10px;
     width: 200px; }
-  .welcome .plasticbag {
-    top: -10px;
+  .plasticbag {
+    top: 40px;
     width: 200px; }
-  .welcome .welcome__center {
+  .welcome__center {
     grid-template-areas: 'presentation presentation'; }
-    .welcome .welcome__center .presentation, .welcome .welcome__center .pizzabox {
+    .welcome__center .presentation, .welcome .welcome__center .pizzabox {
       justify-self: center; }
-    .welcome .welcome__center .pizzabox {
-      display: none; }
-  .welcome .socialmedia {
-    bottom: 100px; } }
+    .welcome__center .pizzabox {
+      display: none; } }
 
 @media all and (min-width: 577px) and (max-width: 768px) {
-  .welcome .sponge {
-    top: -10px;
-    width: 200px; }
-  .welcome .plasticbag {
-    top: -10px;
-    width: 200px; }
-  .welcome .welcome__center {
+  .welcome__center {
     grid-template-areas: 'presentation presentation'; }
-    .welcome .welcome__center .presentation, .welcome .welcome__center .pizzabox {
+    .welcome__center .presentation, .welcome .welcome__center .pizzabox {
       justify-self: center; }
-    .welcome .welcome__center .pizzabox {
-      display: none; }
-  .welcome .socialmedia {
-    bottom: 100px; } }
+    .welcome__center .pizzabox {
+      display: none; } }
 
 /*
 ****************************************
@@ -335,7 +320,6 @@ section {
 ****************************************
 */
 .contact {
-  width: 100vw;
   clip-path: polygon(0 100%, 100% 100%, 100% 20%, 40% 20%, 28% 0, 28% 20%, 0 20%);
   background: #222831 url(https://raw.githubusercontent.com/estga/furry-journey/main/images/mailGraphic.png) center left/66vh no-repeat;
   background-blend-mode: multiply;
@@ -347,7 +331,7 @@ section {
     display: flex;
     justify-content: space-between; }
     .contact .contact__wrapper article {
-      width: 30vw;
+      width: 33vw;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -410,7 +394,7 @@ section {
         width: 100%;
         padding-bottom: 10vh; }
         .contact .contact__wrapper article:first-child {
-          margin-top: 40vh; }
+          margin-top: 30vh; }
       .contact .contact__wrapper .contact__form {
         margin-top: 0; }
         .contact .contact__wrapper .contact__form form input,
@@ -424,7 +408,6 @@ section {
 ****************************************
 */
 .footer {
-  width: 100vw;
   position: relative;
   z-index: 2;
   background-color: #18306d;
