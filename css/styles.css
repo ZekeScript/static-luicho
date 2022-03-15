@@ -155,7 +155,7 @@ button {
     .welcome .welcome__center .pizzabox {
       display: none; }
   .welcome .socialmedia {
-    bottom: 50px; } }
+    bottom: 100px; } }
 
 @media all and (min-width: 577px) and (max-width: 768px) {
   .welcome__center {
