@@ -11,7 +11,8 @@
   margin: 0;
   padding: 0;
   outline: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  outline: solid; }
 
 body {
   background: #fff;
@@ -91,6 +92,7 @@ button {
 .welcome {
   margin-top: 6.5vh;
   height: 85vh;
+  width: 100vw;
   overflow-x: hidden; }
   .welcome .sponge {
     top: -70px;
@@ -103,7 +105,7 @@ button {
     width: 300px;
     position: absolute;
     top: -50px;
-    right: -50px; }
+    right: 0px; }
     .welcome .plasticbag img {
       width: 100%; }
   .welcome .welcome__center {
