@@ -37,9 +37,10 @@ button {
 
 .navbar {
   position: fixed;
-  top: 0px;
-  left: 0px;
   right: 0px;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
   z-index: 3; }
   .navbar .nav-wrapper {
@@ -94,7 +95,7 @@ button {
   overflow-x: hidden; }
   .welcome .sponge {
     top: -70px;
-    left: -60px;
+    left: 0px;
     position: absolute;
     width: 300px; }
     .welcome .sponge img {
@@ -109,7 +110,7 @@ button {
   .welcome .welcome__center {
     top: 27vh;
     height: 50vh;
-    width: 100vw;
+    width: 99.9vw;
     position: absolute;
     display: grid;
     grid-template-areas: 'presentation pizzabox'; }
@@ -141,17 +142,17 @@ button {
 
 /* Responsive query */
 @media all and (max-width: 576px) {
-  .sponge {
+  .welcome .sponge {
     top: 10px;
     width: 200px; }
-  .plasticbag {
-    top: 40px;
+  .welcome .plasticbag {
+    top: 20px;
     width: 200px; }
-  .welcome__center {
+  .welcome .welcome__center {
     grid-template-areas: 'presentation presentation'; }
-    .welcome__center .presentation, .welcome .welcome__center .pizzabox {
+    .welcome .welcome__center .presentation, .welcome .welcome__center .pizzabox {
       justify-self: center; }
-    .welcome__center .pizzabox {
+    .welcome .welcome__center .pizzabox {
       display: none; } }
 
 @media all and (min-width: 577px) and (max-width: 768px) {

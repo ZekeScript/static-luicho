@@ -1,7 +1,7 @@
 /* Imports */
-@import "colors";
-@import "url-map";
-@import "fonts";
+@import 'colors';
+@import 'url-map';
+@import 'fonts';
 
 /* 
 ****************************************
@@ -34,24 +34,26 @@ button {
     navbar
 ****************************************
 */
-@mixin tamanio($alto, $ancho) {     //definicion de mixin
-    height: $alto;
-    width: $ancho;
+@mixin tamanio($alto, $ancho) {
+	//definicion de mixin
+	height: $alto;
+	width: $ancho;
 }
 .bg-dark {
 	background-color: #18306d !important;
 }
 .navbar {
 	position: fixed;
+    right: 0px;
+    left: 0px;
 	top: 0px;
-	left: 0px;
-	right: 0px;
+	width: 100vw;
 	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 	z-index: 3;
 	.nav-wrapper {
 		padding-inline: 10vw;
 		.brand {
-            @include tamanio(56px, 80px);       //uso de mixin
+			@include tamanio(56px, 80px); //uso de mixin
 			z-index: 2;
 			box-shadow: 0px 33px 25px rgba(0, 0, 0, 0.2);
 			img:hover {
@@ -90,7 +92,7 @@ button {
 						left: 0px;
 						content: '';
 						background: $--yellow-logo;
-                        @include tamanio(2px, 0%);      //uso de mixin
+						@include tamanio(2px, 0%); //uso de mixin
 						transition: width 300ms linear;
 					}
 				}
@@ -105,31 +107,31 @@ button {
 ****************************************
 */
 .welcome {
-    margin-top: 6.5vh;
+	margin-top: 6.5vh;
 	height: 85vh;
-    width: 100vw;
-    overflow-x: hidden;
-    .sponge {
-        top: -70px;
-        left: -60px;
-        position: absolute;
-        width: 300px;
-        img {
-            width: 100%;
-        }
-    }
-    .plasticbag {
-        width: 300px;
-        position: absolute;
-        top: -50px;
-        right: 0px;
-        img {
-            width: 100%;
-        }
-    }
+	width: 100vw;
+	overflow-x: hidden;
+	.sponge {
+		top: -70px;
+		left: 0px;
+		position: absolute;
+		width: 300px;
+		img {
+			width: 100%;
+		}
+	}
+	.plasticbag {
+		width: 300px;
+		position: absolute;
+		top: -50px;
+		right: 0px;
+		img {
+			width: 100%;
+		}
+	}
 	.welcome__center {
 		top: 27vh;
-        @include tamanio(50vh, 100vw);
+		@include tamanio(50vh, 99.9vw);
 		position: absolute;
 		display: grid;
 		grid-template-areas: 'presentation pizzabox';
@@ -147,7 +149,7 @@ button {
 			}
 		}
 		.pizzabox {
-            @extend .presentation; //extend y reescritura de grid-area
+			@extend .presentation; //extend y reescritura de grid-area
 			grid-area: pizzabox;
 			max-width: 50vw;
 		}
@@ -171,21 +173,23 @@ button {
 
 /* Responsive query */
 @media all and (max-width: 576px) {
-	.sponge {
-		top: 10px;
-		width: 200px;
-	}
-	.plasticbag {
-		top: 40px;
-		width: 200px;
-	}
-	.welcome__center {
-		grid-template-areas: 'presentation presentation';
-		.presentation {
-			justify-self: center;
+	.welcome {
+		.sponge {
+			top: 10px;
+			width: 200px;
 		}
-		.pizzabox {
-			display: none;
+		.plasticbag {
+			top: 20px;
+			width: 200px;
+		}
+		.welcome__center {
+			grid-template-areas: 'presentation presentation';
+			.presentation {
+				justify-self: center;
+			}
+			.pizzabox {
+				display: none;
+			}
 		}
 	}
 }
@@ -292,14 +296,15 @@ button {
 			border-radius: 20px;
 			padding: 2%;
 		}
-	}// uso del mapa url-map
+	} // uso del mapa url-map
 	@each $name-url, $url in $url-map {
-        .#{$name-url} {
-		    background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background_#{$url}.jpg)
-			    center/cover no-repeat;
-		    grid-area: #{$url};
-	    }
-    }
+		.#{$name-url} {
+			background: url(https://raw.githubusercontent.com/estga/super-chainsaw/main/images/background_#{$url}.jpg)
+				center/cover
+				no-repeat;
+			grid-area: #{$url};
+		}
+	}
 }
 
 /* Responsive query */
@@ -440,7 +445,7 @@ button {
 				textarea {
 					border: none;
 					padding: 1rem;
-                    @include tamanio(6vh, 33vw);        //uso de mixin
+					@include tamanio(6vh, 33vw); //uso de mixin
 					margin-bottom: 2vh;
 				}
 				textarea {
@@ -517,55 +522,55 @@ button {
 	z-index: 2;
 	background-color: $--background-nav;
 	padding: 1vh 0;
-    .footer__wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .footer__menu {
-            display: flex;
-            flex-direction: column;
-            .footer__link {
-                color: black;
-                text-decoration: none;
-                &:hover {
-                    color: $--yellow-logo;
-                    transition: 600ms;
-                    text-decoration: none;
-                }
-            }
-        }
-        .footer__socialmedia {
-            flex-wrap: nowrap;
-            justify-content: end;
-            i {
-                width: 20px;
-                color: #171b20;
-                &:hover {
-                    color: $--yellow-logo;
-                    transition: 600ms;
-                }
-            }
-        }
-    }
-    hr {
-        border-top: solid 1px $--yellow-logo;
-    }
-    .footer__mark {
-        color: black;
-        display: flex;
-        align-items: baseline;
-        justify-content: center;
-        a {
-            color: black;
-            text-decoration: none;
-            &:hover {
-                color: $--yellow-logo;
-                transition: 600ms;
-                text-decoration: none;
-            }
-        }
-        i {
-            color: $--yellow-logo;
-        }
-    }
+	.footer__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.footer__menu {
+			display: flex;
+			flex-direction: column;
+			.footer__link {
+				color: black;
+				text-decoration: none;
+				&:hover {
+					color: $--yellow-logo;
+					transition: 600ms;
+					text-decoration: none;
+				}
+			}
+		}
+		.footer__socialmedia {
+			flex-wrap: nowrap;
+			justify-content: end;
+			i {
+				width: 20px;
+				color: #171b20;
+				&:hover {
+					color: $--yellow-logo;
+					transition: 600ms;
+				}
+			}
+		}
+	}
+	hr {
+		border-top: solid 1px $--yellow-logo;
+	}
+	.footer__mark {
+		color: black;
+		display: flex;
+		align-items: baseline;
+		justify-content: center;
+		a {
+			color: black;
+			text-decoration: none;
+			&:hover {
+				color: $--yellow-logo;
+				transition: 600ms;
+				text-decoration: none;
+			}
+		}
+		i {
+			color: $--yellow-logo;
+		}
+	}
 }
