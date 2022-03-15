@@ -143,10 +143,10 @@ button {
 /* Responsive query */
 @media all and (max-width: 576px) {
   .welcome .sponge {
-    top: 10px;
+    top: 0px;
     width: 200px; }
   .welcome .plasticbag {
-    top: 20px;
+    top: 0px;
     width: 200px; }
   .welcome .welcome__center {
     top: 20vh;
