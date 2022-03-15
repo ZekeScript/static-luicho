@@ -155,7 +155,7 @@ button {
     .welcome .welcome__center .pizzabox {
       display: none; }
   .welcome .socialmedia {
-    bottom: 100px; } }
+    bottom: 120px; } }
 
 @media all and (min-width: 577px) and (max-width: 768px) {
   .welcome__center {
@@ -165,7 +165,7 @@ button {
     .welcome__center .pizzabox {
       display: none; }
     .welcome__center .socialmedia {
-      bottom: 100px; } }
+      bottom: 120px; } }
 
 /*
 ****************************************
