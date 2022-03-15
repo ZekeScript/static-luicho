@@ -183,6 +183,7 @@ button {
 			width: 200px;
 		}
 		.welcome__center {
+            top: 20vh;
 			grid-template-areas: 'presentation presentation';
 			.presentation {
 				justify-self: center;

@@ -149,6 +149,7 @@ button {
     top: 20px;
     width: 200px; }
   .welcome .welcome__center {
+    top: 20vh;
     grid-template-areas: 'presentation presentation'; }
     .welcome .welcome__center .presentation, .welcome .welcome__center .pizzabox {
       justify-self: center; }
