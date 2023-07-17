@@ -13,6 +13,7 @@ Esta es una página web para la comercialización de productos de limpieza y des
 
 ## Screenshot
 
+![image](https://github.com/ZekeScript/static-luicho/assets/57415369/c14dc68f-168b-4ea1-8480-a5c58ef8332f)
 
 
 ## Uso de la página
