@@ -1,36 +1,36 @@
 # Distribuidora Luicho
 
-Esta es una página web para la comercialización de productos de limpieza y descartables en Corrientes, Argentina, llamada Distribuidora Luicho. La empresa es una pequeña y mediana empresa familiar (20 empleados) con alcance dentro de la provincia. Ofrecen entregas sin costo adicional para las compras.
+This is a website for the marketing of cleaning products and disposables in Corrientes, Argentina, called Distribuidora Luicho. The company is a small to medium-sized family business with 20 employees, operating within the province. They offer free deliveries for purchases.
 
-## Características principales
+## Key Features
 
-- Página principal con información de la empresa y presentación de marca.
-- Secciones de "Quienes somos", "Productos" y "FAQs" en la barra de navegación.
-- Uso de bibliotecas y recursos externos como Font Awesome, Google Fonts y AOS Library.
-- Diseño responsive utilizando Bootstrap CSS.
-- Formulario de contacto para que los usuarios puedan comunicarse con la empresa.
-- Enlaces a redes sociales como Facebook, Instagram y WhatsApp.
+- Homepage with company information and brand presentation.
+- Sections for "About Us," "Products," and "FAQs" in the navigation bar.
+- Use of external libraries and resources such as Font Awesome, Google Fonts, and AOS Library.
+- Responsive design using Bootstrap CSS.
+- Contact form for users to get in touch with the company.
+- Links to social media platforms such as Facebook, Instagram, and WhatsApp.
 
 ## Screenshot
 
 ![image](https://github.com/ZekeScript/static-luicho/assets/57415369/c14dc68f-168b-4ea1-8480-a5c58ef8332f)
 
 
-## Uso de la página
+## Using the Website
 
-Puedes navegar por la página utilizando la barra de navegación en la parte superior. Las secciones principales son:
+You can navigate through the website using the navigation bar at the top. The main sections are:
 
-- **Quienes somos**: Información sobre la empresa y su especialización en la distribución y comercialización de productos y envases descartables para alimentos, higiene y embalaje. También fabrican y distribuyen productos de limpieza bajo la marca Manía.
-- **Productos**: Listado de productos disponibles para la venta.
-- **FAQs**: Preguntas frecuentes sobre la empresa y sus productos.
-- **Contacto**: Formulario para contactar con la empresa.
+- **About Us**: Information about the company and its specialization in the distribution and marketing of disposable food, hygiene, and packaging products. They also manufacture and distribute cleaning products under the brand Manía.
+- **Products**: List of available products for sale.
+- **FAQs**: Frequently asked questions about the company and its products.
+- **Contact**: Form to get in touch with the company.
 
-En el pie de página, encontrarás enlaces adicionales a las secciones principales, así como enlaces a las redes sociales de la empresa.
+In the footer, you will find additional links to the main sections, as well as links to the company's social media platforms.
 
 ## Wireframe
 
-Wireframe de todas las paginas del sitio. Tanto de la version desktop como la mobile https://whimsical.com/luicho-s-project-8Z5x5y7piexbPGmC9MzeJP@2Ux7TurymNVu1RN2qRZg
+Wireframe of all the pages on the site, both for the desktop and mobile versions: [Wireframe Link](https://whimsical.com/luicho-s-project-8Z5x5y7piexbPGmC9MzeJP@2Ux7TurymNVu1RN2qRZg)
 
-## Contacto
+## Contact
 
-Si deseas contactar con Distribuidora Luicho, puedes utilizar el formulario de contacto en la sección correspondiente de la página web.
+If you wish to contact Distribuidora Luicho, you can use the contact form in the corresponding section of the website.
